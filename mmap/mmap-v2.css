@@ -37,7 +37,7 @@ body:has(details.mischief[open])
 
 .doorcontainer {
   position: relative;
-  background-color: #e5d2ac;
+  background-image:url(https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/mmap/mmap-interior.png);
   border: 1px solid black;
   height: 420px;
   width: 300px;
