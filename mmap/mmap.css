@@ -1,0 +1,290 @@
+figure {
+  margin-left:0px;
+  margin-right:0px;
+  overflow-x: hidden;
+}
+
+.doorcontainer {
+  position: relative;
+  background-color: #e5d2ac;
+  border: 1px solid black;
+  height: 420px;
+  width: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.doorinteriorcontainer {
+  position: absolute;
+}
+
+.location {
+  font-size: 15px;
+  width: 75px;
+  text-align: center;
+  display:block;
+  border:1px solid green;
+  position:absolute;
+}
+
+.names {
+  font-size: 12px;
+  width: 60px;
+  text-align: center;
+  display:block;
+  border:1px solid blue;
+  position:absolute;
+
+}
+
+.location-under {
+  list-style: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.astro {
+  top:30px;
+  left:25px;
+}
+
+.astro-name {
+  top:75px;
+  left:30px;
+}
+
+.great {
+  top:300px;
+  left:60px;
+}
+
+.great-name {
+  top:330px;
+  left:65px;
+}
+
+.greenhouse {
+  top:220px;
+  left:200px;
+}
+
+.greenhouse-name {
+  top:250px;
+  left:205px;
+}
+
+.common-room {
+  top:50px;
+  left:190px;
+}
+
+.library {
+  top:180px;
+  left:70px;
+}
+
+.library-name {
+  top:210px;
+  left:80px;
+}
+
+.kitchens {
+  top:365px;
+  left:150px;
+}
+
+.kitchens-name {
+  top:390px;
+  left:150px;
+}
+
+.leftdoor {
+  position: absolute;
+  vertical-align: top;
+  top: 0px;
+  left: 0px;
+  border-radius: 1px;
+  border-color: black;
+  background-image:url(https://raw.githubusercontent.com/mackerelcheese/AO3-Tutorials/refs/heads/main/mmap/marauders%20map%20-left%20150px.png);
+  box-shadow: 1px 1px 2px black;
+  width: 150px;
+  height: 420px;
+  transition: 5s;
+  transition-delay: 1000000000000s;
+  z-index: 3;
+}
+
+.leftdoor:hover {
+  cursor: progress;
+  left: -45%;
+  transition:left 4s;
+  transition-delay: left 1000000000000s;
+}
+
+.rightdoor {
+  position: absolute;
+  vertical-align: top;
+  top: 0px;
+  right: 0px;
+  border-radius: 1px solid black;
+  background-image:url(https://raw.githubusercontent.com/mackerelcheese/AO3-Tutorials/refs/heads/main/mmap/marauders%20map%20-right%20150px.png);
+  box-shadow: -1px 1px 2px black;
+  width: 150px;
+  height: 420px;
+  transition: 3s;
+  transition-delay: 1000000000000s;
+  z-index: 2;
+}
+
+.rightdoor:hover {
+  top: -5px;
+  width: 10px;
+  transition: ease-in-out 2s;
+  cursor: progress;
+}
+
+.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mischief {
+    list-style: none;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+    padding:10px;
+
+}
+
+.mapcon {
+    display:none;
+}
+
+body:has(details.mischief[open]) 
+.mapcon {
+    display:block;
+} 
+/*https://www.pngkey.com/download/u2r5e6i1w7t4u2e6_marauders-map-mightyprint-wall-art-print-harry-potter/*/ 
+
+
+
+/*detail summary shenanigans*/
+/*story*/
+
+/******************************************library***********************************/ 
+.library-story {
+  display: none;
+}
+
+body:has(details.op-library[open])
+.library-story {
+    display:block;
+}
+
+body:has(details.op-library[open])
+.op-library {
+    display:none;
+}
+
+body:has(details.op-library[open])
+.op-great {
+    display:block;
+}
+
+/**************************************great hall**************************************/
+.great-story {
+  display: none;
+}
+
+.op-great {
+  display:none;
+}
+
+body:has(details.op-great[open])
+.great-story {
+    display:block;
+}
+
+body:has(details.op-great[open])
+.op-great {
+    display:none;
+}
+
+body:has(details.op-great[open])
+.op-kitchens {
+    display:block;
+}
+
+/**************************************kitchens**************************************/
+.kitchens-story {
+  display: none;
+}
+
+.op-kitchens {
+  display:none;
+}
+
+body:has(details.op-kitchens[open])
+.kitchens-story {
+    display:block;
+}
+
+body:has(details.op-kitchens[open])
+.op-kitchens {
+    display:none;
+}
+
+body:has(details.op-kitchens[open])
+.op-greenhouse {
+    display:block;
+}
+
+/**************************************greenhouse**************************************/
+.greenhouse-story {
+  display: none;
+}
+
+.op-greenhouse {
+  display:none;
+}
+
+
+body:has(details.op-greenhouse[open])
+.greenhouse-story {
+    display:block;
+}
+
+body:has(details.op-greenhouse[open])
+.op-greenhouse {
+    display:none;
+}
+
+body:has(details.op-greenhouse[open])
+.op-commonroom {
+    display:block;
+}
+
+/**************************************common room**************************************/
+.commonroom-story {
+  display: none;
+}
+
+.op-commonroom {
+  display:none;
+}
+
+body:has(details.op-commonroom[open])
+.commonroom-story {
+    display:block;
+}
+
+body:has(details.op-commonroom[open])
+.op-commonroom {
+    display:none;
+}
+
