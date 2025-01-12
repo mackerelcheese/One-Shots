@@ -41,7 +41,7 @@ details summary {
 
 .doorcontainer {
   position: relative;
- background-image:url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/mmap/mmap-interior-v2.png");*/
+ background-image:url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/mmap/mmap-interior-v3.png");
   border: 1px solid black;
   height: 420px;
   width: 300px;
@@ -102,8 +102,8 @@ details summary {
 
 /*********************location positioning********************************/
 .location {
-    font-size: 13px;
-    width: 110px;
+    font-size: 14px;
+    width: 100px;
     text-align: center;
     display:block;
     position:absolute;
@@ -128,8 +128,8 @@ details summary {
 }  
 
 .astro {
-    top:60px;
-    left:25px;
+    top:55px;
+    left:30px;
   }
   
   .astro-name {
@@ -154,22 +154,22 @@ details summary {
   
   .greenhouse-name {
     top:254px;
-    left:205px;
+    left:215px;
   }
   
   .common-room {
-    top:95px;
-    left:185px;
+    top:85px;
+    left:190px;
   }
   
   .library {
-    top:185px;
-    left:55px;
+    top:180px;
+    left:50px;
   }
   
   .library-name {
     top:213px;
-    left:80px;
+    left:70px;
   }
   
   .kitchens {
@@ -179,7 +179,7 @@ details summary {
   
   .kitchens-name {
     top:396px;
-    left:190px;
+    left:185px;
   }
 
   /*******************hidden stories**********************/
