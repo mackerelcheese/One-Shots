@@ -23,6 +23,10 @@ figure {
   font-weight:bold
 }
 
+.mischief-fake {
+    display:none;
+}
+
 .mapcon {
   display:none;
 }
@@ -32,8 +36,14 @@ figure:has(details.mischief[open])
   display:block;
 } 
 
-details summary {
-    display:inline;
+figure:has(details.mischief[open]) 
+.mischief {
+  display:none;
+}
+
+figure:has(details.mischief[open]) 
+.mischief-fake {
+  display:block;
 }
 
 /**********************map aesthetics*********************************/
