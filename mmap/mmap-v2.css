@@ -154,6 +154,8 @@ figure:has(details.mischief[open])
   .great-name {
     top:340px;
     left:60px;
+    transform: rotate(-6deg)
+
   }
   
   .greenhouse {
@@ -163,7 +165,9 @@ figure:has(details.mischief[open])
   
   .greenhouse-name {
     top:254px;
-    left:215px;
+    left:215px;    
+    transform: rotate(-6deg)
+
   }
   
   .common-room {
@@ -174,11 +178,13 @@ figure:has(details.mischief[open])
   .library {
     top:180px;
     left:50px;
+;
   }
   
   .library-name {
     top:213px;
     left:70px;
+    transform: rotate(-6deg)
   }
   
   .kitchens {
@@ -189,6 +195,7 @@ figure:has(details.mischief[open])
   .kitchens-name {
     top:396px;
     left:185px;
+    transform: rotate(-6deg)
   }
 
   /*******************hidden stories**********************/
