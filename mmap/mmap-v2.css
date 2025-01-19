@@ -11,6 +11,25 @@ figure {
     flex-direction: column;
 }
 
+/*****************kudos*****************/ 
+#workskin ~ #feedback #kudos_message {
+    font-size: 0;
+}
+  
+#workskin ~ #feedback #kudos_message.notice::after {
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+    content: "Thank you for leaving kudos!";
+}
+  
+#workskin ~ #feedback #kudos_message.kudos_error::after {
+    content: "You have already left kudos here. :))";
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+}
+
 /**solemnly swear**/
 
 .mischief {
@@ -111,19 +130,21 @@ figure:has(details.mischief[open])
 
 /*********************location positioning********************************/
 .location {
-    font-size: 14px;
+    font-size: 13px;
     width: 100px;
     text-align: center;
     display:block;
     position:absolute;
+    color:black;
   }
   
   .names {
-    font-size: 11px;
+    font-size: 10px;
     width: 60px;
     text-align: center;
     display:block;
     position:absolute;
+    color:black;
   
   }
 
@@ -135,6 +156,11 @@ figure:has(details.mischief[open])
     margin:0px;
     font-weight: bold;
 }  
+
+.location-list details > summary::-webkit-details-marker,
+.location-list details > summary::marker {
+display: none;
+}
 
 .astro {
     top:55px;
