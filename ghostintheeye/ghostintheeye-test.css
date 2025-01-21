@@ -61,7 +61,7 @@ figure:has(details.playbutton[open])
 
 figure:has(details.rewindbutton[open])
 .reveal1 {
-    display:inline-block;
+    display:inline;
 }
 
 figure:has(details.rewindbutton[open])
