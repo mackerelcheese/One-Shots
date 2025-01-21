@@ -1,0 +1,149 @@
+figure {
+    margin-left: 0px;
+    margin-right:0px;
+}
+
+.playbutton > summary {
+    display:flex;
+    padding:10px;
+    list-style: none;
+    border:1px solid black;
+    width:6em;
+    height:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color:white;
+    font-size: 1.1em;
+    background-color: black;
+    border-radius:5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rewindbutton > summary {
+    display:flex;
+    padding:10px;
+    list-style: none;
+    border:1px solid black;
+    width:6em;
+    height:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color:white;
+    font-size: 1.1em;
+    background-color: black;
+    border-radius:5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reveal1 {
+    display:none;
+}
+
+.story-play {
+    display:none;
+}
+
+figure:has(details.playbutton[open])
+.story-play {
+    display:block;
+}
+
+figure:has(details.playbutton[open])
+.playbutton {
+    display:none;
+}
+
+figure:has(details.rewindbutton[open])
+.reveal1 {
+    display:inline-block;
+}
+
+figure:has(details.rewindbutton[open])
+.upper {
+    display:none;
+}
+
+figure:has(details.rewindbutton[open])
+.upperprime {
+    color: transparent;
+}
+
+/****************test 2******************/
+
+.reveal2 {
+    display:none;
+}
+
+.playbutton2 > summary {
+    display:flex;
+    padding:10px;
+    list-style: none;
+    border:1px solid black;
+    width:6em;
+    height:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color:white;
+    font-size: 1.1em;
+    background-color: black;
+    border-radius:5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rewindbutton2 > summary {
+    display:flex;
+    padding:10px;
+    list-style: none;
+    border:1px solid black;
+    width:6em;
+    height:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color:white;
+    font-size: 1.1em;
+    background-color: black;
+    border-radius:5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story-play2 {
+    display:none;
+}
+
+figure:has(details.playbutton2[open])
+.story-play2 {
+    display:block;
+}
+
+figure:has(details.playbutton2[open])
+.playbutton2 {
+    display:none;
+}
+
+figure:has(details.rewindbutton2[open])
+.reveal2 {
+    color: black;
+    background-color:yellow;
+    display:inline
+}
+
+figure:has(details.rewindbutton2[open])
+.upper2 {
+    display:none;
+}
+
+
+
+
