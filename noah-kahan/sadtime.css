@@ -1,0 +1,25 @@
+figure {
+    margin-left:0px;
+    margin-right: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/*****************kudos*****************/ 
+#workskin ~ #feedback #kudos_message {
+    font-size: 0;
+}
+  
+#workskin ~ #feedback #kudos_message.notice::after {
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+    content: "Thank you for leaving kudos!";
+}
+  
+#workskin ~ #feedback #kudos_message.kudos_error::after {
+    content: "You have already left kudos here. :))";
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+}

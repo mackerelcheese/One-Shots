@@ -8,7 +8,7 @@ figure {
     padding:10px;
     list-style: none;
     border:1px solid black;
-    width:6em;
+    width:7em;
     height:auto;
     text-align: center;
     justify-content: center;
@@ -27,7 +27,7 @@ figure {
     padding:10px;
     list-style: none;
     border:1px solid black;
-    width:6em;
+    width:7em;
     height:auto;
     text-align: center;
     justify-content: center;
@@ -41,16 +41,83 @@ figure {
     margin-right: auto;
 }
 
-.reveal1 {
+.rewindmorebutton > summary {
+    display:flex;
+    padding:10px;
+    list-style: none;
+    border:1px solid black;
+    width:7em;
+    height:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color:white;
+    font-size: 1.1em;
+    background-color: black;
+    border-radius:5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.playmorebutton > summary {
+    display:flex;
+    padding:10px;
+    list-style: none;
+    border:1px solid black;
+    width:7em;
+    height:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color:white;
+    font-size: 1.1em;
+    background-color: black;
+    border-radius:5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color:white !important;
+    text-decoration: none !important;
+}
+.rewind-b {
     display:none;
 }
 
 .story-play {
+    display:none;
+}
+
+.reveal {
+    display:none;
+}
+
+.rewindmorebutton {
+    display:none;
+}
+
+.rewindbutton {
+    display:none;
+}
+
+.playmorebutton {
+    display:none;
+}
+
+.story-playmore{
     display:none;
 }
 
 figure:has(details.playbutton[open])
 .story-play {
+    display:block;
+}
+
+figure:has(details.playbutton[open])
+.rewindbutton {
     display:block;
 }
 
@@ -60,89 +127,54 @@ figure:has(details.playbutton[open])
 }
 
 figure:has(details.rewindbutton[open])
-.reveal1 {
+.reveal{
     display:inline;
+    background-color: yellow;
 }
 
 figure:has(details.rewindbutton[open])
-.upper {
-    display:none;
-}
-
-figure:has(details.rewindbutton[open])
-.upperprime {
-    color: transparent;
-}
-
-/****************test 2******************/
-
-.reveal2 {
-    display:none;
-}
-
-.playbutton2 > summary {
-    display:flex;
-    padding:10px;
-    list-style: none;
-    border:1px solid black;
-    width:6em;
-    height:auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-family: monospace;
-    color:white;
-    font-size: 1.1em;
-    background-color: black;
-    border-radius:5px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.rewindbutton2 > summary {
-    display:flex;
-    padding:10px;
-    list-style: none;
-    border:1px solid black;
-    width:6em;
-    height:auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-family: monospace;
-    color:white;
-    font-size: 1.1em;
-    background-color: black;
-    border-radius:5px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.story-play2 {
-    display:none;
-}
-
-figure:has(details.playbutton2[open])
-.story-play2 {
+.rewindmorebutton{
     display:block;
 }
 
-figure:has(details.playbutton2[open])
-.playbutton2 {
+figure:has(details.rewindbutton[open])
+.upper{
     display:none;
 }
 
-figure:has(details.rewindbutton2[open])
-.reveal2 {
-    color: black;
-    background-color:yellow;
-    display:inline
-}
-
-figure:has(details.rewindbutton2[open])
-.upper2 {
+figure:has(details.rewindbutton[open])
+.rewindbutton{
     display:none;
 }
 
+figure:has(details.rewindmorebutton[open])
+.rewind-b{
+    display:inline;
+}
+
+figure:has(details.rewindmorebutton[open])
+.intro{
+    background-color: yellow;
+}
+
+figure:has(details.rewindmorebutton[open])
+.rewindmorebutton{
+    display:none;
+}
+
+figure:has(details.rewindmorebutton[open])
+.playmorebutton{
+    display:block;
+}
+
+figure:has(details.playmorebutton[open])
+.story-playmore{
+    display:block;
+}
+
+figure:has(details.playmorebutton[open])
+.playmorebutton{
+    display:none;
+}
 
 /****note to self - check href indices****/

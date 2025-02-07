@@ -1,0 +1,252 @@
+figure {
+    margin-left:0px;
+    margin-right: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/*****************kudos*****************/ 
+#workskin ~ #feedback #kudos_message {
+    font-size: 0;
+}
+  
+#workskin ~ #feedback #kudos_message.notice::after {
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+    content: "What does it mean to be alive? To participate in acts of creation? Thank you for participating in mine.";
+}
+  
+#workskin ~ #feedback #kudos_message.kudos_error::after {
+    content: "Despite the time and space between us, you have found me again. In another life, you have already left kudos here. :)";
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+}
+
+.inline {
+    display:inline-block; 
+    min-width:20px;
+    position: relative;
+    /*border:1px solid black;*/
+}
+
+.inline-space {
+    margin-left: 4px;
+    margin-right: 0px;
+}
+
+.notepad {
+    margin-top:10px;
+    width:300px;
+    border:1px solid black;
+    padding:10px;
+    height:400px;
+}
+
+/********button aesthetics********/
+
+.button > summary {
+    display:flex;
+    padding:10px;
+    list-style: none;
+    border:1px solid black;
+    width:6em;
+    height:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color:white;
+    font-size: 1.3em;
+    background-color: black;
+    border-radius:5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p1 {
+    opacity:0;
+    transition-delay:0s;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+
+}
+
+.p2 {
+    position:relative;
+    opacity:0;
+    transition-delay:0s;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+    color:black;
+}
+
+.p3 {
+    position:absolute;
+    left:0px;
+    opacity:0;
+    transition-delay:0s;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+    text-shadow: inherit;
+
+}
+
+.p4 {
+    opacity:0;
+    transition-delay:0s;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+}
+
+
+.p5 {
+    opacity:0;
+    transition-delay:0s;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+}
+
+
+.p6 {
+    opacity:0;
+    transition-delay:0s;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+}
+
+
+.p7 {
+    opacity:0;
+    transition-delay:0s;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+}
+
+
+.p8 {
+    opacity:0;
+    transition-delay:0s;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+}
+
+.p9 {
+    position:relative;
+    left:0px;
+    opacity:0;
+    transition-delay:0s;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+}
+
+.p10 {
+    position:absolute;
+    left:0px;
+    opacity:0;
+    transition-delay:0s;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+}
+
+figure:has(details.button[open]) 
+.p1 {
+    opacity:1;
+    transition-delay:0s;  
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+} 
+
+figure:has(details.button[open]) 
+.p2 {
+    opacity:1;
+    color:white;
+    transition-property: opacity, color;
+    transition-delay:0.3s,3s;
+    transition-duration: 0.5s,0.2s;
+    transition-timing-function: linear;
+} 
+
+figure:has(details.button[open]) 
+.p3 {
+  opacity:1;
+  transition-delay:4s;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  text-shadow: black 1px 0 10px;;
+} 
+
+figure:has(details.button[open]) 
+.p4 {
+    opacity:1;
+    transition-delay:4.5s;  
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+} 
+
+figure:has(details.button[open]) 
+.p5 {
+    opacity:1;
+    transition-delay:5s;  
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+} 
+
+figure:has(details.button[open]) 
+.p6 {
+    opacity:1;
+    transition-delay:5.5s;  
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+figure:has(details.button[open]) 
+.p5 {
+    opacity:1;
+    transition-delay:6s;  
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+figure:has(details.button[open]) 
+.p6 {
+    opacity:1;
+    transition-delay:6.5s;  
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+figure:has(details.button[open]) 
+.p7 {
+    opacity:1;
+    transition-delay:7s;  
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+figure:has(details.button[open]) 
+.p8 {
+    opacity:1;
+    transition-delay:7.5s;  
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+figure:has(details.button[open]) 
+.p9 {
+    opacity:1;
+    color:white;
+    transition-property: opacity, color;
+    transition-delay:8s,8.5s;
+    transition-duration: 0.5s,0.2s;
+    transition-timing-function: linear;
+} 
+
+figure:has(details.button[open]) 
+.p10 {
+  opacity:1;
+  transition-delay:8.7s;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+} 

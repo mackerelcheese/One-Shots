@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ghost time trials</title>
+    <link href="ghostintheeye-rewind.css" rel="stylesheet">
+</head>
+<body>
+<figure>
+<div id="rewind2"></div>
+    <span class="rewind-b">
+        The roof on Barty’s mansion is still wet from the rain but Regulus does not care.
+    </span>
+</p>
+<p>
+    <span class="rewind-b">
+        “What do you think happens when we die?” 
+    </span>
+</p>
+
+<p>
+    <span class="rewind-b">
+        “I dunno,” Barty says, flicking the cigarette ash onto the floor. “Maybe our lives will flash before our eyes or some cliche like that.” 
+    </span>
+</p>
+
+<p>
+    <span class="rewind-b">
+        “I think that’ll suck. I already went through life once, why should I have to go through it again.” 
+    </span>
+</p>
+
+<p>
+    <span class="rewind-b">
+        “Maybe it’ll just be the highlights. The top 10 best and worst parts, like a WatchMojo video.”  
+    </span>
+</p>
+<p>
+    <span class="rewind-b">“Ugh, the worst parts too?” Regulus groans. “Doesn’t make sense why you would call it a highlight.” 
+    </span>
+</p>
+<p> 
+    <span class="rewind-b">"</span>
+    <span class="intro">Life only makes sense when you’re looking back on it.</span>
+    <span class="rewind-b">Barty flicks the cigarette ash onto the floor. “Maybe having your life flash before your eyes before you die is the body’s way of saying, ‘hey doesn’t it all make sense now?’”</span>
+</p>
+<p>
+    <span class="rewind-b">
+        “Make sense of how much my life sucked,” Regulus snorts into his drink. “I don’t need to look back on it to know that.”
+    </span>
+</p>
+<p>
+    <span class="rewind-b">
+        “It doesn’t have to be that way forever,” Barty shrugs before taking a long drag. He tilts his head upwards to the sky and let out the steady stream of smoke above them. “There’s so much life left to live.” 
+    </span>
+</p>
+<p>
+    <span class="rewind-b">"</span>
+    <span class="intro">You still have to ask yourself the question.</span>
+    <span class="rewind-b"> Barty lies down on the wet cement beside Regulus. "</span>
+    <span class="intro">How do you want to live?</span>
+    <span class="rewind-b">"</span>
+</p>
+<p>
+    <span class="rewind-b">
+        [regulus not being sure about how he wants to live so he flips the question to barty]
+    </span>
+</p>
+<p>
+    <span class="rewind-b">
+        “Okay then,” Regulus says, taking the bait. “How do you want to live?”  
+    </span>
+</p>
+<p>
+    <span class="rewind-b">
+        “Enough,” Barty says, looking up at the night sky. Not a single star is visible in the sky. “I want to live enough.” 
+    </span>
+</p>
+
+<!--play button-->
+<details class="playbutton">
+    <summary>&#9655; PLAY?</summary>
+</details>
+
+<!--play more button-->
+<a href="#playmore">
+    <details class="playmorebutton">
+        <summary>&#9655;&#9655; PLAY?</summary>
+    </details>
+</a>
+
+<div class="story-play">
+    <hr>
+<!--rewind more button-->
+<a href="#rewind2">
+    <details class="rewindmorebutton">
+        <summary>&#9665;&#9665; REWIND?</summary>
+    </details>
+</a>
+<div id="rewind1"></div>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>    
+    <p>"Hey!" Regulus sputters out as Snuffles shakes out his wet shaggy fur in the bath, water droplets flying everywhere. 
+        <span class="upper">James can't help but laugh. He seems to do that a lot - laugh.</span>
+        <span class="reveal">Barty can't help but laugh. He seems to do that a lot more now - laugh.</span></p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>    
+</div>
+
+<!--rewind button-->
+<a href="#rewind1">
+    <details class="rewindbutton">
+        <summary>&#9665;REWIND?</summary>
+    </details>
+</a>
+
+<div id= "playmore" class="story-playmore">
+    <hr>
+    <p>And the world keeps spinning.</p>
+</div>
+
+</figure>
+</body>
