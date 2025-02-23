@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta name="dtb:uid" content="41b4a2ca-8627-42b8-9843-9310c3a9a55c"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:generator" content="calibre (6.13.0)"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>find my friends</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="uhfFiVqekx3zPdEEeNc2KuD" playOrder="1">
+      <navLabel>
+        <text>Preface</text>
+      </navLabel>
+      <content src="find_my_friends_split_000.xhtml"/>
+    </navPoint>
+    <navPoint id="uEMXbcyER7nioak66pkMSzB" playOrder="2">
+      <navLabel>
+        <text>find my friends</text>
+      </navLabel>
+      <content src="find_my_friends_split_002.xhtml"/>
+    </navPoint>
+    <navPoint id="uXspBsQDJAEZxXjAvwI3tj3" playOrder="3">
+      <navLabel>
+        <text>Afterword</text>
+      </navLabel>
+      <content src="find_my_friends_split_003.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

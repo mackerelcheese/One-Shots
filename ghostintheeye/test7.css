@@ -1,0 +1,52 @@
+figure {
+    margin-left: 0px;
+    margin-right: 0px;
+  display: inline;
+}
+
+figure span, figure div {
+  display: inline;
+}
+
+details > summary {
+    list-style: none;
+}
+
+details summary::-webkit-details-marker, 
+details summary::marker {
+  display: none;
+}
+
+figure:has(.playbutton:not([open])) .laugh-fake,
+figure:has(.playbutton[open]) .laugh-rewind {
+  display: inline-block;
+}
+
+
+figure:has(.playbutton[open]) .laugh-fake,
+figure:has(.playbutton:not([open])) .laugh-rewind
+{
+  display: none;
+}
+
+.trigger[open] .trigger-james {
+  display: none;
+}
+
+.trigger[open] .trigger-barty {
+  display: inline;
+  text-decoration: underline dotted green;
+} 
+
+.trigger:not([open]) .trigger-james {
+    display: inline;
+  text-decoration: underline dotted red;
+}
+
+.trigger:not([open]) .trigger-barty {
+  display: none;
+} 
+
+.playbutton {
+  display: block;
+}

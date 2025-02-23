@@ -1,0 +1,74 @@
+figure {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+details,
+details summary {
+  word-wrap: break-word;
+  display: contents;
+}
+
+.trigger {
+    display:inline;
+    padding:0px;
+    margin:0px;
+}
+
+.trigger > summary > span:first-child {
+    text-decoration: underline dotted red;
+    display:inline;
+    padding:0px;
+    margin:0px;
+
+}
+
+.trigger > summary > span:nth-child(2) {
+    display:none;
+    padding:0px;
+    margin:0px;
+}
+
+.laugh-rewind {
+    display: none;
+    padding:0px;
+    margin:0px;
+}
+
+figure:has(details.trigger[open])
+.trigger > summary > span:nth-child(2) {
+    text-decoration: underline dotted green;
+    display:inline;
+    padding:0px;
+    margin:0px;
+
+}
+
+figure:has(details.trigger[open])
+.trigger > summary > span:first-child {
+    display: none;
+    padding:0px;
+    margin:0px;
+
+}
+
+figure:has(details.playbutton[open])
+.laugh-fake {
+    display:none;
+    padding:0px;
+    margin:0px;
+
+}
+
+figure:has(details.playbutton[open])
+.laugh-rewind {
+    display:inline;
+    padding:0px;
+    margin:0px;
+}
+
+figure:has(details.playbutton[open])
+.playbutton {
+    display:none;
+}
+

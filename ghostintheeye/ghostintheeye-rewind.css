@@ -22,159 +22,48 @@ figure {
     margin-right: auto;
 }
 
-.rewindbutton > summary {
-    display:flex;
-    padding:10px;
-    list-style: none;
-    border:1px solid black;
-    width:7em;
+.fakeclick-intro > summary {
     height:auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-family: monospace;
-    color:white;
-    font-size: 1.1em;
-    background-color: black;
-    border-radius:5px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.rewindmorebutton > summary {
-    display:flex;
-    padding:10px;
     list-style: none;
-    border:1px solid black;
-    width:7em;
-    height:auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-family: monospace;
-    color:white;
-    font-size: 1.1em;
-    background-color: black;
-    border-radius:5px;
-    margin-left: auto;
-    margin-right: auto;
+    text-decoration: underline dotted red;
 }
 
-.playmorebutton > summary {
-    display:flex;
-    padding:10px;
+.real-intro {
+    display:none;
+}
+
+.fakeclick-intro {
+    display: none;
+} 
+
+.laugh > details {
+    display: inline-block;
+    margin: 0;
+  }
+
+.J {
+    display: inline-block;
+    margin: 0;
+  }
+
+.B {
+    display: inline-block;
+    margin: 0;
+  }
+
+.B > summary {
+    text-decoration: underline dotted green;
     list-style: none;
-    border:1px solid black;
-    width:7em;
-    height:auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-family: monospace;
-    color:white;
-    font-size: 1.1em;
-    background-color: black;
-    border-radius:5px;
-    margin-left: auto;
-    margin-right: auto;
+    text-wrap: wrap;
+    display: inline-block;
+    margin: 0;
 }
 
-a {
-    color:white !important;
-    text-decoration: none !important;
-}
-.rewind-b {
-    display:none;
-}
-
-.story-play {
-    display:none;
-}
-
-.reveal {
-    display:none;
-}
-
-.rewindmorebutton {
-    display:none;
-}
-
-.rewindbutton {
-    display:none;
-}
-
-.playmorebutton {
-    display:none;
-}
-
-.story-playmore{
-    display:none;
-}
-
-figure:has(details.playbutton[open])
-.story-play {
-    display:block;
-}
-
-figure:has(details.playbutton[open])
-.rewindbutton {
-    display:block;
-}
-
-figure:has(details.playbutton[open])
-.playbutton {
-    display:none;
-}
-
-figure:has(details.rewindbutton[open])
-.reveal{
-    display:inline;
-    background-color: yellow;
-}
-
-figure:has(details.rewindbutton[open])
-.rewindmorebutton{
-    display:block;
-}
-
-figure:has(details.rewindbutton[open])
-.upper{
-    display:none;
-}
-
-figure:has(details.rewindbutton[open])
-.rewindbutton{
-    display:none;
-}
-
-figure:has(details.rewindmorebutton[open])
-.rewind-b{
-    display:inline;
-}
-
-figure:has(details.rewindmorebutton[open])
-.intro{
-    background-color: yellow;
-}
-
-figure:has(details.rewindmorebutton[open])
-.rewindmorebutton{
-    display:none;
-}
-
-figure:has(details.rewindmorebutton[open])
-.playmorebutton{
-    display:block;
-}
-
-figure:has(details.playmorebutton[open])
-.story-playmore{
-    display:block;
-}
-
-figure:has(details.playmorebutton[open])
-.playmorebutton{
-    display:none;
-}
+.J > summary {
+    text-decoration: underline dotted red;
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+  }
 
 /****note to self - check href indices****/

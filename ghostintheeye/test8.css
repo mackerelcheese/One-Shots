@@ -1,0 +1,50 @@
+figure {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+  
+details,
+details summary {
+    display: contents;
+}
+
+.trigger {
+    display:none;
+}
+
+figure:has(details.playbutton[open]) 
+.laugh-fake {
+    display: none;
+}
+  
+.trigger span:nth-child(2) {
+    display: none;
+}
+
+figure:has(details.playbutton[open]) 
+.trigger {
+    display: contents;
+}
+
+figure:has(details.playbutton[open]) 
+.trigger span:first-child {
+    display: inline;
+    text-decoration: underline dotted red;
+}
+
+figure:has(details.playbutton[open]) 
+details.trigger[open] span:first-child {
+    display: none;
+}
+  
+ figure:has(details.playbutton[open]) 
+ details.trigger[open] span:nth-child(2) {
+    display: inline;
+    text-decoration: underline dotted green;
+}
+  
+figure:has(details.playbutton[open]) 
+.playbutton {
+    display: none;
+}
+

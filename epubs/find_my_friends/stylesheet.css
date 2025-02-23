@@ -1,0 +1,586 @@
+.byline {
+  display: block;
+  text-align: center;
+}
+.calibre {
+  display: block;
+  font-size: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 5pt;
+}
+.calibre1 {
+  display: block;
+}
+.calibre2 {
+  font-weight: bold;
+}
+.calibre3 {
+  display: block;
+  font-weight: bold;
+  margin: 0;
+}
+.calibre4 {
+  display: block;
+  margin: 0 0 1em 1em;
+}
+.calibre5 {
+  display: block;
+  margin: 0 0 0 1em;
+}
+.calibre6 {
+  display: block;
+  font-size: 1.41667em;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0.67em 0;
+}
+.calibre7 {
+  display: block;
+  margin: 1em 0;
+}
+.calibre8 {
+  display: block;
+  margin: 1em;
+}
+.calibre9 {
+  display: block;
+  list-style-type: disc;
+  margin-bottom: 1em;
+  margin-right: 0;
+  margin-top: 1em;
+}
+.calibre10 {
+  display: list-item;
+}
+.calibre11 {
+  text-decoration: underline;
+}
+.calibre12 {
+  display: block;
+}
+.calibre13 {
+  font-style: italic;
+}
+.calibre14 {
+  color: gray;
+  display: block;
+  height: 2px;
+  margin: 0.5em auto;
+  border: currentColor inset 1px;
+}
+.endnote-link {
+  display: block;
+  font-size: 0.75em;
+}
+.message {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+.tags {
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  border: currentColor none medium;
+}
+.toc-heading {
+  display: none;
+  font-size: 1.41667em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0.83em 0;
+}
+.userstuff {
+  display: block;
+  font-family: serif;
+  margin: 1em;
+  padding: 0;
+}
+.userstuff1 {
+  display: block;
+  font-family: serif;
+  padding: 0;
+}
+.userstuff2 {
+  display: block;
+  font-family: serif;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/***************************housekeeping*************************/
+
+figure {
+  margin-left:0px;
+  margin-right:0px;
+  overflow-x: hidden;
+}
+
+.flexcon {
+    display:flex;
+    flex-direction: column;
+}
+
+/**solemnly swear**/
+
+.mischief {
+  list-style: none;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width:auto;
+  font-weight:bold
+}
+
+.mischief-fake {
+    display:none;
+}
+
+.mapcon {
+  display:none;
+}
+
+figure:has(details.mischief[open]) 
+.mapcon {
+  display:block;
+} 
+
+figure:has(details.mischief[open]) 
+.mischief {
+  display:none;
+}
+
+figure:has(details.mischief[open]) 
+.mischief-fake {
+  display:block;
+}
+
+/**********************map aesthetics*********************************/
+
+.doorcontainer {
+  position: relative;
+ background-image:"./img/mmap-interior-v3.png";
+  border: 1px solid black;
+  height: 420px;
+  width: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.doorinteriorcontainer {
+  position: absolute;
+}
+
+.leftdoor {
+  position: absolute;
+  vertical-align: top;
+  top: 0px;
+  left: 0px;
+  border-radius: 1px;
+  border-color: black;
+  background-image:"./img/marauders-map-left.png";
+  box-shadow: 1px 1px 2px black;
+  width: 150px;
+  height: 420px;
+  transition: 5s;
+  transition-delay: 1000000000000s;
+  z-index: 3;
+}
+
+.leftdoor:hover {
+  cursor: progress;
+  left: -45%;
+  transition:left 4s;
+  transition-delay: left 1000000000000s;
+}
+
+.rightdoor {
+  position: absolute;
+  vertical-align: top;
+  top: 0px;
+  right: 0px;
+  border-radius: 1px solid black;
+  background-image:"./img/marauders-map-right.png";
+  box-shadow: -1px 1px 2px black;
+  width: 150px;
+  height: 420px;
+  transition: 3s;
+  transition-delay: 1000000000000s;
+  z-index: 2;
+}
+
+.rightdoor:hover {
+  top: -5px;
+  width: 10px;
+  transition: ease-in-out 2s;
+  cursor: progress;
+}
+
+/*********************location positioning********************************/
+.location {
+    font-size: 13px;
+    width: 100px;
+    text-align: center;
+    display:block;
+    position:absolute;
+    color:black;
+  }
+  
+  .names {
+    font-size: 10px;
+    width: 60px;
+    text-align: center;
+    display:block;
+    position:absolute;
+    color:black;
+  
+  }
+
+.location-list {
+    list-style: none;
+    text-decoration: underline;
+    cursor: pointer;
+    padding:0px;
+    margin:0px;
+    font-weight: bold;
+}  
+
+.location-list details > summary::-webkit-details-marker,
+.location-list details > summary::marker {
+display: none;
+}
+
+.astro {
+    top:55px;
+    left:30px;
+  }
+  
+  .astro-name {
+    top:75px;
+    left:30px;
+  }
+  
+  .great {
+    top:305px;
+    left:65px;
+  }
+  
+  .great-name {
+    top:340px;
+    left:60px;
+    transform: rotate(-6deg)
+
+  }
+  
+  .greenhouse {
+    top:224px;
+    left:195px;
+  }
+  
+  .greenhouse-name {
+    top:254px;
+    left:215px;    
+    transform: rotate(-6deg)
+
+  }
+  
+  .common-room {
+    top:85px;
+    left:190px;
+  }
+  
+  .library {
+    top:180px;
+    left:50px;
+;
+  }
+  
+  .library-name {
+    top:213px;
+    left:70px;
+    transform: rotate(-6deg)
+  }
+  
+  .kitchens {
+    top:370px;
+    left:150px;
+  }
+  
+  .kitchens-name {
+    top:396px;
+    left:185px;
+    transform: rotate(-6deg)
+  }
+
+  /*******************hidden stories**********************/
+
+.library-story {
+    display: none;
+}
+
+.great-story {
+    display: none;
+}
+
+.kitchens-story {
+    display: none;
+}
+
+.greenhouse-story {
+    display: none;
+}
+
+.commonroom-story {
+    display: none;
+}
+
+/******fake options***************/
+
+.op-library-fake {
+    display:none;
+}
+
+.op-great-fake {
+    display:none;
+}
+
+.op-kitchens-fake {
+    display:none;
+}
+
+.op-greenhouse-fake {
+    display:none;
+}
+
+
+/*******library********************/
+
+figure:has(details.op-library[open])
+.library-story {
+    display:block;
+}
+
+figure:has(details.op-library[open])
+.op-library {
+    display:none;
+}
+
+figure:has(details.op-library[open])
+.op-library-fake {
+    display:block;
+}
+
+figure:has(details.library-r1[open])
+.library-story {
+    order:1;
+}
+
+figure:has(details.library-r2[open])
+.library-story {
+    order:2;
+}
+
+figure:has(details.library-r3[open])
+.library-story {
+    order:3;
+}
+
+
+figure:has(details.library-r4[open])
+.library-story {
+    order:4;
+}
+
+/*************great hall*************/
+figure:has(details.op-great[open])
+.great-story {
+    display:block;
+}
+
+figure:has(details.op-great[open])
+.op-great {
+    display:none;
+}
+
+figure:has(details.op-great[open])
+.op-great-fake {
+    display:block;
+}
+
+figure:has(details.great-r1[open])
+.great-story {
+    order:1;
+}
+
+figure:has(details.great-r2[open])
+.great-story {
+    order:2;
+}
+
+figure:has(details.great-r3[open])
+.great-story {
+    order:3;
+}
+
+figure:has(details.great-r4[open])
+.great-story {
+    order:4;
+}
+
+
+/******kitchens*********************/
+figure:has(details.op-kitchens[open])
+.kitchens-story {
+    display:block;
+}
+
+figure:has(details.op-kitchens[open])
+.op-kitchens {
+    display:none;
+}
+
+figure:has(details.op-kitchens[open])
+.op-kitchens-fake {
+    display:block;
+}
+
+figure:has(details.kitchens-r1[open])
+.kitchens-story {
+    order:1;
+}
+
+figure:has(details.kitchens-r2[open])
+.kitchens-story {
+    order:2;
+}
+
+figure:has(details.kitchens-r3[open])
+.kitchens-story {
+    order:3;
+}
+
+figure:has(details.kitchens-r4[open])
+.kitchens-story {
+    order:4;
+}
+
+
+/*************greenhouse************/
+figure:has(details.op-greenhouse[open])
+.greenhouse-story {
+    display:block;
+}
+
+figure:has(details.op-greenhouse[open])
+.op-greenhouse {
+    display:none;
+}
+
+figure:has(details.op-greenhouse[open])
+.op-greenhouse-fake {
+    display:block;
+}
+
+figure:has(details.greenhouse-r1[open])
+.greenhouse-story {
+    order:1;
+}
+
+figure:has(details.greenhouse-r2[open])
+.greenhouse-story {
+    order:2;
+}
+
+figure:has(details.greenhouse-r3[open])
+.greenhouse-story {
+    order:3;
+}
+
+figure:has(details.greenhouse-r4[open])
+.greenhouse-story {
+    order:4;
+}
+
+
+/********************common room****************/
+figure:has(details.op-common[open])
+.commonroom-story {
+    display:block;
+}
+
+/********************Rounds**********************/
+
+.round2 {
+    display:none;
+}
+
+.round3 {
+    display:none;
+}
+
+.round4 {
+    display:none;
+}
+
+.round5 {
+    display:none;
+}
+
+
+/**************rounds detail summary**************/
+
+figure:has(details.round1[open])
+.round1 {
+    display:none;
+}
+
+figure:has(details.round1[open])
+.round2 {
+    display:block;
+}
+
+figure:has(details.round2[open])
+.round2 {
+    display:none;
+}
+
+figure:has(details.round2[open])
+.round3 {
+    display:block;
+}
+
+figure:has(details.round3[open])
+.round3 {
+    display:none;
+}
+
+figure:has(details.round3[open])
+.round4 {
+    display:block;
+}
+
+figure:has(details.round4[open])
+.round4 {
+    display:none;
+}
+
+figure:has(details.round4[open])
+.round5 {
+    display:block;
+}
+
+figure:has(details.round5[open])
+.round5 {
+    display:none;
+}
+
+
+
+
+
+
