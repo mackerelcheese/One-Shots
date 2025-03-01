@@ -677,12 +677,22 @@ display: table;
 }
 
 .phone-notif-logo {
-  height: 35px;
-  width:35px;
+  max-height: 35px;
+  max-width:35px;
   border-radius: 50%;
   position:absolute;
   margin-left:-35px;
   display:inline-block;
+}
+
+.phone-notif-alarm {
+  max-height: 25px;
+  max-width:25px;
+  border-radius: 50%;
+  position:absolute;
+  margin-left:-30px;
+  display:inline-block;
+  margin-top:3px;
 }
 
 .phone-sp-60 {
@@ -716,6 +726,139 @@ display: table;
 .sp-play {
   display:inline-block;
   height:20px !important;
-
 }
+
+/***linkedin****/
+
+.li-BG {
+  max-width:100%;
+  height: auto;
+  background-color: #0077B5;
+  padding:5px;
+}
+
+.lipost-con {
+  display: block; 
+  background-color: white;
+  border-radius: 3px;
+  width:96%;
+  padding:5px;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:5px;
+}
+
+.liheader-con {
+  display:flex;
+  align-items:center;
+  width:auto;
+  height:auto;
+  padding:1px;
+}
+
+.li-pfp {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  background: #191414;
+  color: white;
+  margin: 5px;
+} 
+
+.li-con {
+  display: block;
+}
+
+.li-h2{
+  font-size: 0.9em;
+  color: black;
+  margin-left: 5px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.li-h3{
+  font-size: 0.7em;
+  color: #a2a2a2;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.lipost-body{
+  display:block;
+  width:98%;
+  height:auto;
+  margin:auto;
+  padding:9px;
+}
+
+.lihashtags {
+  color:blue;
+  font-weight:thin;
+  font-size:0.85em;
+}
+
+.lifollow {
+  margin-right:7px;
+  margin-left:auto;
+  font-size:0.85em;
+  color:black;
+}
+
+.lifollow:hover {
+  color:blue;
+}
+
+.li-interactbar {
+  display:flex;
+  max-width:100%;
+  align-items:center;
+  height:auto;
+  border-top:1px solid #a2a2a2;
+  border-bottom:1px solid #a2a2a2;
+}
+
+.li-interactbutton {
+  display:flex;
+  align-items:center;
+  width:auto;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  padding-left:2.5px;
+  padding-right:2.5px;
+  color:#5A5A5A;
+  font-size:0.85em;
+}
+
+.li-interactbutton:hover {
+  background-color:#a2a2a2;
+}
+
+.li-interacticon {
+  width: 0.8em;
+  height: 0.8em;
+  margin: 2px;
+}
+
+.li-interacticonpfp {
+  width: 1.3em;
+  height: 1.3em;
+  margin: 5px;
+}
+
+/*amend amend amend*/
+.li-comment1 {
+  display:flex;
+  width:100%;
+  margin:auto;
+  margin-left:35px;
+}
+
+.li-line {
+  border-bottom: 1px solid #a2a2a2;
+  width: 100%;
+}
+
 
