@@ -1,0 +1,114 @@
+.phone {
+    max-width: 400px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: table;
+    margin: auto;
+}
+
+.messagebody {
+  background-color: #FFFFFF;
+  display: table;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.w-text {
+  float: left;
+  color: #000000;
+  margin: 0 0 0.5em;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background: #e5e5ea;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+
+.p-reply {
+  float: right;
+  color: #FFFFFF;
+  margin: 0 0 0.5em;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background: #5c5fc7;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+
+.time {
+min-width: 295px;
+color: #7B7C80;
+font-size: .75em;
+padding-bottom: .5em;
+padding-top: .5em;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: -.5em;
+display: table;
+text-align: center;
+}
+
+
+.teams-header {
+    display:flex;
+    border-bottom:1px solid #a2a2a2;
+    align-items: center;
+    height:2.5em;
+}
+
+.li-h2{
+  font-size: 0.9em;
+  color: black;
+  margin-left: 5px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.li-h3{
+  font-size: 0.7em;
+  color: #a2a2a2;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.teams-back {
+    display: block;
+    height:30px;
+  }
+  
+  .teams-video {
+    display: block;
+    height:30px;
+    position:absolute;
+    right: 50px;
+    left:auto;
+  }
+  
+  .teams-phone {
+    display: block;
+    height:24px;
+    position:absolute;
+    right: 20px;
+  }
+  
+  .teams-contact {
+    display:inline-block;
+    margin-left:45px;
+  }
+  
+  .teams-contact::before{
+    content:"";
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color:gray;
+    display:inline-block;
+    position:absolute;
+    /* margin-top:1px; */
+    margin-left:-35px;
+  }
+  
+  

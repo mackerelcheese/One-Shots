@@ -9,6 +9,9 @@ figure {
     display: none;
 }
 
+details summary {
+  list-style: none;
+}
 /****image credits 
 
 
@@ -61,14 +64,15 @@ phone
 
 /*****ios la temperanza******/ 
 .phone {
-    max-width: 390px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    display: table;
-    margin: auto;
+  max-width: 400px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
-  min-width: 390px;
+  min-width: 400px;
   background-color: #f6f6f6;
   border-bottom: 1px solid #b2b2b2;
   color: #000000;
@@ -181,16 +185,16 @@ phone
 
 /****time****/
 .time {
-min-width: 295px;
-color: #7B7C80;
-font-size: .75em;
-padding-bottom: .5em;
-padding-top: .5em;
-margin-left: -.5em;
-margin-right: -.5em;
-margin-bottom: -.5em;
-text-align: center;
-display: table;
+  min-width: 295px;
+  color: #7B7C80;
+  font-size: .75em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -.5em;
+  display: table;
+  text-align: center;
 }
 
 /****typing indicator****/
@@ -259,6 +263,11 @@ display: table;
 
 .typing-indicator span:nth-child(2) {
   opacity: .65;
+}
+
+.tag {
+  color:#0775e7 !important;
+  font-weight:600
 }
 
 /*****group text******/
@@ -506,6 +515,7 @@ display: table;
 .phone-container-container{
   display:flex;
   justify-content:center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .phone-container {
   /* border-top: 1px solid #b1b1b3;
@@ -726,6 +736,17 @@ display: table;
   border-image-slice: 1;
 }
 
+.phone-sp-50 {
+  border-bottom: 3px solid transparent;
+  /* padding-left: 5px; */
+  padding-top: 5px;
+  /* padding-bottom:10px; */
+  margin-bottom:10px;
+  margin-left:5px;
+  border-image: linear-gradient(to right, white 50%, #3a4340 50%);
+  border-image-slice: 1;
+}
+
 .phone-noti-sp-time {
   display: flex;
   justify-content: space-between;
@@ -748,6 +769,19 @@ display: table;
   height:20px !important;
 }
 
+
+/**duolingo noti**/
+
+.phone-notif-duo {
+  max-height: 25px;
+  max-width:25px;
+  border-radius: 50%;
+  position:absolute;
+  margin-left:-30px;
+  display:inline-block;
+  margin-top:3px;
+}
+
 /***linkedin****/
 
 .li-BG {
@@ -755,6 +789,7 @@ display: table;
   height: auto;
   background-color: #0077B5;
   padding:5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .lipost-con {
@@ -767,6 +802,7 @@ display: table;
   margin-left:auto;
   margin-right:auto;
   margin-top:5px;
+  margin-bottom: 5px;
 }
 
 .liheader-con {
@@ -775,6 +811,7 @@ display: table;
   width:auto;
   height:auto;
   padding:1px;
+  margin-top: 0px;
 }
 
 .li-pfp {
@@ -796,6 +833,7 @@ display: table;
   margin-left: 5px;
   font-weight: bold;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .li-h3{
@@ -811,7 +849,8 @@ display: table;
   width:98%;
   height:auto;
   margin:auto;
-  padding:9px;
+  padding-left:9px;
+  padding-right: 9px;
 }
 
 .lihashtags {
@@ -883,15 +922,417 @@ display: table;
 
 /******teams********/
 
-.teams {
-  max-width: 400px;
-  display:block;
+.w-text {
+  float: left;
+  color: #000000;
+  margin: 0 0 0.5em;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background: #e5e5ea;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+
+.p-reply {
+  float: right;
+  color: #FFFFFF;
+  margin: 0 0 0.5em;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background: #5c5fc7;
+  max-width: 75%;
+  clear: both;
+  position: relative;
 }
 
 .teams-header {
   display:flex;
   border-bottom:1px solid #a2a2a2;
+  align-items: center;
+  height:2.5em;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right:auto;
+  position:relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.li-h2{
+font-size: 0.9em;
+color: black;
+margin-left: 5px;
+font-weight: bold;
+margin-bottom: 0px;
+margin-top: 0px;
+}
+
+.li-h3{
+font-size: 0.7em;
+color: #a2a2a2;
+margin-left: 5px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.teams-back {
+  display: block;
+  height:30px;
+}
+
+.teams-video {
+  display: block;
+  height:30px;
+  position:absolute;
+  right: 50px;
+  left:auto;
+}
+
+.teams-phone {
+  display: block;
+  height:24px;
+  position:absolute;
+  right: 20px;
+}
+
+.teams-contact {
+  display:inline-block;
+  margin-left:45px;
+}
+
+.teams-contact::before{
+  content:"";
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color:gray;
+  display:inline-block;
+  position:absolute;
+  /* margin-top:1px; */
+  margin-left:-35px;
+}
+
+.emoji-txt {
+  font-size: 2em;
+}
+
+/* ---------------chrome history, made by jihn------------------------- */
+/* https://codepen.io/jihnari/pen/jOaNgNZ */
+
+/*chrome history*/
+div.ch-table p
+{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.ch-header{
+  font-family: 'Uni sans', 'Whitney', sans-serif;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 20px;
+  padding: 4px 5px 0px;
+}
+
+.ch-header p {
+  margin: 0px;
+}
+.ch-title{
+  font-size:1.4em;
+  padding-top:5px;
+}
+.ch-search-icon{
+  /* float:right; */
+  cursor: pointer;
+  height:2em;
+  /* clear:both; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.ch-sub-header{
+  color: #1A72E8;
+  font-size: 11px;
+  margin-bottom: 8px;
+  margin-top: 9px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.ch-sub-header p {
+  margin: 0px;
+}
+
+.ch-date{
+  color: #5f6267;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: -8px;
+  padding-bottom: 10px;
+}
+
+.ch-table {
+  display: table;
+  width: 95%;
+  table-layout: fixed;
+  /* position: relative; */
+  /* background: pink; */
+  padding-left: 8px;
+  margin-top: -13px;
+  padding-right: 4px;
+}
+
+.ch-row{
+  display: table-row;
+  /* font-size: 14px; */
+  /* width: 100%; */
+  /* height: 21px; */
+  border: 1px solid gray;
+  /* margin: 0px 0px 0px 0px; */
+  /* padding-left: 10px; */
+  /* margin-bottom: -10px; */
+}
+
+.ch-dot-cell{
+  display: table-cell;
+  width:40px;
+  vertical-align: middle;
+}
+.ch-dot{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #F2F3F5;
+}
+.ch-site-cell{
+  display: table-cell;
+  padding-right:15px;
+}
+.ch-page-name{
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  margin-top: 10px;
+}
+.ch-page-link{
+  font-size: 11px;
+  color: #5f6267;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.ch-x-cell{
+  width:30px;
+  display:table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.ch-x{
+  margin:0px 10px 0px 5px;
+  width:20px;
+}
+
+.ch-hide {
+  display: none;
 }
 
 
+/* delete later */
+.ch-name-wrapper{
+  display:inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.signal-gc-dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom:5px;
+  background-color: #bbb;
+}
+.signal-gc-name{
+  font-size:1.1em;
+  margin-top:5px;
+  display: block;
+}
+.signal-gc-subname{
+  font-size:.9em;
+  display:block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.signal-gc-name-line{
+  padding-bottom:5px;
+  box-shadow: 0px 8px 8px -10px #888888;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.clear{
+  clear:both;
+}
+table
+{
+    width: 100%;
+}
+
+.chrome-window {
+  background-color: white;
+  font-family: sans-serif;
+  min-height: 450px;
+  overflow-y: hidden;
+  /* max-width: 600px; */
+  position: relative;
+  /* padding: 10px; */
+  /* border: 1px solid gray; */
+  /* margin: 10px; */
+  
+  /* border-top: 30px solid gray;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  /* padding-top: 10px; */
+}
+
+.chrome-window-ext {
+  /* width: 100%;
+  position: relative;
+  height: 15px;
+  background-color: gray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  color: black;
+  max-width: 600px;
+  min-width: 250px;
+  position: relative;
+  border-top: 30px solid gray;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.ch-window-ext-title {
+  font-family: monospace;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin: auto;
+}
+
+.chrome-window-ext .dot-cont {
+  top: -41px;
+  left: 5px;
+  z-index: 10;
+}
+
+.ch-row:has(details[open]) {
+  display: none;
+}
+
+.ch-restore-icon {
+  margin: 0px 10px 0px 5px;
+  /* width:20px; */
+  background: lightgray;
+  border-radius: 30px;
+  padding: 2.5px;
+  height: 15px;
+  width: 15px;
+}
+
+.read-toggle-img {
+  margin: 0px auto;
+}
+
+/* toggle read more */
+.readmore-div:has(details:not([open])) .read-toggle-img.more, 
+.readmore-div:has(details[open]) .read-toggle-img.less {
+  display: block;
+}
+
+.readmore-div:has(details:not([open])) .read-toggle-img.less,
+.readmore-div:has(details[open]) .read-toggle-img.more {
+  display: none;
+}
+
+.chrome-window-ext:has(.readmore-toggle:not([open])) .chrome-window {
+  height: 450px;
+}
+
+.chrome-window-ext:has(.readmore-toggle[open]) .chrome-window {
+  height: auto;
+}
+
+.readmore-div {
+  /* position: absolute; */
+  z-index: 10;
+  /* bottom: 0;
+  left: 50%; */
+  cursor: pointer;
+  position: relative;
+  margin-top: -30px;
+}
+
+.readmore-div p , .readmore-div details {
+  margin: 5px;
+}
+
+/* .readmore-div summary:after {
+  content: '';
+  bottom: 0px;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255,255,255, 0), white);
+} */
+
+/* toggle history items in chrome */
+.ch-row:has(:not([open])) .ch-restore-icon,
+.ch-row:has(details[open]) .ch-x {
+  display: none;
+}
+
+.ch-row:has(:not([open])) .ch-x,
+.ch-row:has(details[open]) .ch-restore-icon {
+  display: inline;
+}
+
+.ch-restore {
+  display: none;
+  margin: 0px;
+}
+
+.chrome-window:has(details:not(.ch-restore)[open]) .ch-restore {
+  display: inline;
+}
+
+.chrome-window:has(.ch-restore[open]) .ch-row {
+  display: table-row !important;
+}
+
+/* history restore in chrome toggle , for each row */
+.ch-restore:not([open]) .ch-hist-clear-open,
+.ch-restore[open] .ch-hist-clear {
+  display: none;
+}
+
+.ch-restore[open] .ch-hist-clear-open,
+.ch-restore:not([open]) .ch-hist-clear {
+  display: inline;
+}
+/* --------------------------------------------------------------- */
 
