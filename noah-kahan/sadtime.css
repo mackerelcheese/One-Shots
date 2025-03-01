@@ -18,7 +18,11 @@ play and pause
 
 <a href="https://www.flaticon.com/free-icons/play" title="play icons">Play icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/pause" title="pause icons">Pause icons created by inkubators - Flaticon</a> 
+
+clock 
+<a href="https://www.flaticon.com/free-icons/alarm" title="alarm icons">Alarm icons created by meaicon - Flaticon</a>
 ******/ 
+
 
 /*****************kudos*****************/ 
 #workskin ~ #feedback #kudos_message {
@@ -672,7 +676,7 @@ display: table;
   overflow:hidden;
 }
 
-.phone-notif-sp {
+.phone-notif-logo {
   height: 35px;
   width:35px;
   border-radius: 50%;
