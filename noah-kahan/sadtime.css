@@ -700,11 +700,18 @@ display: table;
 .phone-noti-sp-img {
   display: flex;
   justify-content: center;
+  align-items: center;
   height:25px;
 }
 
 .phone-noti-sp-img > img {
   display:inline-block;
-  height:25px;
+  height:30px;
+}
+
+.sp-play {
+  display:inline-block;
+  height:20px !important;
+
 }
 
