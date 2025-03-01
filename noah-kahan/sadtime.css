@@ -654,8 +654,6 @@ display: table;
   /* margin-right:auto; */
 }
 
-
-
 /* .dc-green-line-50, .dc-green-line-20, .dc-green-line-85{
 } */
 .phone-update-progress-50 {
@@ -673,13 +671,39 @@ display: table;
   font-weight:bold;
   overflow:hidden;
 }
-.phone-notif-header-sp::before{
-  content:'';
-  height: 25px;
-  width: 25px;
+
+.phone-notif-sp {
+  height: 35px;
+  width:35px;
   border-radius: 50%;
-  display:inline-block;
   position:absolute;
-  /* margin-top:1px; */
   margin-left:-35px;
+  display:inline-block;
 }
+
+.phone-sp-60 {
+  border-bottom: 3px solid transparent;
+  /* padding-left: 5px; */
+  padding-top: 5px;
+  /* padding-bottom:10px; */
+  margin-bottom:10px;
+  margin-left:5px;
+  border-image: linear-gradient(to right, white 60%, #3a4340 50%);
+  border-image-slice: 1;
+}
+
+.phone-noti-sp-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone-noti-sp-img {
+  display: flex;
+  justify-content: center;
+}
+
+.phone-noti-sp-img > img {
+  display:inline-block;
+  height:25px;
+}
+
