@@ -37,6 +37,8 @@ video call
 phone 
 <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Gregor Cresnar - Flaticon</a>
 
+hourglass 
+<a href="https://www.flaticon.com/free-icons/hour-glass" title="hour glass icons">Hour glass icons created by Freepik - Flaticon</a>
 
 
 ******/ 
@@ -769,18 +771,6 @@ phone
   height:20px !important;
 }
 
-
-/**duolingo noti**/
-
-.phone-notif-duo {
-  max-height: 25px;
-  max-width:25px;
-  border-radius: 50%;
-  position:absolute;
-  margin-left:-30px;
-  display:inline-block;
-  margin-top:3px;
-}
 
 /***linkedin****/
 
