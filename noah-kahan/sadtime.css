@@ -21,7 +21,23 @@ play and pause
 
 clock 
 <a href="https://www.flaticon.com/free-icons/alarm" title="alarm icons">Alarm icons created by meaicon - Flaticon</a>
+
+spotify 
+https://www.pngegg.com/en/png-wgyre/download
+
+back button 
+<a href="https://www.flaticon.com/free-icons/back" title="back icons">Back icons created by Bingge Liu - Flaticon</a>
+
+video call 
+<a href="https://www.flaticon.com/free-icons/video" title="video icons">Video icons created by Rizki Ahmad Fauzi - Flaticon</a>
+
+phone 
+<a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Gregor Cresnar - Flaticon</a>
+
+
+
 ******/ 
+
 
 
 /*****************kudos*****************/ 
@@ -45,14 +61,14 @@ clock
 
 /*****ios la temperanza******/ 
 .phone {
-    max-width: 300px;
+    max-width: 390px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: table;
     margin: auto;
 }
 
 .header {
-  min-width: 300px;
+  min-width: 390px;
   background-color: #f6f6f6;
   border-bottom: 1px solid #b2b2b2;
   color: #000000;
@@ -481,6 +497,10 @@ display: table;
   border:1px solid black;
 }
 
+.spotify-logo {
+  display: block;
+  height:35px;
+}
 /***jins phone****/
 
 .phone-container-container{
@@ -860,5 +880,18 @@ display: table;
   border-bottom: 1px solid #a2a2a2;
   width: 100%;
 }
+
+/******teams********/
+
+.teams {
+  max-width: 400px;
+  display:block;
+}
+
+.teams-header {
+  display:flex;
+  border-bottom:1px solid #a2a2a2;
+}
+
 
 
