@@ -1,0 +1,2160 @@
+/*UNIVERSAL - by Jihnari*/
+/* ao3 parser broke things. wrapping ithe whole chapter in a figure fixes it, but at the cost of margins you dont want. */
+figure {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/*whatsapp code*/ 
+/*by etc e tal (pe_pe_peperoncinocandy) on AO3*/ 
+/*very minor minor edits by me*/ 
+
+.screenreader {
+      position: absolute;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+::-webkit-scrollbar {
+      width: 10px;
+    }
+
+::-webkit-scrollbar-track {
+      background: none;
+    }
+
+ ::-webkit-scrollbar-thumb {
+      background: rgba(0,0,0,0.5);
+      border-radius: 10px;
+    }
+
+::-webkit-scrollbar-thumb:hover {
+      background: rgba(0,0,0,0.7);
+      border-radius: 10px;
+    }
+
+ p {
+      line-height: 1.2em;
+    }
+
+ audio::-webkit-media-controls-play-button {
+      height: 80px;
+    }
+
+ .wpp {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      width: 330px;
+      margin: 0 auto;
+      position: relative;
+      float: center;
+      overflow: hidden;
+    }
+
+   .wpp .emoji1 {
+      font-size: 60px;
+      line-height: 58px;
+      display: inline-block;
+      margin-left: -8px;
+      margin-right: -15px;
+    }
+
+   .wpp .emoji2 {
+      font-size: 20px;
+      line-height: 19px;
+    }
+
+   .wpp .light .time {
+      font-size: 0.75em;
+      color: #999;
+      display: inline-block;
+      float: right;
+      line-height: 1.3em;
+      padding-top: 0.5em;
+      padding-left: 1.5em;
+      margin: 0;
+    }
+
+   .wpp .light .timeemoji {
+      font-size: 0.75em;
+      color: #999;
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+  
+   .wpp .timemedia {
+      font-size: 0.75em;
+      color: #ffffff;
+      display: inline-block;
+      float: right;
+      line-height: 1.3em;
+      padding-top: 0.5em;
+      padding-left: 1.1em;
+      margin: 0;
+      margin-top: -24px;
+      z-index: 3;
+      right: 10px;
+      position: relative;
+    }
+
+   .wpp .media {
+      border-radius: 5px;
+      width: 100%;
+      display: block;
+      z-index: 1;
+      margin-top: -2px;
+    }
+
+   .wpp .info {
+      font-size: 0.75rem;
+      width: 100%;
+      margin: 10px auto;
+      margin-bottom: -13px;
+      text-align: center;
+      display: inline-block;
+      line-height: 1.3;
+    }
+
+   .wpp .sent audio {
+      opacity: 0;
+      border-radius: 7px;
+      width: 100px;
+      z-index: 6;
+      position: absolute;
+      margin-left: -68px;
+      margin-top: -29px;
+    }
+
+   .wpp .received audio {
+      opacity: 0;
+      border-radius: 7px;
+      width: 100px;
+      z-index: 6;
+      position: absolute;
+      margin-left: -188px;
+      margin-top: -29px;
+    }
+
+   .wpp .voicemessagesent {
+      width: 95%;
+      display: block;
+      z-index: 5;
+      margin-top: 7px;
+      margin-left: 13px;
+      position: relative;
+      margin-bottom: -15px;
+    }
+
+   .wpp .voicemessagereceived {
+      width: 95%;
+      display: block;
+      z-index: 5;
+      margin-top: 7px;
+      margin-left: -5px;
+      position: relative;
+      margin-bottom: -15px;
+    }
+
+   .wpp .sent .icon {
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      overflow: hidden;
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      margin-left: -5px;
+      display: block;
+    }
+
+   .wpp .received .icon {
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      overflow: hidden;
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      margin-left: 197px;
+      display: block;
+    }
+
+   .wpp .light .voicetimersent {
+      font-size: 0.75em;
+      color: #999;
+      display: inline-block;
+      margin-left: 86px;
+    }
+
+   .wpp .light .voicetimerreceived {
+      font-size: 0.75em;
+      color: #999;
+      display: inline-block;
+      margin-left: 37px;
+    }
+
+  
+   .wpp .light .time2 {
+      font-size: 0.75em;
+      color: #999;
+      display: inline-block;
+      margin-left: 92px;
+    }
+
+   .wpp .fromgreen1 {
+      color: #06CF9C;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+   .wpp .fromgreen2 {
+      color: #02A698;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+   .wpp .fromgreen3 {
+      color: #3DB46C;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+   .wpp .fromgreen4 {
+      color: #25D366;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+   .wpp .fromgreen5 {
+      color: #A5B337;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+   .wpp .fromyellow {
+      color: #FFBC38;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+   .wpp .frombrown1 {
+      color: #B4876E;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+   .wpp .frombrown2 {
+      color: #C4532D;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+   .wpp .fromred {
+      color: #EB2837;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+   .wpp .frompink1 {
+      color: #FF2E74;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+     .wpp .frompink2 {
+      color: #E542A3;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+     .wpp .frompurple1 {
+      color: #5E47DE;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .frompurple2 {
+      color: #7F66FF;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromblue1 {
+      color: #7D9EF1;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromblue2 {
+      color: #007BFC;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromblue3 {
+      color: #53BDEB;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .previewsent img,
+    #workskin .wpp .previewreceived img {
+      margin-left: -5px;
+      margin-right: 10px;
+      float: left;
+      margin-top: -7px;
+      height: 80px;
+      max-width: 80px;
+      position: relative;
+    }
+
+    #workskin .wpp .titleimg {
+      color: black;
+      font-weight: bold;
+      top: -2px;
+      margin-bottom: -2px;
+      display: block;
+      position: relative;
+    }
+
+    #workskin .wpp .previewtitle {
+      color: black;
+      font-weight: bold;
+      margin-top: -2px;
+      margin-bottom: -2px;
+      display: inline-block;
+      position: relative;
+    }
+
+    #workskin .wpp .links {
+      color: #027EB5;
+    }
+
+    #workskin .wpp .reaction {
+      margin-top: -1.2em;
+      position: relative;
+      display: inline-block;
+      margin-left: .2em;
+      margin-right: .2em;
+      float: right;
+      font-size: 0.95em;
+    }
+
+    #workskin .wpp .contact {
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 1.15em;
+      top: 20px;
+      position: absolute;
+      text-align: left;
+      margin-left: 100px;
+      overflow: hidden;
+      max-width: 140px;
+      height: 20px;
+    }
+
+    #workskin .wpp .header .button1 {
+      width: 28px;
+      vertical-align: top;
+      top: 17px;
+      margin-left: 10px;
+      position: absolute;
+    }
+
+    #workskin .wpp .header .button2 {
+      width: 20px;
+      margin-top: 0px;
+      margin-left: 270px;
+      position: absolute;
+    }
+
+    #workskin .wpp .header .button3 {
+      width: 20px;
+      margin-top: 0px;
+      margin-left: 301px;
+      position: absolute;
+    }
+
+    #workskin .wpp .group {
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 1.15em;
+      top: 15px;
+      position: absolute;
+      text-align: left;
+      margin-left: 100px;
+      overflow: hidden;
+      max-width: 153px;
+      height: 20px;
+    }
+
+    #workskin .wpp .groupmembers {
+      color: #FFFFFF;
+      font-size: .8em;
+      top: 33px;
+      height: 15px;
+      position: absolute;
+      text-align: left;
+      margin-left: 100px;
+      overflow: hidden;
+      max-width: 153px;
+    }
+
+    #workskin .wpp .typingbar .button1 {
+      width: 26px;
+      vertical-align: top;
+      margin-top: -12px;
+      margin-left: 10px;
+      position: absolute;
+    }
+
+    #workskin .wpp .typingbar .button2 {
+      width: 26px;
+      vertical-align: top;
+      margin-top: -12px;
+      margin-left: 200px;
+      position: absolute;
+    }
+
+    #workskin .wpp .typingbar .button3 {
+      width: 26px;
+      vertical-align: top;
+      margin-top: -12px;
+      margin-left: 235px;
+      position: absolute;
+    }
+
+    #workskin .wpp .light .mic {
+      height: 38px;
+      width: 38px;
+      top: 5px;
+      left: 285px;
+      background: #008069;
+      border-radius: 50%;
+      text-align: left;
+      overflow: hidden;
+      position: absolute;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    
+    #workskin .wpp .mic .button1 {
+      width: 26px;
+      vertical-align: top;
+      margin-top: -12px;
+      margin-left: 6px;
+      position: absolute;
+    }
+
+    #workskin .wpp .light .typingbar .text {
+      display: inline-block;
+      color: #999;
+      position: absolute;
+      margin-top: -9px;
+      margin-left: 44px;
+      font-size: .95em;
+    }
+
+
+    #workskin .wpp .light .sent1 {
+      float: right;
+      color: #000000;
+      margin: 0.1em 1em;
+      margin-top: 0.7em;
+      border-radius: 0.8em 0 0.8em 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #D9FDD3;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    #workskin .wpp .light .sent1::after {
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0em 1em 1em .5em;
+      border-color: transparent transparent transparent #D9FDD3;
+      position: absolute;
+      top: 0px;
+      right: -1.4em;
+    }
+
+    #workskin .wpp .light .sent1::before {
+      content: "";
+      width: .6em;
+      height: 2em;
+      border: 0px;
+      background-image: linear-gradient(112deg, rgba(202, 203, 204, 1), rgba(255,0,0,0), rgba(255,0,0,0));
+      position: absolute;
+      top: .6px;
+      right: -.6em;
+    }
+
+    #workskin .wpp .light .sent2 {
+      float: right;
+      color: #000000;
+      margin: 0.1em 1em;
+      margin-top: 0.25em;
+      border-radius: 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #D9FDD3;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    #workskin .wpp .light .received1 {
+      float: left;
+      color: #000000;
+      margin: 0.1em 1em;
+      margin-top: 0.7em;
+      border-radius: 0 0.8em 0.8em 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #FAFAFA;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    #workskin .wpp .light .received1::after {
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0px .5em 1em 0px;
+      border-color: transparent #FAFAFA transparent transparent;
+      position: absolute;
+      top: 0px;
+      left: -0.4em;
+    }
+
+    #workskin .wpp .light .received1::before {
+      content: "";
+      width: .6em;
+      height: 2em;
+      border: 0px;
+      background-image: linear-gradient(255deg, rgba(202, 203, 204, 1), rgba(255,0,0,0), rgba(255,0,0,0));
+      position: absolute;
+      top: 1px;
+      left: -.6em;
+    }
+
+    #workskin .wpp .light .received2 {
+      float: left;
+      color: #000000;
+      margin: 0.1em 1em;
+      margin-top: 0.25em;
+      border-radius: 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #FAFAFA;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    #workskin .wpp .light .info p {
+      max-width: 75%;
+      border-radius: 9px;
+      padding: 9px;
+      display: inline-block;
+      background: #F8F7F5;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+      color: #55646D;
+      opacity: .9;
+    }
+
+    #workskin .wpp .light .quotesentgreen1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #06CF9C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedgreen1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #06CF9C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentgreen2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #02A698;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedgreen2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #02A698;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentgreen3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #3DB46C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedgreen3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #3DB46C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentgreen4 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #25D366;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedgreen4 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #25D366;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentgreen5 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #A5B337;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedgreen5 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #A5B337;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentyellow {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #FFBC38;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedyelow {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #FFBC38;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentbrown1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #B4876E;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedbrown1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #B4876E;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentbrown2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #C4532D;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedbrown2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #C4532D;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentred {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #EB2837;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedred {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #EB2837;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentpink1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #FF2E74;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedpink1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #FF2E74;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentpink2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #E542A3;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedpink2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #E542A3;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentpurple1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #5E47DE;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedpurple1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #5E47DE;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentpurple2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #7F66FF;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedpurple2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #7F66FF;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentblue1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #7D9EF1;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedblue1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #7D9EF1;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentblue2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #007BFC;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedblue2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #007BFC;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentblue3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #53BDEB;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedblue3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #53BDEB;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .previewsent {
+      font-size: 0.85rem;
+      overflow: hidden;
+      height: 73px;
+      background-color: #D1F4CC;
+      color: #757575;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -5px;
+      margin-left: -8px;
+      width: 244px;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .previewreceived {
+      font-size: 0.85rem;
+      overflow: hidden;
+      height: 73px;
+      background-color: #F1F2F2;
+      color: #757575;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -5px;
+      margin-left: -8px;
+      width: 244px;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .previewlinksent {
+      font-size: 0.7rem;
+      color: #97B298;
+    }
+
+    #workskin .wpp .light .previewlinkreceived {
+      font-size: 0.7rem;
+      color: #B0B4B6;
+    }
+
+    #workskin .wpp .light .reactionsent {
+      float: right;
+      padding-left: .2em;
+      padding-right: .2em;
+      padding-bottom: 0.8em;
+      padding-top: .2em;
+      right: 20px;
+      min-width: 10px;
+      height: 10px;
+      display: block;
+      background: #FAFAFA;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+      color: #999;
+      border-radius: 15px;
+      position: relative;
+      clear: both;
+      margin: 0.1em .5em;
+      margin-top: -.4em;
+      margin-bottom: .1em;
+      margin-left: 1.4em;
+      text-align: right;
+    }
+
+    #workskin .wpp .light .reactionreceived {
+      float: left;
+      padding-left: .2em;
+      padding-right: .2em;
+      padding-bottom: 0.8em;
+      padding-top: .2em;
+      left: 5px;
+      min-width: 10px;
+      height: 10px;
+      display: block;
+      background: #FAFAFA;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+      color: #999;
+      border-radius: 15px;
+      position: relative;
+      clear: both;
+      margin: 0.1em .5em;
+      margin-top: -.4em;
+      margin-bottom: .1em;
+      margin-left: 1.4em;
+      text-align: left;
+    }
+
+    #workskin .wpp .light .header {
+      background: #008069;
+      width: 355;
+      height: 60px;
+      vertical-align: top;
+      top: 0px;
+      margin-bottom: -3px;
+      overflow: hidden;
+      position: sticky;
+      z-index: 8;
+    }
+
+    #workskin .wpp .header .icon {
+      width: 40px;
+      border-radius: 50%;
+      float: left;
+      margin-top: -8px;
+      margin-left: 45px;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    #workskin .wpp .light .bg1 {
+      background-image: url("https://i.ibb.co/r4trrrQ/bglight1.png");
+      background-position: center top;
+      background-repeat: repeat-y;
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: 470px;
+      width: 330px;
+    }
+
+/*removed background from footer*/ 
+
+    #workskin .wpp .light .footer1 {
+      min-width: 330;
+      height: 50px;
+      position: relative;
+      vertical-align: bottom;
+      overflow: hidden;
+      margin-top: -1px;
+      background-position: center bottom;
+      background-repeat: repeat-y;
+    }
+
+    #workskin .wpp .light .typingbar {
+      height: 38px;
+      width: 270px;
+      top: 5px;
+      left: 10px;
+      background: #FAFAFA;
+      border-radius: 20px;
+      text-align: left;
+      overflow: hidden;
+      position: absolute;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+/*twitter by jin*/
+.tw-dot-thread{
+  float:left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #D7DADD;
+  box-shadow: 0px 0px 0px 3px white;
+  /* mmargin-bottom: -15px; */
+  margin-top:0px;
+  margin-left:-21px;
+}
+.tw-dot{
+  float:left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #D7DADD;
+  margin-bottom: -15px;
+}
+.tw-usernames, .tw-usernames-w-dot{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 80%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.tw-usernames-w-dot{
+  max-width:60% !important;
+}
+.tw-name{
+  font-weight:bold;
+  cursor: pointer;
+  /* vertical-align: baseline; */
+}
+.tw-name:hover{
+text-decoration: underline;
+}
+.tw-handle{
+  color: #657685;
+  cursor: pointer;
+  /* vertical-align: baseline; */
+}
+.tw-time{
+  color: #657685;
+}
+.tw-text-gray{
+  color: #657685;
+}
+.tw-text-blue{
+  color: #1c94dc !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.tw-link{
+  color: #1c94dc !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.tw-link:visited {
+  color: #1c94dc !important;
+  text-decoration: none !important;
+}
+.tw-link:active {
+  color: #1c94dc !important;
+  text-decoration: none !important;
+}
+.tw-border-bottom {
+  border-bottom: 1px solid #D7DADD;
+}
+.tw-border-bottom-thick {
+  /* border-bottom: 5px solid #dfe5e8; */
+  border-bottom: 1px solid #D7DADD;
+  border-top: 1px solid #D7DADD;
+  background: #E7ECF0;
+  height:5px;
+  max-width:100%;
+}
+.twt-comment-buttons{
+  max-height: 50px;
+  width: 80%;
+  max-width: 450px;
+  display: block;
+}
+.tw-img{
+  float: center;
+  margin: 10px 0px 0px 0px; 
+  max-width: 95%;
+  /* check on this height  */
+  max-height:400px;
+  border: 1px solid #D7DADD;
+  border-radius: 10px;
+}
+
+.tw-qrt-img, .tw-qrt-w-img, .tw-qrt{
+  font-size: 1.0em !important;
+  display:block;
+  width:95%;
+  border: 1px solid #D7DADD;
+  border-radius: 10px;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.tw-qrt-w-img{
+  margin: 10px 0px 0px 10px;
+  padding:5px 10px 10px 10px;
+  min-height: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.tw-qrt-img{
+  margin: -2px 0px 15px 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.tw-qrt{
+  width:90%;
+  margin: 10px 0px 10px 10px;
+  padding:5px 10px 10px 10px;
+  min-height: 10px;
+}
+.tw-qrt-body{
+  padding-top: 25px;
+}
+.tw-tiny-dot{
+  vertical-align: middle;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #D7DADD;
+}
+.tw-line-vertical {
+  margin-left: 22px;
+  border-left: 2px solid transparent;
+  border-image: linear-gradient(to bottom, lightgray 70%, rgba(255,255,255, 0) 20%);
+  border-image-slice: 1;
+}
+
+/* can i really just throw border-image-slice in here? is that really allowed (as opposed to putting it after the border-image was declared) */
+/* ***it is NOT allowed, just fyi */
+.tw-line-vertical-100, .tw-line-vertical-10, .tw-line-vertical-50, .tw-line-vertical-90, .tw-line-vertical2{
+  margin-left: 22px;
+  border-left: 2px solid transparent;
+  border-color: lightgray;
+  /* border-image-slice: 1; */
+}
+.tw-line-vertical2 {
+  border-image: linear-gradient(to bottom, lightgray 95%, rgba(255,255,255, 0) 5%);
+  border-image-slice: 1;
+}
+.tw-line-vertical-0{
+  margin-left:22px;
+}
+.tw-line-vertical-10{
+  border-image: linear-gradient(to bottom, lightgray 10%, rgba(255,255,255, 0) 90%);
+  border-image-slice: 1;
+}
+.tw-line-vertical-50 {
+  border-image: linear-gradient(to bottom, lightgray 50%, rgba(255,255,255, 0) 50%);
+  border-image-slice: 1;
+}
+.tw-line-vertical-90 {
+  border-image: linear-gradient(to bottom, lightgray 90%, rgba(255,255,255, 0) 10%);
+  border-image-slice: 1;
+}
+.tw-body{
+  font-size: 1.4em;
+
+  /* ao3 spacing fix */
+  margin-top: -5px;
+}
+.tw-footer{
+  color: #657685;
+  /* font-size: .9em;  */
+  margin-top:-10px;
+  margin-bottom:5px;
+}
+.tw-subtext{
+  color: #657685;
+  /* font-size: .9em; */
+  /* padding-bottom:10px; */
+}
+.tw-retweets-bar{
+  /* font-size: .9em; */
+  padding:10px 0 10px 0;
+  /* idk why this is necessary, maybe smth to do with a shift up 15px somewhere */
+  margin-bottom: 15px;
+  border-bottom: 1px solid #D7DADD;
+  border-top: 1px solid #D7DADD;
+  color: #657685;
+  font-size: .8em;
+}
+
+/* this could be muuuch cleaner but got it cleaned up then hot swapped it in and everything broke?? so it gets to live like this now. */
+.tw-no-heart{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar.jpg") no-repeat;
+  display: inline-block;
+  height:40px;
+  width:100%;
+  background-size:100% 40px;
+  border-bottom: 1px solid #D7DADD;
+  margin-top:-15px;
+  margin-bottom:0;
+}
+.tw-no-heart:hover{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar-heart.png") no-repeat;
+  display: inline-block;
+  height:40px;
+  width:100%;
+  background-size:100% 40px;
+}
+.tw-thread-indent{
+  float:left;
+  display: block;
+  margin-top:0px !important;
+  margin-left:-21px !important;
+  margin-bottom: 15px !important;
+  
+  box-shadow: 0px 0px 0px 3px white;
+}
+.tw-unviewable{
+  border:#EFF2F4 solid 1px;
+  border-radius: 10px;
+  /* width:95%; */
+  color:#54656F;
+  background-color: #F7F9F8;
+  padding:5px 10px 5px 10px;
+  margin:5px;
+}
+.tw-gray-box{
+  background: #C5CFD6;
+  width:100%;
+  height:120px;
+}
+.tw-verified-icon{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-verified.png");
+  height: 20px;
+  width: 20px;
+  background-size: 20px 20px;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+/*twitter DMs*/
+.tw-check { 
+  color: #1Da1f3;
+  content: "✓";
+  font-weight: bold;
+}
+.tw-uncheck{
+  color: #AAB8C1;
+  content: "✓";
+  font-weight: bold;
+}
+.tw-box-left0, .tw-box-left1 {
+  color: black;
+  background: #e7ecf0;
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 10px;
+  border-bottom-left-radius: 0;
+  margin-bottom: 3px;
+  float: left;
+  max-width: 75%;
+  clear:both;
+  position: relative;
+}
+.tw-box-left0{
+  margin-top: 10px;
+}
+.tw-box-left1 {
+  border-top-left-radius: 0;
+}
+/* no bg color */
+/* might have replaced this in qab2 but idk with what, will have to check **qab1 */
+.tw-box-left-round {
+  border: 1px solid #e7ecf0;
+  border-radius: 12px;
+  padding: 10px 40px 10px 10px;
+  margin-bottom: 3px;
+  float: left;
+  max-width: 75%;
+  clear:both;
+  position: relative;
+}
+.tw-box-right1, .tw-box-right0 {
+  border-width: 1px;
+  color: white;
+  background: #1Da1f3;
+  border-radius: 12px;
+  padding: 10px;
+  border-bottom-right-radius: 0;
+  
+  margin-bottom: 3px;
+  float: right;
+  max-width: 75%;
+  clear:both;
+  position: relative;
+}
+.tw-box-right0 {
+  margin-top: 10px;
+}
+.tw-box-right1{
+  border-top-right-radius: 0;
+}
+
+.tw-time-right, .tw-time-left {
+  float: right;
+  position: relative;
+  color: #667684;
+  padding: 2px;
+  clear:both;
+  font-size:0.8em;
+}
+.tw-time-left {
+  float: left;
+}
+.tw-time-right{
+  float: right;
+}
+
+.tw-middle-line {
+  text-align: center;
+  border-bottom: 1px solid #CDD6DB;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+.tw-middle-box {
+  background: #fff;
+  padding: 0 15px;
+  color:#657585;
+  font-size:.8em;
+  font-weight:bold;
+}
+
+.tw-white-img{
+  /* filter/brightness not supported by ao3 */
+  /* filter: brightness(0.95); */
+  /* opacity: 0.8;
+  background-color: black; */
+}
+.tw-img-right0, .tw-img-left0 {
+   max-height: 200px;
+   overflow:hidden;
+   margin-top: 10px;
+   border-width: 1px;
+   border-radius: 12px;
+   border-bottom-right-radius: 0;
+   margin-bottom: 3px;
+   max-width: 75%;
+}
+.tw-img-right0{
+  float: right;
+}
+.tw-img-left0 {
+  float: left;
+}
+
+/* new twitter stuff, should delete/clean a bunch of it  */
+.tw-space{
+  margin:0;
+  height: 20px;
+}
+.tw-header-text{
+  font-size: 12px;
+}
+.tw-tweet-header, .tw-thread-header, .tw-header{
+  font-size:1.2em;
+  padding-bottom:5px;
+  border-bottom: 1px solid #D7DADD;
+}
+.tw-tweet-header::after{
+  content:"Tweet";
+}
+.tw-thread-header::after{
+  content:"Thread";
+}
+
+/* all the nonsense for the viewable impression count twitter icons  */
+/* hey... do you need both of these
+what is the function of this, was it an ao3 specific fix */
+p.tw-small-icon-buffer{
+  height:15px;
+  margin-bottom:-10px;
+  /* margin-top: -15px; */
+}
+
+.tw-small-icon-table{
+  display: table;
+  position:absolute;
+  left:0;
+  /* max-width:600px; */
+  width: 100%;
+  margin-right:20px;
+  /* for ao3's nonsense */
+  margin-top: -20px;
+  /* ao3 stopped the nonsense? */
+  /* alternatively, we just make a wrapper for twitter and kill the p margins */
+
+  overflow: hidden;
+  -webkit-text-stroke-width: 0;
+  white-space: nowrap;
+}
+.tw-small-icon-cell-link{
+  display: table-cell;
+  height: 30px;
+  min-width: 70px;
+  text-align: left;
+  font-size: .8em;
+  padding-left:5px;
+  color:gray;
+  vertical-align: middle;
+}
+.tw-small-icon-cell-link::before{
+  content: '';
+  display: inline-flex;
+  height:30px;
+  width:30px;
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-link.png") no-repeat;
+  background-size:30px 30px;
+  cursor: pointer;
+  vertical-align: -70%;
+  padding-right:15px;
+}
+.tw-test{
+  margin-left:30px;
+  margin-top:-25px;
+}
+.tw-small-icon-cell-reply-buffer{
+  /* ao3 wants this to exist, but for there to be no poperties in it. yeah. */
+  /* width:20px; */
+  width:0px;
+}
+.tw-small-icon-cell-bubble{
+  display: table-cell;
+  height: 30px;
+  min-width:100px;
+
+  text-align: left;
+  font-size: .8em;
+  padding-left:5px;
+  color:gray;
+  vertical-align: middle;
+}
+.tw-small-icon-cell-bubble::before{
+  content: '';
+  display: inline-flex;
+  height:30px;
+  width:30px;
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-bubble.png") no-repeat;
+  background-size:30px 30px;
+  cursor: pointer;
+
+  vertical-align: -70%;
+  padding-right:15px;
+
+  /* this value has to change depending on if its a main tweet or tweet thread, i think */
+  margin-left:37px;
+}
+.tw-small-icon-cell-heart{
+  display: table-cell;
+  height: 30px;
+  min-width:70px;
+
+  text-align: left;
+  vertical-align: middle;
+  font-size: .8em;
+  padding-left:5px;
+  color:gray;
+  vertical-align: middle;
+}
+.tw-small-icon-cell-heart::before{
+  content: '';
+  display: inline-flex;
+  height:30px;
+  width:30px;
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-heart.png") no-repeat;
+  background-size:30px 30px;
+  cursor: pointer;
+
+  vertical-align: -70%;
+  padding-right:15px;
+}
+/* this is broken  */
+/* delete it?  */
+.tw-small-icon-cell-heart::before:hover{
+  display: inline-flex;
+  height:30px;
+  width:30px;
+  /* this is currently the same image as above bc discord nuked the old image and i dont have it on hand  */
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-heart.png") no-repeat;
+  background-size:30px 30px;
+}
+.tw-small-icon-cell-retweet{
+  display: table-cell;
+  height: 30px;
+  min-width: 70px;
+
+  text-align: left;
+  font-size: .8em;
+  padding-left:5px;
+  color:gray;
+  vertical-align: middle;
+}
+.tw-small-icon-cell-retweet::before{
+  content: '';
+  display: inline-flex;
+  height:30px;
+  width:30px;
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-retweet.png") no-repeat;
+  background-size:30px 30px;
+  cursor: pointer;
+
+  vertical-align: -70%;
+  padding-right:15px;
+}
+
+/* twitter trending code */
+/* try deleting this, see what happens */
+  div.tw-search-container p
+  {
+    margin-top:0;
+    margin-bottom:0;
+  }
+  .tw-search-container {
+      display: table;
+      width: 100%;
+      position:relative;
+  }
+  .tw-search-box{
+    display: table-cell;
+    background:#ECEDEF;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 7px 10px 7px 10px;
+    color: black;
+  }
+  .tw-search-box2{
+    display: table-cell;
+    background:#ECEDEF;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 7px 10px 7px 10px;
+    color: black;
+
+    margin-right:20px;
+  }
+  .tw-search-text{
+      display: table-cell;
+      width:85%;
+  }
+  /* these unfortunately both exist but icon2 is default now */
+  .tw-back-icon2{
+    width:3.5em;
+    height:27px;
+
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-arrow.png") no-repeat;
+    background-size:27px 27px;
+
+    /* margin-right:40px;
+    margin-left:5px; */
+    margin: 0 40px 0 5px;
+
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .tw-back-icon{
+    height: 27px;
+    width: 27px;
+    vertical-align:middle;
+  
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-arrow.png") no-repeat;
+    background-size:contain;
+    display: inline-block;
+  
+    margin-right:15px;
+    margin-left:3px;
+  }
+  .tw-other-icon{
+    width:6em;
+    height:2em;
+
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-other-icons.png") no-repeat 100% center;
+    background-size: 4.5em 2em;
+
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .tw-down-arrow{
+    /*change color*/
+    border: solid #5F6266;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-right:10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    float:right;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .tw-big-dot {
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #D7DADD;
+  }
+  .tw-tabs{
+    width:100%;
+    white-space: nowrap;
+    padding-bottom:17px;
+  }
+  .tw-tab-name{
+    width: 19%;
+    display: inline-block;
+    text-align : center;
+    cursor:pointer;
+  }
+  .tw-tab-name-focus{
+    color:#18A0FB;
+    border-bottom:3px solid;
+    padding-bottom: 15px;
+    margin-bottom:-18px;
+  }
+  /* for use on "latest" i think */
+  .tw-is-trending{
+    color:gray;
+    font-size: .8em;
+    margin-left:32px;
+    margin-top:-10px;
+    margin-bottom:-10px;
+  }
+  .tw-is-trending::before{
+    width:12px;
+    height:12px;
+
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-trending-fire.png") no-repeat;
+    background-size:12px 12px;
+
+    margin-right:10px;
+    display:inline-block;
+    content:"";
+    vertical-align: middle;
+  }
+  .tw-is-trending::after{
+  content:" is trending";
+  }
+
+/*reddit by jin*/ 
+
+/*reddit*/
+/*
+i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix that weird issue where sometimes things collapse instead of float", i remember sitting down, i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk if half of that even needs to be there and honestly at this point i dont care. i also remeber thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool.
+
+the last thing we might wanna do here is use the fadeout function and place the 'view all comments' button over top of it. rn im tired tho. messing w relative/ablosute is one of my least favorite things.
+*/
+.rd-font{
+  font-family:verdana, arial, helvetica, sans-serif;
+  background-color: white;
+  color:black;
+  padding:10px;
+}
+.rd-view-box {
+  background: #0079D3;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  font-weight:bold;
+  padding: 7px;
+  margin: 0 5px -5px 5px;
+}
+.rd-signup-box {
+  background: #0079D3;
+  border-radius: 14px;
+  text-align: center;
+  color: white;
+  padding: 7px 5px 7px 5px;
+  margin: 0px 5px -5px 5px;
+  font-size:0.8em;
+}
+.rd-sortby{
+  font-size:0.8em;
+  padding-left:5px;
+}
+.rd-photo-box {
+  background: #d3dce0;
+  border-radius: 18px;
+  color: black;
+  padding: 2px 10px 2px 10px;
+}
+.rd-name{
+  text-align: center;
+  font-weight:bold;
+  font-size:1.2em;
+}
+.rd-header{
+  font-weight:bold;
+  font-size:1.1em;
+  margin:-5px 0 -5px 0;
+}
+.rd-div1{
+  border-bottom: 8px solid #EEEFF1;
+  padding-bottom:18px;
+  padding-left:8px;
+  margin-bottom: 10px;
+}
+.rd-div2{
+  border-bottom: 1.5px solid #EEEFF1;
+}
+.rd-vote{
+  height:1.8em;
+  display: inline-block;
+  padding-top:5px;
+  padding-bottom:5px;
+  cursor: pointer;
+}
+.rd-link, .rd-op{
+  color:#25A0ED;
+  cursor: pointer;
+}
+.rd-op{
+  font-weight:bold;
+}
+.rd-down-arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2.5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: 0px 0 2px 7px;
+}
+.rd-small{
+  font-size: .8em;
+  display: inline-block;
+  padding-bottom:5px;
+}
+.rd-vr1 {
+  display: table;
+  padding: 0px 0px 0px 10px;
+  margin: 0px 0 5px 5px;
+  border-left: 1px solid #EEEFF1;
+}
+.rd-gray-text {
+  color: #657685;
+}
+.rd-bubble, .rd-open{
+  color: #787C7F;
+  font-size: .8em;
+  padding: 12px 5px 3px 5px;
+  margin-bottom:5px;
+  border-radius: 16px;
+  border: 1px solid #EEEFF1;
+  cursor: pointer;
+}
+.rd-answered {
+  background: #2d4351;
+  border-radius: 2px;
+  font-size: 0.8em;
+  color: white;
+  padding: 1px 5px;
+  /* margin-bottom:-5px; */
+  /* padding: 1px;
+  padding-right: 5px;
+  padding-left: 5px; */
+}
+.rd-arrow-text{
+  padding-top:2px;
+  vertical-align:super;
+  display: inline-block;
+}
+.rd-arrow-up{
+  padding-top:0px;
+  padding-bottom:0px;
+  height:1.5em;
+}
+.rd-arrow-down{
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+    height:1.5em;
+}
+.rd-elispes{
+  float:right;
+  padding-right:10px;
+  font-size:1.0em;
+}
+.rd-open-text{
+  font-weight: bold;
+  color:black;
+  vertical-align:super;
+  display: inline-block;
+  padding: 12px 8px;
+}
