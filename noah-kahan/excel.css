@@ -1,0 +1,113 @@
+figure {
+    margin-left:0px;
+    margin-right: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.nofit {
+width: 100%;
+table-layout: fixed;
+}
+
+ .nofit1 {
+width: 3%;
+}
+
+.nofit2 {
+width: auto;
+}
+
+table.excel {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.8em;
+}
+    
+ table.excel th {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+    
+ table.excel td {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+    
+ table.excel th:first-child,
+ table.excel td:first-child {
+    border-left: 1px solid gray;
+}
+
+table.excel tr {
+height: 12px;
+}
+
+.spreadsheetlegend {
+    background-color: gainsboro;
+    color: dimgray;
+    text-align: center;
+}
+    
+.spreadsheetheader {
+    text-align: center;
+    font-weight: bold;
+}
+ 
+.selectedcell {
+    border: 2px solid forestgreen;
+}
+
+.square {
+    height: 6px;
+    width: 6px;
+    background-color: forestgreen;
+    position: relative;
+    left: 100%;
+    bottom: -8px;
+    border: 1px solid white;
+}
+
+.yellow1 {
+    background-color: #fbbc04;
+}
+
+.yellow2 {
+    background-color: #ffe599;
+}
+
+.yellow3 {
+    background-color: #fff2cc;
+}
+
+.blue1 {
+    background-color:#0b5394;
+}
+
+.blue2 {
+    background-color: #3d85c6;
+}
+
+.blue3 {
+    background-color: #9fc5e8;
+}
+
+.blue4 {
+    background-color: #d0e0e3;
+}
+
+.blue5 {
+    background-color: #073763;
+}
+
+.green1 {
+    background-color: #45818e;
+}
+
+.black1 {
+    background-color: black;
+}
+
+
+    

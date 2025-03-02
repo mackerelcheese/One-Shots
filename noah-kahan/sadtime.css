@@ -1189,7 +1189,7 @@ margin-bottom: 0px;
   background-color: #fef4fa;
   border:1px solid #e5dfe6; 
   padding:5px;
-  font-size: 0.9em;
+  font-size: 0.7em;
   width:100%;
   color:#b27cb1;
 }
@@ -1758,4 +1758,31 @@ hidden when the defails is open.
 .fadeout {
   height:150px;
   background: linear-gradient(to bottom,black, white);
+}
+
+/***RX***/
+.rxscriptcon {
+  display: block;
+  background-color: #eee7d7;
+  border: 2px gray;
+  padding: 2em;
+  max-width: 300px;
+  height: auto;
+  -webkit-box-shadow: -8px 10px 9px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -8px 10px 9px -1px rgba(0,0,0,0.75);
+box-shadow: -8px 10px 9px -1px rgba(0,0,0,0.75);  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.rx-header {
+  margin-left: 30px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.rxlogo {
+  height:3em;
+  width:auto;
+  float:left;
 }
