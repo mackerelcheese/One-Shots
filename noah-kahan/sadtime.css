@@ -12,6 +12,29 @@ figure {
 details summary {
   list-style: none;
 }
+
+.flexcon {
+  display:flex;
+}
+
+.reg {
+  text-align: left;
+  font-size: 2em;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.barty {
+  text-align: right;
+  font-size: 2em;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.sirius {
+  text-align: center;
+  font-size: 2em;
+  font-family:'Courier New', Courier, monospace;
+}
+
 /****image credits 
 
 
@@ -267,9 +290,18 @@ hourglass
   opacity: .65;
 }
 
-.tag {
+.tagme {
   color:#0775e7 !important;
   font-weight:600
+}
+
+.tagyou {
+  font-weight:600
+}
+
+.link {
+  text-decoration: underline 1px solid #0775e7;
+  color:#0775e7;
 }
 
 /*****group text******/
@@ -727,6 +759,16 @@ hourglass
   margin-top:3px;
 }
 
+.phone-notif-hourglass {
+  max-height: 20px;
+  max-width:20px;
+  border-radius: 25%;
+  position:absolute;
+  margin-left:-28px;
+  display:inline-block;
+  margin-top:3px;
+}
+
 .phone-sp-60 {
   border-bottom: 3px solid transparent;
   /* padding-left: 5px; */
@@ -777,7 +819,6 @@ hourglass
 .li-BG {
   max-width:100%;
   height: auto;
-  background-color: #0077B5;
   padding:5px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -793,6 +834,7 @@ hourglass
   margin-right:auto;
   margin-top:5px;
   margin-bottom: 5px;
+  border-top:1px solid #a2a2a2;
 }
 
 .liheader-con {
@@ -864,6 +906,7 @@ hourglass
   display:flex;
   max-width:100%;
   align-items:center;
+  justify-content: space-around;
   height:auto;
   border-top:1px solid #a2a2a2;
   border-bottom:1px solid #a2a2a2;
@@ -908,6 +951,142 @@ hourglass
 .li-line {
   border-bottom: 1px solid #a2a2a2;
   width: 100%;
+}
+
+/***li job posting***/
+
+.li-jobcomname {
+  font-weight: 600;
+  margin-left: 45px;
+  display: flex;
+  align-items: center;
+  height:30px;
+  margin-top: 10px;
+}
+
+.li-jobcomname::before {
+  content:"";
+  height:30px;
+  width: 30px;
+  border-radius: 30%;
+  background-color:gray;
+  display:inline-block;
+  position:absolute;
+  /* margin-top:1px; */
+  margin-left:-35px;
+}
+
+.greytxt {
+  color: #a2a2a2;
+}
+
+.underline {
+  text-decoration: underline solid black;
+}
+
+.li-jobh1 {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.li-jobh2 {
+  margin-top: 0px;
+  font-weight: 100;
+  font-size: 0.6em;
+}
+
+.li-jobh3 {
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+
+.li-jobdet {
+  background-color: #daebd1;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding:3px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.li-jobskillmatch {
+  background-color: #e8e8e8;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding:3px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-top: 8px;
+}
+
+.li-easyapply {
+  margin-top: 10px;
+  margin-left: 5px;
+  background-color: #0a66c2;
+  border: 1.5px solid #0a66c2;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right:20px;
+  color:white;
+  border-radius: 20px;;
+  font-weight: 600;
+}
+
+.li-easyapply:hover {
+  background-color: #084d92;
+} 
+
+.li-jobsave {
+  margin-top: 10px;
+  margin-left: 5px;
+  border: 1.5px solid #0a66c2;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right:20px;
+  border-radius: 20px;;
+  font-weight: 600;
+  color:#0a66c2;
+}
+
+.li-jobsave:hover {
+  background-color: #e7f3fe;
+}
+
+.li-jobAI {
+  display:flex;
+  width:80%;
+  height:40px;
+  padding:10px;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.li-jobAI > div {
+  font-size: 0.9em;
+  min-width: 250px;
+  margin-right: 5px;
+  background-color: #f4f2ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px 10px 0px 10px;
+  -webkit-border-radius: 10px 10px 0px 10px;
+  -moz-border-radius: 10px 10px 0px 10px;
+}
+
+.li-circle {
+  display: flex;
+  width:25px;
+  height: 25px;
+  padding:10px;
+  border-radius: 50%;
+  margin-right: 5px ;
+  border:1px solid #a2a2a2;
 }
 
 /******teams********/
@@ -1004,6 +1183,20 @@ margin-bottom: 0px;
 
 .emoji-txt {
   font-size: 2em;
+}
+
+.teams-error {
+  background-color: #fef4fa;
+  border:1px solid #e5dfe6; 
+  padding:5px;
+  font-size: 0.9em;
+  width:100%;
+  color:#b27cb1;
+}
+
+.teams-error::after {
+  content:'X';
+  float:right;
 }
 
 /* ---------------chrome history, made by jihn------------------------- */
@@ -1326,3 +1519,243 @@ table
 }
 /* --------------------------------------------------------------- */
 
+
+/* twitter, with threads https://archiveofourown.org/works/35006431 */
+
+.tw {
+  max-width: 500px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 20px auto;
+  border-style: solid;
+  border-width: .1em;
+  border-color: lightgray;
+  padding: 1em;
+}
+
+.tw-table {
+  table-layout: fixed;
+  vertical-align: top;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tw-td-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.tw-td-thread {
+  border-left-style: solid;
+  border-color: rgb(207, 217, 222);
+  border-width: 2px;
+}
+
+.tw-icon-img {
+  width: 45px;
+  height: 45px;
+  float: left;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tw-post-verified {
+  height: 1em;
+  padding-left: 0.2em;
+  position: relative;
+  top: 0.1em;
+  content: url("https://i.imgur.com/2oTuVdz.png");
+}
+
+.tw-post {
+  overflow: hidden;
+  padding-left: 0.5em;
+}
+
+.tw-post-meta-user {
+  font-weight: bold;
+}
+
+.tw-post-meta-handle {
+  color: slategray;
+}
+
+.tw-post-meta-time {
+  color: slategray;
+}
+
+.tw-post-meta-time:before {
+  content: '\0B7';
+  padding-right: 0.2em;
+}
+
+.tw-embed {
+  border-style: solid;
+  border-width: .1em;
+  border-color: darkgray;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+img.tw-embed
+{
+  width: 85%;
+}
+
+.tw-ref {
+  color: rgb(29, 155, 240);
+  cursor: pointer;
+}
+
+.tw-reply {
+  color: slategray;
+}
+
+
+.tw-share details {
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+  height: 20px;
+}
+
+/* 
+.tw-show-open is displayed when the details is open, 
+hidden when the deatils is closed.
+.tw-show-close is displayed when the deatils is closed
+hidden when the defails is open.
+*/
+.tw-share details[open] .tw-show-open,
+.tw-share details:not([open]) .tw-show-close
+{
+  display: flex;
+}
+
+.tw-share details[open] .tw-show-close,
+.tw-share details:not([open]) .tw-show-open
+{
+  display: none;
+}
+
+
+.tw-share {
+  /* background-image: url("https://64.media.tumblr.com/d46b27345c9cea4790756a57e42ccb6c/f2497834d8606ba7-ad/s500x750/10e4a6e3ba606786d94c2d1ddb099bf2516fd704.png"); */
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  min-height: 25px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6px !important;
+  position: relative;
+}
+
+.tw-share-icon {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  width: 100%;
+  min-height: 20px;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+.tw-share-quotes {
+  background-image: url("https://i.imgur.com/HOvzkw7.png");
+  padding-left: 25px;
+  background-position-y: -1px;
+}
+
+.tw-share-quotes.tw-show-open {
+  background-image: url("https://i.imgur.com/xBcBsT9.png");
+}
+
+.tw-share-retwts {
+  background-image: url("https://i.imgur.com/uOLZWeh.png");
+  background-position-y: -1px;
+  padding-left: 27px;
+}
+
+.tw-share-retwts.tw-show-open {
+  background-image: url("https://i.imgur.com/hlKje5j.png");
+}
+
+.tw-share-hearts {
+  background-image: url("https://i.imgur.com/s6gMzzW.png");
+  background-position-y: -1px;
+  padding-left: 27px;
+}
+
+.tw-share-hearts.tw-show-open {
+  background-image: url("https://i.imgur.com/L0R5oMT.png");
+}
+
+.tw-share-links {
+  background-image: url("https://i.imgur.com/WMCCktQ.png");
+  background-position-y: -4px;
+  padding-left: 25px;
+}
+
+.tw-share-links.tw-show-open {
+  background-image: url("https://i.imgur.com/rcwDeZu.png");
+}
+
+.tw-td-rt-1 {
+  width: 45px;
+  background-image: url("https://64.media.tumblr.com/a926f84106d9146ffdff9f264bb67e1f/f2497834d8606ba7-e9/s75x75_c1/1db007980d847c8aa07beb1b230a398652a3a340.png");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position-x: right;
+  background-position-y: center;
+  padding-bottom: 0.2em;
+}
+
+.tw-td-rt-2 {
+  padding-left: 0.5em;
+  padding-bottom: 0.2em;
+}
+
+.tw-rt {
+  color: rgb(83, 100, 113);
+  font-weight: bold;
+  font-size: small;
+}
+
+.tw p {
+  margin: 0;
+}
+
+.tw-share details > summary {
+    list-style: none;
+}
+
+.tw-share details summary::-webkit-details-marker,
+.tw-share details summary::marker {
+  display: none;
+}
+
+/******time passes*****/
+
+.fadein {
+  height:150px;
+  background: linear-gradient(to bottom,white, black);
+}
+
+.timeskip {
+  height:500px;
+  background: black;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fadeout {
+  height:150px;
+  background: linear-gradient(to bottom,black, white);
+}
