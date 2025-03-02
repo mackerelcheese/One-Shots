@@ -89,7 +89,7 @@ hourglass
 
 /*****ios la temperanza******/ 
 .phone {
-  max-width: 400px;
+  max-width: 350px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: table;
   margin-left: auto;
@@ -97,7 +97,7 @@ hourglass
 }
 
 .header {
-  min-width: 400px;
+  min-width: 350px;
   background-color: #f6f6f6;
   border-bottom: 1px solid #b2b2b2;
   color: #000000;
