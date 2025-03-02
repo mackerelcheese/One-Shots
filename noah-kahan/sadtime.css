@@ -666,9 +666,7 @@ hourglass
   /* display:flex; */
   /* justify-content:space-around; */
 }
-.phone-notif p span{
-  /* justify-content:space-around; */
-}
+
 .phone-weather-icons{
   justify-content:space-between;
   display:flex;
