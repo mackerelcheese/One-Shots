@@ -144,7 +144,6 @@ hourglass
   
    .topbar:before {
     content: 'Email';
-    display: inline-block;
     position: relative;
     float: left;
     font-weight: bold;
@@ -154,7 +153,6 @@ hourglass
   
    .topbar:after {
     content: ' _ X';
-    display: inline-block;
     position: relative;
     font-weight: bold;
     padding-right: 5px;
@@ -251,7 +249,6 @@ hourglass
   
    .buttonbar:after {
     content: 'Reply | Forward | Delete';
-    display: inline-block;
     position: relative;
     float: left;
     padding: 0px 3px;
