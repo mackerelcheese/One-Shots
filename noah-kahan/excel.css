@@ -5,6 +5,34 @@ figure {
     overflow-x: hidden;
 }
 
+.scroll {
+width: 100%;
+table-layout: fixed;
+}
+
+.scrollable {
+overflow: scroll;
+max-width: 100%;
+}
+
+.scroll1 {
+width: 12px;
+}
+
+.scroll2 {
+width: 15px;
+}
+
+.freezetop {
+position: sticky;
+top: 0;
+}
+
+.freezeleft {
+position: sticky;
+left: 0;
+}
+
 .nofit {
 width: 100%;
 table-layout: fixed;
