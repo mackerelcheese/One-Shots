@@ -1879,13 +1879,20 @@ max-width: 100%;
 }
 
 .scroll1 {
-min-width: 12px;
+width: 12px;
 }
 
 .scroll2 {
-min-width: 15px;
+width: 15px;
 }
 
+.scroll3 {
+  width: 12px;
+}
+  
+.scroll4 {
+  width: 200px;
+}
 .freezetop {
 position: sticky;
 top: 0;
