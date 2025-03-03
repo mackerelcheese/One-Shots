@@ -23,6 +23,10 @@ width: 12px;
 width: 15px;
 }
 
+.scroll3 {
+    width:200px;
+}
+
 .freezetop {
 position: sticky;
 top: 0;
@@ -52,13 +56,13 @@ table.excel {
     font-size: 0.8em;
 }
     
- table.excel th {
+table.excel th {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
 }
     
- table.excel td {
+table.excel td {
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
 }

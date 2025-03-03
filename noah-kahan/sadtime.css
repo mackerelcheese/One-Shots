@@ -460,6 +460,73 @@ p.header {
   clear: both;
 }
 
+.typing-indicator {
+  background-color: #e6e7ed;
+  width: auto;
+  border-radius: 1em;
+  padding: .5em 1em;
+  display: table;
+  margin: 0 0 .5em;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  clear: both;
+}
+
+.typing-indicator::before,
+.typing-indicator::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #e6e7ed;
+}
+
+.typing-indicator::after {
+  height: 6px;
+  width: 6px;
+  left: -6px;
+  bottom: -6px;
+}
+
+.typing-indicator span {
+  height: 15px;
+  width: 15px;
+  float: left;
+  margin: 0 1px;
+  background-color: #9E9EA1;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.typing-indicator span {
+  height: .65em;
+  width: .65em;
+  float: left;
+  margin: .425em 0 .425em .25em;
+  margin-left: 0.25em;
+  background-color: #9e9ea1;
+  display: inline-block;
+  border-radius: 50%;
+  opacity: .5;
+}
+
+.typing-indicator span:first-child {
+  margin-left: 0;
+}
+
+.typing-indicator span:nth-child(1) {
+  opacity: .85;
+}
+
+.typing-indicator span:nth-child(2) {
+  opacity: .65;
+}
+
 .tagme {
   font-weight: 600;
   color:#3f8dde;
@@ -630,9 +697,11 @@ p.header {
   font-weight:normal;
   margin-left:5px;
 }
+
 .phone-notif-header-email{
   font-size:.8rem;
 }
+
 /* hack fix */
 .phone-notif p{
   margin:5px;
@@ -660,6 +729,14 @@ p.header {
   width:60%;
   height:60px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.phone-call-declinecon {
+  margin-top: 300px;
+  width:60%;
+  height:60px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -1781,7 +1858,6 @@ hidden when the defails is open.
   font-size:1.7em;
   margin-left:10px;
   margin-right:10px;
-
 }
 
 .rs-credits {
@@ -1878,12 +1954,9 @@ width: 15px;
 }
 
 .scroll3 {
-  width: 12px;
+    width:200px;
 }
-  
-.scroll4 {
-  width: 200px;
-}
+
 .freezetop {
 position: sticky;
 top: 0;
@@ -1913,13 +1986,13 @@ table.excel {
     font-size: 0.8em;
 }
     
- table.excel th {
+table.excel th {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
 }
     
- table.excel td {
+table.excel td {
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
 }
@@ -1998,11 +2071,202 @@ height: 12px;
     background-color: black;
 }
 
+/*****banking*****/
+
+.bank-header {
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #073763;
+  color: white;
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bank-header span {
+  font-size: 0.8em;
+}
+
+.bank-transactions {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.9em;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.bank-date {
+  font-family: Arial, Helvetica, sans-serif;
+  width:100%;
+  background-color: dimgray;
+  padding-top:12px;
+  padding-bottom: 12px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+table.bank-transactions-input {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-style:hidden;
+}
+
+table.bank-transactions-input td {
+  padding:12px;
+}
+
+table.bank-transactions-input td > span {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+table.bank-transactions-input tr:nth-child(even){
+  background-color: #D3D3D3;
+}
+
+table.bank-transactions-input tr td:nth-child(2) {
+  color: red;
+  font-weight: bold;
+}
+
+.column1 {
+  width:70%;
+}
+
+/* ------------------ google search results ---------------------- */
+/* https://archiveofourown.org/works/8631214/chapters/53486839 */
+.browser {
+  min-width: 200px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.search_autocomplete {
+  border: 1px solid #aaa;
+  /* padding: 5px 5px 5px 5px; */
+  margin-top: 0px;
+}
+
+.search_autocomplete span {
+  display: block;
+  padding: 0px 5px;
+}
+
+.search_autocomplete span:first-of-type {
+  padding: 5px 5px 0px 5px !important;
+}
+
+.search_autocomplete span:last-of-type {
+  padding: 0px 5px 5px 5px !important;
+}
+
+.search_autocomplete span:hover {
+  background: lightblue;
+  cursor: pointer;
+  color: black;
+}
+
+.search_logo {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+
+.search_bar {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.search_bar span {
+  position: relative;
+  display: block;
+  margin: 0 0 0 0;
+  padding: 5px;
+}
+.chrome_term {
+  border: 1px solid #aaa;
+}
+
+.chrome_logo {
+  font-weight: bold;
+  font-size: x-large;
+  font-family: "Lato", "Verdana", sans-serif;
+}
+.chromeold_logo {
+  font-weight: bold;
+  font-size: x-large;
+  font-family: "Cardo", "Garamond", serif;
+}
+.chrome_blue {
+  color: #4285F4;
+  cursor: pointer;
+}
+.chrome_red {
+  color: #DB4437;
+  cursor: pointer;
+}
+.chrome_yellow {
+  color: #F4B400;
+  cursor: pointer;
+}
+.chrome_green {
+  color: #0F9D58;
+  cursor: pointer;
+}
+
+/*****convo rip*****/
+.convo {
+  font-family: "Courier New", courier, monospace;
+  /* font-size: 18px; */
+  text-transform: uppercase;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 3px gray solid;
+}
+
+.bottom-rip {
+  border-bottom: none;
+}
+
+.top-rip {
+  border-top: none;
+}
+
+.convo p {
+  padding: 5px;
+}
+
+.convo-name {
+  font-weight: bold;
+}
+
+.convo-bottom-rip {
+  height: 29px;
+  width: 534px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -7px;
+  padding-right: 0px;
+}
+
+.convo-top-rip {
+  height: 29px;
+  width: 534px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -7px;
+  padding-right: 0px;
+  margin-bottom: -14px;
+}
+
 /******time passes*****/
 
 .fadein {
-  height:150px;
-  background: linear-gradient(to bottom,white, black);
+  height:200px;
+  background: linear-gradient(to bottom,white 40%, black 100%);
 }
 
 .timeskip {
@@ -2015,8 +2279,8 @@ height: 12px;
 }
 
 .fadeout {
-  height:150px;
-  background: linear-gradient(to bottom,black, white);
+  height:200px;
+  background: linear-gradient(to bottom,black 40%, white 100%);
 }
 
 /***RX***/
