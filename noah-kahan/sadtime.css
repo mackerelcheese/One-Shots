@@ -2309,3 +2309,323 @@ box-shadow: -8px 10px 9px -1px rgba(0,0,0,0.75);  margin-left: auto;
   width:auto;
   float:left;
 }
+
+* ----------------------reddit mock ---------------------------- */
+/* made by jihn https://codepen.io/jihnari/pen/jOmMoQX */
+
+.reddit-img {
+    max-width: 350px;
+    /* filter: blur(0.7px); */
+}
+
+.text-color-gray {
+    color: #9F9FA1;
+  }
+  .right{
+    float:right;
+  }
+  
+  .text-size-12{
+    font-size:1.2em;
+  }
+  .text-bold{
+    font-weight:bold;
+  }
+  .padding-left-20 {
+    padding-left: 20px;
+  }
+  
+  
+  /*reddit*/
+  /*
+  i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix that weird issue where sometimes things collapse instead of float", i remember sitting down, i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk if half of that even needs to be there and honestly at this point i dont care. i also remeber thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool. 
+  
+  the last thing we might wanna do here is use the fadeout function and place the 'view all comments' button over top of it. rn im tired tho. messing w relative/ablosute is one of my least favorite things. 
+  */
+  .rd-font{
+    font-family:verdana, arial, helvetica, sans-serif;
+    /* background-color: white; */
+    /*make sure this didnt break everything*/
+    /* color:black; */
+    font-size: 13px;
+    padding: 6px;
+    max-width: 600px;
+    margin: 30px auto;
+  }
+  .rd-view-box {
+    background: #0079D3;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    font-weight:bold;
+    padding: 7px;
+    margin: 0px 5px -5px 5px;
+    cursor: pointer;
+  }
+  .rd-signup-box {
+    background: #0079D3;
+    border-radius: 14px;
+    text-align: center;
+    color: white;
+    padding: 7px 5px 7px 5px;
+    margin: 0px 5px -5px 5px;
+    font-size:0.8em;
+  }
+  .rd-sortby{
+    font-size:0.8em;
+    padding-left:5px;
+  }
+  .rd-photo-box {
+    background: #d3dce0;
+    border-radius: 18px;
+    color: black;
+    padding: 2px 10px 2px 10px;
+  }
+  .rd-name{
+    text-align: center;
+    font-weight:bold;
+    font-size:1.2em;
+  }
+  .rd-header{
+    font-weight:bold;
+    font-size:1.1em;
+    margin: -5px 0px -5px 0px;
+  }
+  .rd-dot { /*idx if i wanna go down this path*/
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #bbb;
+    margin-bottom: -15px;
+  }
+  .rd-div1 {
+    border-bottom: 8px solid #EEEFF1;
+    /* padding-bottom:18px; */
+    /* padding-left:8px; */
+    /* margin-bottom: 10px; */
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+  .rd-div2{
+    border-bottom: 1.5px solid #EEEFF1;
+  }
+  .rd-vote{
+    height:1.8em;
+    display: inline-block;
+    padding-top:5px;
+    padding-bottom:5px;
+    cursor: pointer;
+  }
+  .rd-poster{
+    font-size: .8em;
+    margin-bottom: 15px;
+  }
+  .rd-op {
+    color:#25A0ED;
+    font-weight:bold;
+    cursor: pointer;
+  }
+
+  .rd-op:hover {
+    text-decoration: underline;
+  }
+
+  .rd-link{
+    color:#25A0ED;
+  }
+  .rd-down-arrow {
+    border: solid black;
+    border-width: 0px 2px 2px 0px;
+    display: inline-block;
+    padding: 2.5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 0px 0px 2px 7px;
+  }
+  .rd-small{
+    font-size: .8em;
+    display: inline-block;
+    padding-bottom:5px;
+  }
+
+  .rd-small > strong:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .rd-vr0 {
+    display: table;
+    padding: 10px 0px 0px 30px;
+    border-bottom: 1px solid #EEEFF1;
+  }
+  .rd-vr1 {
+    display: table;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 5px 5px;
+    border-left: 1px solid #EEEFF1;
+  }
+  .rd-vr2 {
+    display: table;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 5px 5px;
+    border-left: 1px solid #EEEFF1;
+  }
+  .rd-vr-not {
+    display: table;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 5px 0px;
+  }
+  .rd-gray-text {
+    /* color: #657685; */
+    opacity: 0.7;
+  }
+
+  .rd-bubble {
+    color: #787C7F;
+    font-size: .8em;
+    padding: 12px 5px 3px 5px;
+    margin-bottom: 5px;
+    border-radius: 16px;
+    border: 1px solid #EEEFF1;
+    /* cursor: pointer; */
+    display: inline;
+  }
+
+  .rd-bubble p {
+    display: inline;
+    cursor: text;
+  }
+  
+  .rd-bubble details, .rd-bubble summary {
+    display: inline-block;
+  }
+
+  /* toggle reddit up / down vote, fake tri state */
+  details.rd-up-cont[open] .unliked,
+  details.rd-down-cont[open] .unliked,
+  details.rd-up-cont:not([open]) .liked,
+  details.rd-down-cont:not([open]) .liked {
+    display: none;
+  }
+
+  .default-vote,
+  details.rd-up-cont:not([open]) .unliked,
+  details.rd-down-cont:not([open]) .unliked,
+  details.rd-up-cont[open] .liked,
+  details.rd-down-cont[open] .liked {
+    display: inline-block;
+  }
+
+  /* toggle voter count on up / down */
+  .rd-bubble:has(.rd-up-cont:not([open])):has(.rd-down-cont:not([open])) .up-vote,
+  .rd-bubble:has(.rd-up-cont:not([open])):has(.rd-down-cont:not([open])) .down-vote,
+  .rd-bubble:has(.rd-up-cont[open]) .down-vote,
+  .rd-bubble:has(.rd-up-cont[open]) .default-vote,
+  .rd-bubble:has(.rd-down-cont[open]) .up-vote,
+  .rd-bubble:has(.rd-down-cont[open]) .default-vote
+  {
+    display: none;
+  }
+
+  .rd-bubble:has(.rd-up-cont[open]) .up-vote,
+  .rd-bubble:has(.rd-down-cont[open]) .down-vote 
+  {
+    display: inline-block;
+  }
+
+  .inactive {
+    display: none;
+    cursor: not-allowed !important;
+  }
+
+  .rd-bubble:has(details[open]) details:not([open]) {
+    display: none;
+  }
+
+ .rd-bubble:has(.rd-down-cont[open]) .rd-arrow-up.inactive,
+ .rd-bubble:has(.rd-up-cont[open]) .rd-arrow-down.inactive {
+    display: inline-block;
+  }
+
+  .rd-div1 p, .rd-vr.rd-div2 p {
+    margin: 0px;
+  }
+
+  .reddit-comment-react details {
+    margin: 0px;
+  }
+
+  .reddit-comment-react {
+    display: inline-flex;
+  }
+
+/* toggle liked reddit COMMENT (like only) */
+.reddit-react-like[open] .unliked,
+.reddit-react-like:not([open]) .liked,
+.reddit-react-dislike[open] .unliked,
+.reddit-react-dislike:not([open]) .liked {
+  display: none;
+}
+
+.reddit-react-like:not([open]) .unliked,
+.reddit-react-like[open] .liked,
+.reddit-react-dislike:not([open]) .unliked,
+.reddit-react-dislike[open] .liked {
+  display: inline;
+}
+
+.reddit-comment-react:has(details[open]) details:not([open]) {
+  display: none;
+}
+
+.reddit-comment-react:has(.reddit-react-like[open]) .react-dislike.inactive,
+.reddit-comment-react:has(.reddit-react-dislike[open]) .react-like.inactive
+{
+   display: inline-block;
+}
+
+.rd-comment-react-reply {
+  padding-left: 13px;
+  margin-top: -7px;
+}
+
+  .rd-left {
+    margin-left: 2px;
+  }
+  
+  .rd-arrow-text{
+    padding-top:2px;
+    mmargin-bottom:10px;
+    vertical-align: super;
+    display: inline-block;
+  }
+  .rd-arrow-up{
+    padding-top:0px;
+    padding-bottom:0px;
+    height:1.5em;
+    cursor: pointer;
+  }
+  .rd-arrow-down{
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+      height:1.5em;
+      cursor: pointer;
+  }
+  .rd-elispes{
+    float:right;
+    padding-right:10px;
+    font-size:1.0em;
+    cursor: pointer;
+  }
+
+  .reddit-comment-react details > summary  {
+    list-style: none;
+  }
+
+  .reddit-comment-react details summary::-webkit-details-marker,
+.reddit-comment-react details summary::marker {
+  display:none;
+}
+/* --------------------------------------------------------------- */
