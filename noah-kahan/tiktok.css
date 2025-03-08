@@ -21,7 +21,7 @@ figure {
   flex-direction:column;
   /* background-color:#bbb; */
   border:1px solid black;
-  /*background: black;*/
+  background: black;
   color:white;
   position:relative;
 }
@@ -30,8 +30,6 @@ figure {
   width:400px;
   height:560px  
 }
-
-
 
 .tiktok-header {
   position:absolute;
