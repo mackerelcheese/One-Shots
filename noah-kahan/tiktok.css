@@ -24,9 +24,12 @@ figure {
   /*background: black;*/
   color:white;
   position:relative;
-  background-image: url();
 }
 
+.tiktok-bg-video {
+  width:400px;
+  height:560px  
+}
 
 
 
