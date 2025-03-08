@@ -21,10 +21,11 @@ figure {
   flex-direction:column;
   /* background-color:#bbb; */
   border:1px solid black;
-  background: black;
+  /*background: black;*/
   color:white;
   position:relative;
 }
+
 
 .tiktok-header {
   position:absolute;
