@@ -28,7 +28,6 @@ figure {
   background: #3a4340;
   color:white;
   position:relative;
-  align-items: center;
 }
 
 .tiktok-background {
@@ -36,10 +35,7 @@ figure {
 }
 
 .tiktok-imageclip {
-    width:300px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    width:400px;
 }
 
 .tiktok-header {
