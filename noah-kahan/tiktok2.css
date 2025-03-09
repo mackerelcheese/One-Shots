@@ -32,11 +32,24 @@ figure {
 
 .tiktok-background {
     background: black !important;
-    overflow-y: hidden;
+    display:flex;   
 }
 
-.tiktok-imageclip {
-    width:400px;
+.tiktok-controllers:has(details[open]
+):has(
+    details:not([open])
+) .tiktok-image {
+    transform: translateY(-500px);
+}
+
+.tiktok-controllers:has(details[open] ~ details([open])
+) .tiktok-image {
+    transform: translateY(-1000px);
+}
+
+.tiktok-bg-video {
+  width:400px;
+  height:560px  
 }
 
 .tiktok-header {
@@ -59,7 +72,7 @@ figure {
   width:100%;
   height:40px;
   display:flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-top: 0.5px solid #3a4340 ;
   background-color:black;
   color:white;
@@ -216,73 +229,6 @@ figure:has(details.tiktok-one[open])
   display:inline;
 }
 
-/*snap*/
 
-.tiktok-controllers {
-    position: absolute;
-    left: 330px;
-    top: 300px;
-    width: 100%;
-    height: 100%;
-}
 
-.tiktok-controllers details {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-}
 
-.tiktok-controllers details p {
-  margin: 0px;
-}
-
-.tiktok-controllers details:not([open]) summary {
-  height: 100%;
-  width: 50%;
-  right: 0px;
-  /* z-index: 10; */
-}
-
-.tiktok-controllers details[open] summary {
-  height: 100%;
-  width: 50%;
-  left: 0px;
-  /* z-index: 10; */
-}
-
-.tiktok-controllers details:not([open]) .snap-back,
-.tiktok-controllers details[open] .snap-fwd 
-{
-  display: none;
-}
-
-.snap-fwd {
-    position: absolute;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    bottom: 10px;
-}
-  
-  .snap-back {
-    position: absolute;
-    left: 10px;
-    width: 40px;
-    height: 40px;
-    bottom: 10px;
-    transform: rotate(180deg);
-    z-index: 1;
-}
-
-.tiktok-background:has(details[open]
-):has(
-    details:not([open]))
-    .tiktok-background{
-    transform: translateY(-500px);
-}
-
-.tiktok-background:has(details[open] ~ details[open])
-    .tiktok-background{
-    transform: translateY(-1000px);
-}

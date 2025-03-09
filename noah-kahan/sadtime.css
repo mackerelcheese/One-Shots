@@ -2264,7 +2264,7 @@ table.bank-transactions-input tr td:nth-child(2) {
 
 /******time passes*****/
 
-.fadein {
+.fadein-time {
   height:200px;
   background: linear-gradient(to bottom,white 40%, black 100%);
 }
@@ -2278,7 +2278,7 @@ table.bank-transactions-input tr td:nth-child(2) {
   justify-content: center;
 }
 
-.fadeout {
+.fadeout-time {
   height:200px;
   background: linear-gradient(to bottom,black 40%, white 100%);
 }
@@ -2336,6 +2336,64 @@ box-shadow: -8px 10px 9px -1px rgba(0,0,0,0.75);  margin-left: auto;
   }
   
   
+/****news*****/
+/*news*/
+.news-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 1px solid #b1b1b3;
+  padding-bottom:5px;
+}
+.news-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.news-date {
+  color: #9F9FA1;
+}
+.news-border {
+  border-bottom: 1px solid #b1b1b3;
+}
+.news-read-more-button {
+  position: absolute;
+  bottom: 0;
+  background: gray;
+  border-radius: 6px;
+  color: white;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  left: 50%;
+  margin-left: -50px;
+}
+
+/*fade*/
+.fadeout {
+  position: relative;
+}
+.fadeout::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255,255,255, 0), white);
+}
+.fadein {
+  position: relative;
+}
+.fadein::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, white, rgba(255,255,255, 0));
+}
+.text-color-gray {
+  color: #9F9FA1;
+}
+.text-size-12{
+  font-size:1.2em;
+}
   /*reddit*/
   /*
   i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix that weird issue where sometimes things collapse instead of float", i remember sitting down, i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk if half of that even needs to be there and honestly at this point i dont care. i also remeber thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool. 
