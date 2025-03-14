@@ -38,8 +38,9 @@ details summary {
 .link {
   text-decoration: underline 1px #3f8dde;
   color:#3f8dde;
-
 }
+
+
 /****image credits 
 
 
@@ -1804,7 +1805,7 @@ hidden when the defails is open.
   margin-right:auto;
   border-bottom:1px solid black; 
   text-align:center; 
-  justify-content:space-evenly;
+  justify-content:space-around;
   align-items:center;
 }
 
@@ -1828,24 +1829,10 @@ hidden when the defails is open.
   align-items:center;
   margin-left:0px;
   font-size:0.6em;
-}
-
-.rs-flair {
-  display:block;
-  width:fit-content;
-  height:auto;
-  max-width:300px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:15px;
-  margin-bottom:15px;
-  padding: 5px; 
-  background: red;
-  color: white;
-  font-weight: bold;
-  font-size:1em;
-  white-space: nowrap;
-  font-weight:bold;
+  background-color: #36008d;
+  color:white !important;
+  padding:8px;
+  border-radius: 8px;
 }
 
 .rs-uhoh {
@@ -2344,16 +2331,20 @@ box-shadow: -8px 10px 9px -1px rgba(0,0,0,0.75);  margin-left: auto;
   border-bottom: 1px solid #b1b1b3;
   padding-bottom:5px;
 }
+
 .news-title {
   font-size: 1.2em;
   font-weight: bold;
 }
+
 .news-date {
   color: #9F9FA1;
 }
+
 .news-border {
   border-bottom: 1px solid #b1b1b3;
 }
+
 .news-read-more-button {
   position: absolute;
   bottom: 0;
@@ -2371,6 +2362,7 @@ box-shadow: -8px 10px 9px -1px rgba(0,0,0,0.75);  margin-left: auto;
 .fadeout {
   position: relative;
 }
+
 .fadeout::before {
   content: '';
   width: 100%;
@@ -2378,9 +2370,11 @@ box-shadow: -8px 10px 9px -1px rgba(0,0,0,0.75);  margin-left: auto;
   position: absolute;
   background: linear-gradient(to bottom, rgba(255,255,255, 0), white);
 }
+
 .fadein {
   position: relative;
 }
+
 .fadein::before {
   content: '';
   width: 100%;
@@ -2388,12 +2382,15 @@ box-shadow: -8px 10px 9px -1px rgba(0,0,0,0.75);  margin-left: auto;
   position: absolute;
   background: linear-gradient(to bottom, white, rgba(255,255,255, 0));
 }
+
 .text-color-gray {
   color: #9F9FA1;
 }
+
 .text-size-12{
   font-size:1.2em;
 }
+
   /*reddit*/
   /*
   i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix that weird issue where sometimes things collapse instead of float", i remember sitting down, i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk if half of that even needs to be there and honestly at this point i dont care. i also remeber thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool. 
@@ -2686,4 +2683,290 @@ box-shadow: -8px 10px 9px -1px rgba(0,0,0,0.75);  margin-left: auto;
 .reddit-comment-react details summary::marker {
   display:none;
 }
-/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */ 
+
+/*****tiktok*****/
+
+.cursive {
+  font-family: cursive;
+}
+
+.tiktok-phone-container-container{
+  display:flex;
+  justify-content:center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tiktok-phone-container {
+  /* border-top: 1px solid #b1b1b3;
+  border-bottom: 1px solid #b1b1b3; */
+  max-width:400px;
+  width:100%;
+  height:600px;
+  max-height:100%;
+  display:flex;
+  /* justify-content:center; */
+  flex-direction:column;
+  /* background-color:#bbb; */
+  border:1px solid black;
+  background: #3a4340;
+  color:white;
+  position:relative;
+}
+
+.tiktok-background {
+    background: black !important;
+    display:flex;   
+}
+
+.tiktok-bg-video {
+  width:400px;
+  height:560px  
+}
+
+.tiktok-header {
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:40px;
+  display:flex;
+  justify-content: space-evenly;
+  /*background-color:black;*/
+  color:white;
+  align-items:center;
+  font-size:0.85em;
+  padding-top:5px;
+}
+
+.tiktok-footer {
+  position:absolute;
+  bottom:0px;
+  width:100%;
+  height:40px;
+  display:flex;
+  justify-content: space-evenly;
+  border-top: 0.5px solid #3a4340 ;
+  background-color:black;
+  color:white;
+  align-items:center;
+  font-size:0.7em;
+  padding-top: 3px;;
+}
+
+.tiktok-sidebar {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  align-items:center;
+  font-size:0.7em;
+  position:absolute;
+  width:20px;
+  height:350px;
+  right:15px;
+  bottom:50px;
+}
+
+.tiktok-circle {
+   display:block;
+   height:35px;
+   width: 35px;
+   background-color: white; 
+   border-radius: 50%;
+   margin-bottom: 10px;
+   margin-top: 5px;
+}
+
+.tiktok-pfp {
+    display:block;
+    height:20px;
+    width: 20px;
+    background-color:  #FE2C55 ; 
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.tiktok-captions {
+  position:absolute; 
+  color:white;
+  text-align:left;
+  width:70%;
+  height:auto;
+  bottom:50px;
+  margin-left:12px;
+  font-size:0.9em;
+}
+
+.tiktok-username {
+  font-weight:bold;
+  font-size:1em !important;
+}
+
+.tiktok-icon {
+    height:20px;
+}
+
+.tiktok-icon2 {
+    height:30px;
+}
+
+
+.tiktok-cap1 {
+  display:inline;
+}
+
+.tiktok-readmore {
+  list-style:none;
+  display:inline;
+  font-weight:bold;
+  font-size:0.9em;
+}
+
+.tiktok-plus {
+    background-color: white;
+    height:20px;
+    width:30px;
+    color:black !important;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.tiktok-plus-back {
+    background-color: #25F4EE;
+    height:20px;
+    width:30px;
+    color:black !important;
+    font-weight: 600;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: -5px;
+}
+
+.tiktok-plus-back::after {
+    content: '';
+    background-color: #FE2C55;
+    height:20px;
+    width:30px;
+    color:black !important;
+    font-weight: 600;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 10px;
+
+}
+
+.tiktok-con {
+    display:flex;
+    flex-direction: column;
+    height:40px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.tiktok-footer-icon {
+    height: 20px;
+    width:20px;
+}
+
+
+.tiktok-cap1 span:last-child {
+  display:none;
+}
+
+.tiktok-readmore span:nth-child(2) {
+   display: none;
+}
+
+figure:has(details.tiktok-one[open]) 
+.tiktok-one span:nth-child(2) {
+   display: inline;
+}
+
+figure:has(details.tiktok-one[open]) 
+.tiktok-one span:nth-child(1) {
+   display: none;
+}
+
+figure:has(details.tiktok-one[open]) 
+.tiktok-cap1 span:last-child {
+  display:inline;
+}
+
+
+/***youtube***/
+
+.YT-con {
+  width:400px; 
+  height:auto;
+  background-color:#0f0f0f;
+  margin-left:auto;
+  margin-right:auto;
+  font-family:"Roboto", "Arial", "sans-serif";
+  color:white;
+}
+
+.YT-video-con {
+  display:flex;
+  width:100%;
+}
+
+.YT-video-thumbnail {
+  width:100%;
+}
+
+.YT-more {
+  height:25px;  
+}
+
+.YT-details-con {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.YT-details {
+  display:block;
+  color:white;
+  margin-left:50px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.YT-details::before {
+  content:"";
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color:gray;
+  display:inline-block;
+  position:absolute;
+  margin-left:-40px;
+}
+
+.YT-details span:last-of-type {
+  color:#7B7C80;
+  font-size:0.8em;
+}
+
+.YT-thumbnail-con {
+  position:relative;
+}
+.YT-timestamp {
+  position:absolute;
+  right:10px;
+  bottom:8px;
+  background:black;
+  opacity:0.5;
+  padding:3px;
+  border-radius:5px;
+}
+
