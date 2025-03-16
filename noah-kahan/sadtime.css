@@ -256,7 +256,7 @@ hourglass
     cursor: pointer;
   }
 
-/****resend drama****/
+/****ios resend drama****/
 /* la temperanza texting https://archiveofourown.org/works/6434845/chapters/14729722 */
 .phone {
   max-width: 300px;
@@ -461,10 +461,81 @@ p.header {
   clear: both;
 }
 
-.typing-indicator {
+/***ios typing indicator***/
+
+.ios-typing-indicator {
   background-color: #e6e7ed;
   width: auto;
   border-radius: 1em;
+  padding: .5em 1em;
+  display: table;
+  margin: 0 0 .5em;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  clear: both;
+}
+
+.ios-typing-indicator::before,
+.ios-typing-indicator::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #e6e7ed;
+}
+
+.ios-typing-indicator::after {
+  height: 6px;
+  width: 6px;
+  left: -6px;
+  bottom: -6px;
+}
+
+.ios-typing-indicator span {
+  height: 15px;
+  width: 15px;
+  float: left;
+  margin: 0 1px;
+  background-color: #9E9EA1;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.ios-typing-indicator span {
+  height: .65em;
+  width: .65em;
+  float: left;
+  margin: .425em 0 .425em .25em;
+  margin-left: 0.25em;
+  background-color: #9e9ea1;
+  display: inline-block;
+  border-radius: 50%;
+  opacity: .5;
+}
+
+.ios-typing-indicator span:first-child {
+  margin-left: 0;
+}
+
+.ios-typing-indicator span:nth-child(1) {
+  opacity: .85;
+}
+
+.ios-typing-indicator span:nth-child(2) {
+  opacity: .65;
+}
+
+/***teams typing indicator***/
+
+.typing-indicator {
+  background-color: #e6e7ed;
+  width: auto;
+  border-radius: 0.5em;
   padding: .5em 1em;
   display: table;
   margin: 0 0 .5em;
@@ -536,6 +607,9 @@ p.header {
 .tagyou {
   font-weight: 600;
 }
+
+
+
 
 /****spotify email****/
 
@@ -1940,15 +2014,15 @@ max-width: 100%;
 }
 
 .scroll1 {
-width: 12px;
-}
-
-.scroll2 {
 width: 15px;
 }
 
+.scroll2 {
+max-width: 15px;
+}
+
 .scroll3 {
-    width:200px;
+    max-width:20px;
 }
 
 .freezetop {
@@ -2264,7 +2338,7 @@ table.bank-transactions-input tr td:nth-child(2) {
 }
 
 .timeskip {
-  height:500px;
+  height:1000px;
   background: black;
   color:white;
   display: flex;
