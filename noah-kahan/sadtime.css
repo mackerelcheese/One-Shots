@@ -1303,8 +1303,10 @@ margin-bottom: 0px;
   border:1px solid #e5dfe6; 
   padding:5px;
   font-size: 0.7em;
-  width:100%;
+  max-width:300px;
   color:#b27cb1;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .teams-error::after {
@@ -2330,7 +2332,7 @@ table.bank-transactions-input tr td:nth-child(2) {
   margin-bottom: -14px;
 }
 
-/******time passes*****/
+/******time jump*****/
 
 .fadein-time {
   height:200px;
@@ -2348,6 +2350,25 @@ table.bank-transactions-input tr td:nth-child(2) {
 
 .fadeout-time {
   height:200px;
+  background: linear-gradient(to bottom,black 40%, white 100%);
+}
+
+.fadein-time-short {
+  height:100px;
+  background: linear-gradient(to bottom,white 40%, black 100%);
+}
+
+.timeskip-short {
+  height:20px;
+  background: black;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fadeout-time-short {
+  height:100px;
   background: linear-gradient(to bottom,black 40%, white 100%);
 }
 
@@ -2959,6 +2980,11 @@ margin-left: auto;
     width:20px;
 }
 
+.tiktok-one {
+  display:inline;
+  padding: 0px;
+  list-style: none;
+}
 
 .tiktok-cap1 span:last-child {
   display:none;
