@@ -7,8 +7,12 @@ figure {
     display:flex;
 }
 
-.cursive {
-  font-family: cursive;
+.tiktok-container {
+  position:relative;
+  max-width:400px;
+  margin-left:auto;
+  margin-right:auto;
+  overflow-x:hidden;
 }
 
 .phone-container-container{
@@ -37,6 +41,72 @@ figure {
 .tiktok-background {
     background: black !important;
     display:flex;   
+    overflow-y:hidden;
+}
+
+.tiktok-arrows {
+  height:40px;  
+}
+
+.tiktok-controllers {
+  /*background:green;*/
+  display:flex;
+  width:100px;
+  justify-content:space-around;
+  position:absolute;
+  z-index:2;
+  top:440px;
+  left:150px;  
+}
+
+.tiktok-controller-main {
+  list-style:none;
+}
+
+.tiktok-controller-main img:last-child, 
+.tiktok-controller2 {
+  display:none;
+}
+
+figure:has(details.tiktok-controller1[open]) 
+.tiktok-controller1 img:last-child {
+  display:inline;
+}
+
+figure:has(details.tiktok-controller1[open]) 
+.tiktok-controller2 {
+  display:inline;
+}
+
+figure:has(details.tiktok-controller1[open]) 
+.tiktok-controller1 img:first-child {
+  display:none;
+}
+
+figure:has(details.tiktok-controller2[open]) 
+.tiktok-controller2 img:last-child {
+  display:inline;
+}
+
+figure:has(details.tiktok-controller2[open]) 
+.tiktok-controller2 img:first-child {
+  display:none;
+}
+
+figure:has(details.tiktok-controller2[open]) 
+.tiktok-controller1 {
+  display:none;
+}
+
+.tiktok-controllers:has(details[open] +
+details:not([open])
+) ~ .phone-container-container .tiktok-image {
+transform: translateY(-500px);
+}
+
+.tiktok-controllers:has(details[open] + details[open])
+ ~ .phone-container-container .tiktok-image {
+    transform: translateY(-1000px);
 }
 
 .tiktok-bg-video {
@@ -116,7 +186,7 @@ figure {
   width:70%;
   height:auto;
   bottom:50px;
-  margin-left:10px;
+  margin-left:12px;
   font-size:0.9em;
 }
 
@@ -221,73 +291,6 @@ figure:has(details.tiktok-one[open])
   display:inline;
 }
 
-/***youtube***/
-
-.YT-con {
-  width:400px; 
-  height:auto;
-  background-color:#0f0f0f;
-  margin-left:auto;
-  margin-right:auto;
-  font-family:"Roboto", "Arial", "sans-serif";
-  color:white;
-}
-
-.YT-video-con {
-  display:flex;
-  width:100%;
-}
-
-.YT-video-thumbnail {
-  width:100%;
-}
-
-.YT-more {
-  height:25px;  
-}
-
-.YT-details-con {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.YT-details {
-  display:block;
-  color:white;
-  margin-left:50px;
-  padding-top:10px;
-  padding-bottom:10px;
-}
-
-.YT-details::before {
-  content:"";
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color:gray;
-  display:inline-block;
-  position:absolute;
-  margin-left:-40px;
-}
-
-.YT-details span:last-of-type {
-  color:#7B7C80;
-  font-size:0.8em;
-}
-
-.YT-thumbnail-con {
-  position:relative;
-}
-.YT-timestamp {
-  position:absolute;
-  right:10px;
-  bottom:8px;
-  background:black;
-  opacity:0.5;
-  padding:3px;
-  border-radius:5px;
-}
 
 
 
