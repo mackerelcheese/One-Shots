@@ -36,6 +36,7 @@ figure {
   background: #3a4340;
   color:white;
   position:relative;
+  overflow-x: hidden;
 }
 
 .tiktok-background {
@@ -45,8 +46,9 @@ figure {
 }
 
 .tiktok-arrows {
-  height:40px;  
+  height:60px;  
 }
+
 
 .tiktok-controllers {
   /*background:green;*/
@@ -55,7 +57,7 @@ figure {
   justify-content:space-around;
   position:absolute;
   z-index:2;
-  top:440px;
+  top:400px;
   left:150px;  
 }
 
@@ -101,12 +103,12 @@ figure:has(details.tiktok-controller2[open])
 .tiktok-controllers:has(details[open] +
 details:not([open])
 ) ~ .phone-container-container .tiktok-image {
-transform: translateY(-500px);
+transform: translateY(-540px);
 }
 
 .tiktok-controllers:has(details[open] + details[open])
  ~ .phone-container-container .tiktok-image {
-    transform: translateY(-1000px);
+    transform: translateY(-1080px);
 }
 
 .tiktok-bg-video {
@@ -150,7 +152,7 @@ transform: translateY(-500px);
   align-items:center;
   font-size:0.7em;
   position:absolute;
-  width:20px;
+  width:30px;
   height:350px;
   right:15px;
   bottom:50px;
@@ -200,7 +202,7 @@ transform: translateY(-500px);
 }
 
 .tiktok-icon2 {
-    height:30px;
+    width:30px;
 }
 
 
@@ -213,6 +215,8 @@ transform: translateY(-500px);
   display:inline;
   font-weight:bold;
   font-size:0.9em;
+  padding:0px;
+  margin:0px;
 }
 
 .tiktok-plus {
@@ -250,7 +254,6 @@ transform: translateY(-500px);
     border-radius: 5px;
     position: absolute;
     margin-left: 10px;
-
 }
 
 .tiktok-con {
