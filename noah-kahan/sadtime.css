@@ -659,7 +659,7 @@ p.header {
   display: block;
   height:35px;
 }
-/***jins phone****/
+/***jins phone
 
 .phone-container-container{
   display:flex;
@@ -668,16 +668,16 @@ p.header {
 }
 .phone-container {
   /* border-top: 1px solid #b1b1b3;
-  border-bottom: 1px solid #b1b1b3; */
+  border-bottom: 1px solid #b1b1b3; 
   max-width:400px;
   width:100%;
   height:600px;
   max-height:100%;
   display:flex;
-  /* justify-content:center; */
+  /* justify-content:center;
   align-items:center;
   flex-direction:column;
-  /* background-color:#bbb; */
+  /* background-color:#bbb; 
   background: #3a4340;
   color:white;
 }
@@ -697,9 +697,9 @@ p.header {
   color:white;
 }
 
-/* change this lots, center it also */
+/* change this lots, center it also 
 .phone-alarm-x{
-  /* content:""; */
+  /* content:""; 
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -749,7 +749,7 @@ p.header {
   margin:5px;
 }
 
-/* overflow none, ... out */
+/* overflow none, ... out 
 .phone-notif-header{
   font-weight:bold;
   overflow:hidden;
@@ -762,15 +762,15 @@ p.header {
   background-color:gray;
   display:inline-block;
   position:absolute;
-  /* margin-top:1px; */
+  /* margin-top:1px; 
   margin-left:-35px;
-}
+}*/
+
 .phone-notif-subheader{
   color:rgb(150, 150, 150);
   font-size:.8rem;
   font-weight:normal;
   margin-left:5px;
-  /* overflow behavior  */
 }
 
 .phone-notif-time{
@@ -784,11 +784,11 @@ p.header {
   font-size:.8rem;
 }
 
-/* hack fix */
+/* hack fix 
 .phone-notif p{
   margin:5px;
-  /* display:flex; */
-  /* justify-content:space-around; */
+  /* display:flex;
+  /* justify-content:space-around; 
 }
 
 .phone-weather-icons{
@@ -836,12 +836,12 @@ p.header {
   background-color: green;
 }
 /* .dc-green-line-50, .dc-green-line-20, .dc-green-line-85{
-} */
+} 
 .phone-update-progress-50 {
   border-bottom: 3px solid transparent;
-  /* padding-left: 5px; */
+  /* padding-left: 5px; 
   padding-top: 5px;
-  /* padding-bottom:10px; */
+  /* padding-bottom:10px; 
   margin-bottom:10px;
   margin-left:5px;
   border-image: linear-gradient(to right, #0481FF 50%, #DADBDC 50%);
@@ -884,9 +884,9 @@ p.header {
 
 .phone-sp-60 {
   border-bottom: 3px solid transparent;
-  /* padding-left: 5px; */
+  /* padding-left: 5px; 
   padding-top: 5px;
-  /* padding-bottom:10px; */
+  /* padding-bottom:10px; 
   margin-bottom:10px;
   margin-left:5px;
   border-image: linear-gradient(to right, white 60%, #3a4340 50%);
@@ -895,9 +895,9 @@ p.header {
 
 .phone-sp-50 {
   border-bottom: 3px solid transparent;
-  /* padding-left: 5px; */
+  /* padding-left: 5px;
   padding-top: 5px;
-  /* padding-bottom:10px; */
+  /* padding-bottom:10px; 
   margin-bottom:10px;
   margin-left:5px;
   border-image: linear-gradient(to right, white 50%, #3a4340 50%);
@@ -924,7 +924,7 @@ p.header {
 .sp-play {
   display:inline-block;
   height:20px !important;
-}
+}*/
 
 
 /***linkedin****/
@@ -1035,15 +1035,17 @@ p.header {
   padding-right:2.5px;
   color:#5A5A5A;
   font-size:0.85em;
+  border-radius: 5px;
 }
 
-.li-interactbutton:hover {
+/*.li-interactbutton:hover {
   background-color:#a2a2a2;
-}
+  color:white;
+}*/
 
 .li-interacticon {
-  width: 0.8em;
-  height: 0.8em;
+  width: 1em;
+  height: 1em;
   margin: 2px;
 }
 
@@ -2408,8 +2410,9 @@ margin-left: auto;
 /* made by jihn https://codepen.io/jihnari/pen/jOmMoQX */
 
 .reddit-img {
-    max-width: 350px;
-    /* filter: blur(0.7px); */
+  margin-left: auto;
+  margin-right: auto;
+  width:350px;
 }
 
 .text-color-gray {
@@ -2760,7 +2763,7 @@ margin-left: auto;
   
   .rd-arrow-text{
     padding-top:2px;
-    mmargin-bottom:10px;
+    margin-bottom: 10px;
     vertical-align: super;
     display: inline-block;
   }
@@ -2795,11 +2798,8 @@ margin-left: auto;
 
 /*****tiktok*****/
 
-.cursive {
-  font-family: cursive;
-}
 
-.tiktok-phone-container-container{
+.phone-container-container{
   display:flex;
   justify-content:center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2808,7 +2808,7 @@ margin-left: auto;
 .tiktok-phone-container {
   /* border-top: 1px solid #b1b1b3;
   border-bottom: 1px solid #b1b1b3; */
-  max-width:350px;
+  max-width:400px;
   width:100%;
   height:600px;
   max-height:100%;
@@ -2820,13 +2820,88 @@ margin-left: auto;
   background: #3a4340;
   color:white;
   position:relative;
-  overflow-y:hidden;
   overflow-x: hidden;
+}
+
+.tiktok-container {
+  position:relative;
+  max-width:400px;
+  margin-left:auto;
+  margin-right:auto;
+  overflow-x:hidden;
+  overflow-y: hidden;
 }
 
 .tiktok-background {
     background: black !important;
     display:flex;   
+    overflow-y:hidden;
+}
+
+.tiktok-arrows {
+  height:60px;  
+}
+
+
+.tiktok-controllers {
+  /*background:green;*/
+  display:flex;
+  width:100px;
+  justify-content:space-around;
+  position:absolute;
+  z-index:2;
+  top:400px;
+  left:150px;  
+}
+
+.tiktok-controller-main {
+  list-style:none;
+}
+
+.tiktok-controller-main img:last-child, 
+.tiktok-controller2 {
+  display:none;
+}
+
+figure:has(details.tiktok-controller1[open]) 
+.tiktok-controller1 img:last-child {
+  display:inline;
+}
+
+figure:has(details.tiktok-controller1[open]) 
+.tiktok-controller2 {
+  display:inline;
+}
+
+figure:has(details.tiktok-controller1[open]) 
+.tiktok-controller1 img:first-child {
+  display:none;
+}
+
+figure:has(details.tiktok-controller2[open]) 
+.tiktok-controller2 img:last-child {
+  display:inline;
+}
+
+figure:has(details.tiktok-controller2[open]) 
+.tiktok-controller2 img:first-child {
+  display:none;
+}
+
+figure:has(details.tiktok-controller2[open]) 
+.tiktok-controller1 {
+  display:none;
+}
+
+.tiktok-controllers:has(details[open] +
+details:not([open])
+) ~ .phone-container-container .tiktok-image {
+transform: translateY(-540px);
+}
+
+.tiktok-controllers:has(details[open] + details[open])
+ ~ .phone-container-container .tiktok-image {
+    transform: translateY(-1080px);
 }
 
 .tiktok-bg-video {
@@ -2870,7 +2945,7 @@ margin-left: auto;
   align-items:center;
   font-size:0.7em;
   position:absolute;
-  width:20px;
+  width:30px;
   height:350px;
   right:15px;
   bottom:50px;
@@ -2920,8 +2995,9 @@ margin-left: auto;
 }
 
 .tiktok-icon2 {
-    height:35px;
+    width:30px;
 }
+
 
 .tiktok-cap1 {
   display:inline;
@@ -2933,6 +3009,7 @@ margin-left: auto;
   font-weight:bold;
   font-size:0.9em;
   padding:0px;
+  margin:0px;
 }
 
 .tiktok-plus {
@@ -2970,7 +3047,6 @@ margin-left: auto;
     border-radius: 5px;
     position: absolute;
     margin-left: 10px;
-
 }
 
 .tiktok-con {
@@ -2987,11 +3063,6 @@ margin-left: auto;
     width:20px;
 }
 
-.tiktok-one {
-  display:inline;
-  padding: 0px;
-  list-style: none;
-}
 
 .tiktok-cap1 span:last-child {
   display:none;
@@ -3015,6 +3086,9 @@ figure:has(details.tiktok-one[open])
 .tiktok-cap1 span:last-child {
   display:inline;
 }
+
+
+
 
 
 /***youtube***/
@@ -3231,4 +3305,552 @@ figure:has(details.tiktok-one[open])
   top:70px;
   left:40px;
   transform: rotate(-55deg);
+}
+
+
+/**Jin's phone updates***/
+
+.phone-container {
+  margin:auto;
+  position:relative;
+  max-width:400px;
+  width:100%;
+  height:600px;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+
+  /* defaults are for alarm mode? might want to change this. */
+  background: linear-gradient(gray, #bbb);
+  color:white;
+}
+/* would like this to be the android menu buttons; home, back, etc  */
+/* if you do this, other margins will have to change  */
+/* but also you'll need a light and dark mode i think?  */
+/* wait this doesnt exist on the notification screen, actually  */
+/* misspelled on purpose so it wont touch anything right now  */
+.pphone-container::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  max-width:400px;
+  width:100%;
+  height:40px;
+  /* but the buttons */
+  /* background: url("https://cdna.artstation.com/p/assets/images/images/062/237/438/large/brendan-rodriguez-don-quixote.jpg?1682650401") no-repeat !important; */
+  background-size:400px 40px;
+}
+
+
+/* to make the notifs scrollable (so you can have more than three at a time) */
+/* why does this existing make things not centered  */
+.phone-notif-container{
+  /* to fix the weird offset  */
+  margin-left:10px;
+  margin-bottom:5px;
+  max-width:400px;
+  /* addressing the odd scrollbar overflow, not perfect  */
+  margin-right:5px;
+  width:100%;
+
+  max-height:450px;
+
+  overflow-y:scroll;
+  /* may not be supported on all browsers */
+  scrollbar-width: 5px;
+  scrollbar-color:gray lightgray;
+
+  position:relative;
+
+  font-family: sans-serif;
+  font-size:.9em;
+}
+
+/* holds the "settings" and "clear" buttons that live after the notifications list  */
+.phone-notif-settings{
+  max-width:400px;
+  width:100%;
+}
+.phone-notif-settings::before{
+  content:"⚙️ Notification settings";
+  color:white;
+  font-size:.8em;
+  margin-left:10px;
+  cursor:pointer;
+}
+/* for non-functional clear (cosmetic only) */
+/* .phone-notif-settings::after{
+  content:"Clear";
+  font-size:.8em;
+  color:white;
+  float:right;
+  border-radius: 15px;
+  background-color:gray;
+  padding: 2px 5px;
+  margin:0px 10px;
+  cursor:pointer;
+} */
+
+.phone-notif-settings::after{
+  content:"Clear";
+  font-size:.8em;
+  border-radius: 10px;
+  padding: 4px 9px;
+  margin:0px 10px;
+  cursor:default;
+  background-color:#c5c5c5ac;
+  color:rgb(133, 133, 133);
+  display:none;
+  right:14;
+  margin-top:-19px;
+  position:absolute;
+  /* if you ever want to switch to z-index trickery: take this class, gut it, turn it into a slightly larger box, make that box have a bg color of invisible. then take the clear button and change the color of it instead of display:none-ing it.  */
+}
+
+
+/* phone styles */
+/* used for alarm */
+.phone-off{
+  background: #3b3b3b;
+  color:white;
+}
+.phone-on{
+  background: linear-gradient(#e5e5e5, #e5e5e5);
+  color:black;
+}
+
+.phone-dark-mode{
+  color:white;
+}
+
+.phone-dark-mode .phone-notif{
+  color:white;
+  background-color:#1f2024;
+}
+
+.phone-bg-pic{
+  /* background: url("https://cdna.artstation.com/p/assets/images/images/062/237/438/large/brendan-rodriguez-don-quixote.jpg?1682650401") no-repeat; */
+  
+  background: url("https://raw.githubusercontent.com/jihnari/misc/main/genshin/uni/img/phone-bgs/tighs-bg.png") no-repeat;
+
+  /* failsafe */
+  background-color:#e5e5e5;
+
+  /* toss this out if it makes your image squish funny, but it WILL just be whatever size it wants to and overflow into nothing  */
+background-size:400px 600px;
+}
+.phone-bg-pic-reg{
+  background: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/noah-kahan/phone-screen/reg-phone.png") no-repeat;
+
+  /* failsafe */
+  background-color:#3a4340;
+  background-size:400px 600px;
+  color:white;
+}
+
+.phone-bg-pic-siri{
+  background: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/noah-kahan/phone-screen/siri-phone.jpg") no-repeat;
+
+  /* failsafe */
+  background-color:#3a4340;
+  background-size:400px 600px;
+  color:white;
+}
+
+
+.phone-alarm-x{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:white;
+  margin: auto 0 50px 0;   
+  position:relative;
+  cursor:pointer;
+}
+.phone-alarm-x::after{
+  /* &times; */
+  content:'×';
+
+  color:black;
+  font-size:60px;
+  /* centered, but at what cost  */
+  position:absolute;
+  top:-10px;
+  left:8;
+}
+
+.phone-alarm-x:hover{
+  background-color:#bbb;
+  transition:1s;
+}
+.phone-snooze{
+  background-color:rgb(203, 201, 201);
+  border-radius:15px;
+  padding:4px 15px;
+  margin-bottom:30px;
+  cursor:pointer;
+}
+.phone-snooze:hover{
+  background-color:gray;
+}
+
+.phone-time {
+  font-size: 4rem;
+  margin:0;
+}
+
+.phone-incoming {
+  font-size: 2rem;
+  margin:0;
+}
+
+.phone-date {
+  font-size: 0.8rem;
+}
+.phone-alarm-name {
+  font-size: 0.8rem;
+  margin-top:-10px;
+}
+
+.phone-call-bottom {
+  /*border: 1px solid black;*/
+  width:70%;
+  margin-bottom: 50px;
+  margin-top: auto;
+  border-radius: 5px;
+  height:200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-call-bottom-row {
+  /*border: 1px solid yellow;*/
+  height:50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.phone-call-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-call-item img {
+  height:30px;
+  width:30px;
+}
+
+.phone-call-item p {
+  font-size: 0.85em;
+}
+
+.phone-call-decline {
+  background-color: red;
+  padding:5px;
+  height:45px;
+  width:45px;
+  border-radius: 50%;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-call-decline img {
+  height:30px;
+  width:30px;
+}
+
+.phone-call-accept {
+  background-color: green;
+  padding:5px;
+  height:45px;
+  width:45px;
+  border-radius: 50%;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-call-accept img {
+  height:30px;
+  width:30px;
+}
+
+.phone-call-hangup {
+  margin-bottom: 50px;
+}
+
+.phone-call-ongoing-item {
+  background-color: grey;
+  padding:5px;
+  height:45px;
+  width:45px;
+  border-radius: 50%;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-call-ongoing-item img {
+  height:25px;
+  width:25px;
+}
+
+.phone-notif{
+  /* this has to have a width if you take it out of phone-notif-container, but otherwise is fine. */
+  background-color:white;
+  border-radius:15px;
+  color:black;
+  padding:10px 20px 10px 40px;
+  margin:5px 10px 5px 5px;
+}
+
+/* overflow none, ... out */
+/* not working currently  */
+.phone-notif-header{
+  font-weight:bold;
+  overflow:hidden;
+}
+.phone-notif-header::before{
+  content:"";
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color:gray;
+
+  display:inline-block;
+  position:absolute;
+  /* margin-top:1px; */
+  margin-left:-35px;
+}
+.phone-notif-subheader{
+  color:rgb(150, 150, 150);
+  font-size:.8rem;
+  font-weight:normal;
+  margin-left:5px;
+}
+
+.phone-notif-time{
+  color:lightgray;
+  font-size:.8rem;
+  font-weight:normal;
+  margin-left:5px;
+}
+.phone-notif-header-email{
+  font-size:.8rem;
+}
+/* hack fix */
+.phone-notif p{
+  margin:5px;
+  /* display:flex; */
+  /* justify-content:space-around; */
+}
+.phone-weather-icons{
+  justify-content:space-between;
+  display:flex;
+}
+/* unsure where this is happening tbh  */
+.weather-notif p{
+  margin-left:-10px;
+}
+
+.phone-update-progress-50 {
+  border-bottom: 3px solid transparent;
+  /* padding-left: 5px; */
+  padding-top: 5px;
+  /* padding-bottom:10px; */
+  margin-bottom:10px;
+  margin-left:5px;
+  border-image: linear-gradient(to right, #0481FF 50%, #DADBDC 50%);
+  border-image-slice: 1;
+}
+
+.phone-notif-podcast-info::before{
+  content:"";
+  height: 35px;
+  width: 35px;
+  border-radius: 20%;
+  background-color:gray;
+
+  display:inline-block;
+  position:absolute;
+  /* margin-top:1px; */
+  margin-left:-45px;
+}
+.phone-notif-podcast-info{
+  /* float:left; */
+  margin-left:15px;
+}
+.phone-notif-podcast-info::after{
+  content:"⏮	▶	⏭";
+  font-size:2rem;
+  overflow:hidden;
+  /* display:inline-block; */
+  /* position:absolute; */
+  /* margin-left:auto; */
+
+  /* justify-content:right; */
+  float:right;
+  /* top:0; */
+  /* position:absolute; */
+  /* margin-left:auto; */
+  /* margin-bottom:auto; */
+  /* margin-top:auto; */
+  /* align-self:flex-start; */
+  /* display:flex; */
+  /* top:0; */
+}
+
+.phone-notif-podcast-buttons{
+  font-size:2rem;
+  /* float:right; */
+  /* align-self:flex-end; */
+  /* margin-left:auto; */
+  /* display:inline-flex; */
+  position:absolute;
+  display:block;
+  /* margin-right:10px; */
+  /* margin-right:auto; */
+}
+
+/* notif icons */
+.notif-email .phone-notif-header::before{
+  /* change out for gmail-icon.png */
+  background: url("https://img.icons8.com/?size=100&id=rUgzXdXFnhmg&format=png&color=FFFFFF") no-repeat;
+  background-color:#5B78A4;
+  background-size:15px 15px;
+  background-position: center;
+}
+
+.notif-spotify .phone-notif-header::before{
+  background: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/noah-kahan/spotifywhite.png") no-repeat;
+  background-color:#5B78A4;
+  background-size:25px 25px;
+  background-position: center;
+}
+
+.notif-alarm .phone-notif-header::before{
+  background: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/noah-kahan/phone-screen/alarm-clock-white.png") no-repeat;
+  background-color:#483248;
+  background-size:15px 15px;
+  background-position: center;
+}
+
+.notif-duo .phone-notif-header::before{
+  background: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/noah-kahan/phone-screen/duoicon-round.png") no-repeat;
+  background-color:#58cc02;
+  background-size:25px 25px;
+  background-position: center;
+}
+
+.notif-screen .phone-notif-header::before{
+  background: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/noah-kahan/phone-screen/hour-glass.png") no-repeat;
+  background-color:#5b55db;
+  background-size:15px 15px;
+  background-position: center;
+}
+
+.notif-calendar .phone-notif-header::before{
+  background: url("https://img.icons8.com/?size=100&id=16152&format=png&color=FFFFFF") no-repeat;
+  background-color:#00658B;
+  background-size:15px 15px;
+  background-position: center;
+}
+
+.notif-signal .phone-notif-header::before{
+  background: url("https://img.icons8.com/?size=100&id=aMlTjvoFVVjP&format=png&color=FFFFFF") no-repeat;
+  background-color:#1A6CF7;
+  background-size:15px 15px;
+  background-position: center;
+}
+.notif-outlook .phone-notif-header::before{
+  background: url("https://img.icons8.com/?size=100&id=20668&format=png&color=FFFFFF") no-repeat;
+  background-color:#0178D4;
+  background-size:15px 15px;
+  background-position: center;
+}
+.notif-outlook-overflow{
+  max-height: 2.4em;
+  display:block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notif-whatsapp .phone-notif-header::before{
+  background: url("https://img.icons8.com/?size=100&id=rUgzXdXFnhmg&format=png&color=FFFFFF") no-repeat;
+  background-color:#CFD6DC;
+  background-size:15px 15px;
+  background-position: center;
+}
+.notif-sms .phone-notif-header::before{
+  background: url("https://img.icons8.com/?size=100&id=87403&format=png&color=FFFFFF") no-repeat;
+  background-color:#0080A3;
+  background-size:15px 15px;
+  background-position: center;
+}
+.notif-private-browser .phone-notif-header::before{
+  background: url("https://raw.githubusercontent.com/jihnari/misc/main/_reusable/phonescreen/img/private-icon.png") no-repeat;
+  background-color:purple;
+  background-size:25px 25px;
+  background-position: center;
+}
+
+.notif-calls .phone-notif-header::before{
+  background: url("https://raw.githubusercontent.com/jihnari/misc/main/_reusable/phonescreen/img/private-icon.png") no-repeat;
+  background-color:purple;
+  background-size:25px 25px;
+  background-position: center;
+}
+
+
+.notif-podcast{
+  /* each podcast uses the show cover as the icon, and there is no bg color. the shape is also bigger and more square.   */
+  /* background: url("https://img.icons8.com/?size=100&id=rUgzXdXFnhmg&format=png&color=FFFFFF") no-repeat;   */
+  /* background-size:15px 15px; */
+  background-position: center;
+}
+
+/* i want notif-download to squish the top line but like. how.  */
+.notif-download .phone-notif-header::before{
+  background: url("https://img.icons8.com/?size=100&id=99375&format=png&color=FFFFFF") no-repeat;
+  background-color:#00875F;
+  background-size:15px 15px;
+  background-position: center;
+}
+
+.phone-sp-50 {
+  border-bottom: 3px solid transparent;
+  /* padding-left: 5px; */
+  padding-top: 5px;
+  /* padding-bottom:10px; */
+  margin-bottom:10px;
+  margin-left:5px;
+  border-image: linear-gradient(to right, white 50%, #3a4340 50%);
+  border-image-slice: 1;
+}
+
+.phone-noti-sp-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone-noti-sp-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:25px;
+}
+
+.phone-noti-sp-img > img {
+  display:inline-block;
+  height:30px;
+}
+
+.sp-play {
+  display:inline-block;
+  height:16px !important;
 }
