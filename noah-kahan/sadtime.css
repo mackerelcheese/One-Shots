@@ -9,9 +9,6 @@ figure {
     display: none;
 }
 
-details summary {
-  list-style: none;
-}
 
 .flexcon {
   display:flex;
@@ -53,7 +50,27 @@ details summary {
 }
 
 
+/***detail summary arrows go away***/
+details.tiktok-readmore > summary, 
+details.tiktok-controller-main > summary,
+details summary, 
+.tw-share details > summary,
+.reddit-comment-react details > summary {
+  list-style: none;
+}
 
+details.tiktok-readmore summary::-webkit-details-marker,
+details.tiktok-readmore summary::marker,
+details.tiktok-controller-main summary::-webkit-details-marker,
+details.tiktok-controller-main summary::marker,
+.reddit-comment-react details summary::-webkit-details-marker,
+.reddit-comment-react details summary::marker,
+.tw-share details summary::-webkit-details-marker,
+.tw-share details summary::marker,
+details > summary::-webkit-details-marker,
+details > summary::marker {
+  display: none;
+}
 
 /****image credits 
 
@@ -1659,14 +1676,6 @@ hidden when the defails is open.
   margin: 0;
 }
 
-.tw-share details > summary {
-    list-style: none;
-}
-
-.tw-share details summary::-webkit-details-marker,
-.tw-share details summary::marker {
-  display: none;
-}
 
 /*****paywall article****/
 
@@ -2598,14 +2607,6 @@ margin-left: auto;
     cursor: pointer;
   }
 
-  .reddit-comment-react details > summary  {
-    list-style: none;
-  }
-
-  .reddit-comment-react details summary::-webkit-details-marker,
-.reddit-comment-react details summary::marker {
-  display:none;
-}
 /* --------------------------------------------------------------- */ 
 
 /*****tiktok*****/
@@ -2652,6 +2653,7 @@ margin-left: auto;
 
 .tiktok-arrows {
   height:60px;  
+  width:60px;
 }
 
 
@@ -2664,11 +2666,10 @@ margin-left: auto;
   z-index:2;
   top:400px;
   left:150px;  
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.tiktok-controller-main {
-  list-style:none;
-}
 
 .tiktok-controller-main img:last-child, 
 .tiktok-controller2 {
@@ -2816,7 +2817,6 @@ transform: translateY(-540px);
 }
 
 .tiktok-readmore {
-  list-style:none;
   display:inline;
   font-weight:bold;
   font-size:0.9em;
@@ -3592,7 +3592,7 @@ background-size:400px 600px;
 }
 
 .notif-sms .phone-notif-header::before{
-  background: url("https://github.com/mackerelcheese/One-Shots/blob/main/noah-kahan/phone-screen/notif-sms.png?raw=true") no-repeat;
+  background: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/noah-kahan/phone-screen/notif-sms.png") no-repeat;
   background-color:#0080A3;
   background-size:15px 15px;
   background-position: center;
@@ -3648,7 +3648,7 @@ background-size:400px 600px;
 
 /* i want notif-download to squish the top line but like. how.  */
 .notif-download .phone-notif-header::before{
-  background: url("https://github.com/mackerelcheese/One-Shots/blob/main/noah-kahan/phone-screen/notif-settings.png?raw=true") no-repeat;
+  background: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/noah-kahan/phone-screen/notif-settings.png") no-repeat;
   background-color:grey;
   background-size:15px 15px;
   background-position: center;
