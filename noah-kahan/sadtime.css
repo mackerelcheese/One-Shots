@@ -2651,6 +2651,11 @@ margin-left: auto;
     overflow-y:hidden;
 }
 
+.tiktok-image {
+  max-width: 400px;
+  overflow-x: hidden;
+}
+
 .tiktok-arrows {
   height:60px;  
   width:60px;
