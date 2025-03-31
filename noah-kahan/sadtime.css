@@ -2029,85 +2029,219 @@ table.bank-transactions-input tr td:nth-child(2) {
   width:70%;
 }
 
-/* ------------------ google search results ---------------------- */
-/* https://archiveofourown.org/works/8631214/chapters/53486839 */
-.browser {
-  min-width: 200px;
-  max-width: 500px;
-  margin: auto;
-}
 
-.search_autocomplete {
-  border: 1px solid #aaa;
-  /* padding: 5px 5px 5px 5px; */
-  margin-top: 0px;
-}
-
-.search_autocomplete span {
+/** ---------google search results ----------*/
+/***https://archiveofourown.org/works/41829291/chapters/104953428***/
+.google-logo {
   display: block;
-  padding: 0px 5px;
+  height: 92px;
+  margin: 0 auto;
 }
 
-.search_autocomplete span:first-of-type {
-  padding: 5px 5px 0px 5px !important;
+.google-search {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  border-collapse: separate;
+  border-spacing: 0px 8px;
+  margin-top: 6px;
 }
 
-.search_autocomplete span:last-of-type {
-  padding: 0px 5px 5px 5px !important;
+.google-search td {
+  padding: 0;
 }
 
-.search_autocomplete span:hover {
-  background: lightblue;
-  cursor: pointer;
-  color: black;
-}
-
-.search_logo {
-  text-align: center;
-  margin: 0px 0px 0px 0px;
-}
-
-.search_bar {
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-
-.search_bar span {
+.search-box {
   position: relative;
-  display: block;
-  margin: 0 0 0 0;
-  padding: 5px;
-}
-.chrome_term {
-  border: 1px solid #aaa;
+  background: #fff;
+  height: 44px;
+  width: 100%;
+  max-width: 584px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 1px 6px #20212447;
 }
 
-.chrome_logo {
-  font-weight: bold;
-  font-size: x-large;
-  font-family: "Lato", "Verdana", sans-serif;
+.search-text {
+  border: none;
+  outline: none;
+  display: table-cell;
+  word-wrap: break-word;
+  vertical-align: middle;
+  color: #000;
+  height: 28px;
+  width: 100%;
+  padding: 0 45px;
 }
-.chromeold_logo {
-  font-weight: bold;
-  font-size: x-large;
-  font-family: "Cardo", "Garamond", serif;
+
+.search-text::before {
+  content: '';
+  background-image: url(https://cdn-icons-png.flaticon.com/512/61/61088.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  opacity: 0.35;
 }
-.chrome_blue {
-  color: #4285F4;
-  cursor: pointer;
+
+.vertical-divider.filled {
+  border-left: 1px solid #dadce0;
+  display: table-cell;
+  padding-right: 52px;
 }
-.chrome_red {
-  color: #DB4437;
-  cursor: pointer;
+
+.vertical-divider.empty {
+  border-left: none;
+  display: table-cell;
+  padding-right: 52px;
 }
-.chrome_yellow {
-  color: #F4B400;
-  cursor: pointer;
+
+.vertical-divider.filled::before {
+  content: '';
+  background-image: url(https://cdn-icons-png.flaticon.com/512/61/61155.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 69px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  opacity: 0.55;
 }
-.chrome_green {
-  color: #0F9D58;
-  cursor: pointer;
+
+.vertical-divider::after {
+  content: '';
+  background-image: url(https://cdn-icons-png.flaticon.com/512/3128/3128290.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 24px;
+  width: 24px;
 }
+
+.suggestions-box {
+  position: relative;
+  top: -8px;
+  overflow: hidden;
+  background: #fff;
+  max-width: 584px;
+  min-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  padding: 0 0 4px 0;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 4px 6px #20212447;
+}
+
+.horizontal-divider {
+  border-top: 1px solid #e8eaed;
+  margin: 0 20px 0 14px;
+  padding-bottom: 4px;
+}
+
+.suggestions-title {
+  color: #70757a;
+  font-size: 14px;
+  margin-left: 16px;
+  padding: 8px 0;
+  line-height: 16px;
+}
+
+.suggestions-text {
+  color: #212121;
+  word-break: break-word;
+  padding-right: 8px;
+}
+
+.suggestions-text ul {
+  margin: 0 auto;
+  padding-bottom: 8px;
+}
+
+.suggestions-text li {
+  margin: 0;
+  padding: 6px 0 6px 30px;
+  list-style: none;
+  margin-inline-start: 0;
+}
+
+.suggestions-text li::before {
+  content: '';
+  background-image: url(https://cdn-icons-png.flaticon.com/512/61/61088.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 15px;
+  height: 14px;
+  width: 14px;
+  opacity: 0.35;
+}
+
+.suggestions-text li.history::before {
+  content: '';
+  background-image: url(https://cdn-icons-png.flaticon.com/512/3114/3114812.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 15px;
+  height: 14px;
+  width: 14px;
+  opacity: 0.35;
+}
+
+.suggestions-text li.trending::before {
+  content: '';
+  background-image: url(https://cdn-icons-png.flaticon.com/512/6797/6797554.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 14px;
+  height: 16px;
+  width: 16px;
+  opacity: 0.35;
+}
+
+.button-box {
+  height: 70px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.report {
+  color: #70757a;
+  float: right;
+  font-size: 8pt;
+  font-style: italic;
+  position: absolute;
+  right: 16px;
+  padding: 0 5px;
+  margin-top: -13px;
+}
+
 
 /*****convo rip*****/
 .convo {
@@ -2654,6 +2788,7 @@ margin-left: auto;
 .tiktok-image {
   max-width: 400px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .tiktok-arrows {
