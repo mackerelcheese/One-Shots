@@ -1,0 +1,1289 @@
+/***housekeeping****/
+
+.hide {
+    display:none;
+}
+
+.flex-o {
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-b {
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.rela {
+    position:relative;
+}
+
+.abs {
+    position:absolute;
+}
+
+.scale-s {
+    transform: scale(0.6);
+}
+
+.scale-m {
+    transform: scale(0.8);
+}
+
+.instructions {
+    border: 1px solid black;
+    width:70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+/***game changer buttons****/
+.gc-acon {
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gc-choice {
+    font-family: monospace;
+    font-size: large;
+    border:1px solid green;
+    width: 80%;
+    padding:15px;
+    background-color: #e6cfae;
+    color:black;
+    border-radius: 3px;
+    box-shadow: 
+        0px 0px 0px 5px rgba(158, 61, 66, 1), 
+        0px 0px 0px 10px rgba(92, 164, 179, 1);
+    margin-bottom:30px;
+}
+
+.gc-choice:hover {
+    background-color: #c9a471;
+}
+
+/***questions****/
+.gc-question {
+    width:100%;
+    background: black;
+    height:168.75px;
+    padding:1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gc-question div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:300px;
+    background: white;
+    color:black;
+    border-radius: 20px;
+    height:168.75px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .gc-question p {
+    transform: scale(0.7, 1.6);
+    line-height: 20px; /* 4px +12px + 4px */    line-break: normal;
+ }
+
+
+/******title card****/
+.gc-titlecard {
+    width:100%;
+    height:200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,
+    #c83f39 20px,
+    #dd743a 20px,
+    #dd743a 40px,
+    #e0c26a 40px,
+    #e0c26a 60px,
+    #3ca7c7 60px,
+    #3ca7c7 80px,
+    #6b1b1f 80px,
+    #6b1b1f 100px,
+    #ca3c38 100px,
+    #ca3c38 120px,
+    #e37e45 120px,
+    #e37e45 140px,
+    #e3c670 140px,
+    #e3c670 160px,
+    #3fa8c8 160px,
+    #3fa8c8 180px,
+    #711e23 180px,
+    #711e23 200px);
+}
+
+.gc-logo {
+    width:200px;
+}
+
+/****loopy****/
+/****background***/
+
+.gc-background-con {
+    width:100%;
+    height:380px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.gc-background1 {
+    display: flex;
+    width:100%;
+    height:380px;
+    justify-content: space-around;
+    align-items: center;
+    background: #5ba5b3;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.gc-background2 {
+    width:100%;
+    height:380px;
+}
+
+/***loop****/ 
+.gc-loop-con {
+    width:140px;
+    height:650px;
+}
+
+.gc-cloop-con1 {
+    top:180px;
+    left:-60px;
+    z-index: 1;
+}
+
+.gc-cloop-con2 {
+    top:380px;
+    left:60px;
+    z-index: 2;
+}
+
+.gc-cloop1 {
+    background:#9e3d42;
+    height:140px;
+    width:140px;
+    border-radius: 50%;
+}
+
+.gc-cloop2 {
+    background:#ce6237;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+
+.gc-cloop3 {
+    background:#d97f3b;
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+}
+
+.gc-cloop4 {
+    background:#d29037;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+}
+
+.gc-loop-line{
+    width:140px;
+    background: linear-gradient(to right,#d29037 20px,#d97f3b 20px,#d97f3b 40px,#ce6237 40px,#ce6237 60px,#9e3d42 60px,#9e3d42 80px,#ce6237 80px,#ce6237 100px,#d97f3b 100px,#d97f3b 120px,#d29037 120px, #d29037 140px);
+}
+
+.line1 {
+    height:250px;
+}
+
+.line2 {
+    height:200px;
+    top:250px;
+    z-index: 3;
+}
+
+.line3 {
+    height:200px;
+    top:445px;
+    z-index: 1;
+}
+
+/*********goodbyeeee arrow***********/
+
+.buttons details summary,
+details.buttons summary,
+.connectionbox details summary,
+details.connectionbox summary,
+.submit details summary,
+details.submit summary,
+.submit1 details summary,
+details.submit1 summary 
+{
+    list-style: none;
+}
+
+details.buttons summary::-webkit-details-marker,
+details.buttons summary::marker,
+.buttons details summary::-webkit-details-marker,
+.buttons details summary::marker,
+details.connectionbox summary::-webkit-details-marker,
+details.connectionbox summary::marker,
+details.submit summary::-webkit-details-marker,
+details.submit::marker,
+details.submit1 summary::-webkit-details-marker,
+details.submit1::marker,
+.dlist details,
+.dlist details > summary::marker, 
+details > summary::-webkit-details-marker
+{
+    display:none;
+} 
+
+/****bubbles*****/
+
+.bubble-con {
+    width:300px;
+    height:200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.bubble {
+    border-radius: 50%;
+    background: #B2B7DF;
+    background: radial-gradient(circle, rgba(178, 183, 223, 0.8) 0%, rgba(238, 174, 202, 0.5) 100%);
+    opacity:0.5;
+}
+
+.bubble-m {
+    height:90px;
+    width:90px;
+}
+
+body:has(details.bubble-pop[open]) details.bubble-pop[open] div:nth-child(2) 
+{
+    display: flex;
+}  
+
+body:has(details.bubble-pop[open]) details.bubble-pop[open] div:nth-child(1) 
+{
+    display: none;
+}  
+
+.bubble1:has(details.bubble-pop[open] ~ details.bubble-pop[open] ~ details.bubble-pop[open]) ~ .bubble1-after {
+    display:block;
+} 
+
+/**connections*****/ 
+
+.connectionbox {
+    display: block;
+    float:left;
+    text-align: center;
+    text-align: center;
+    background-color: #efefe6;
+    color:black;
+    width:70px;
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+    margin-bottom: 1.5px;
+    margin-top:1.5px;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: Small;
+    word-break: break-word;
+}
+
+.clear {
+    clear: both;
+}
+
+body:has(details.connectionbox[open]) 
+details.connectionbox[open] {
+    background-color: #5a594e;
+    color:white;
+
+}
+
+.win-connect {
+    display:none;
+}
+/***connections rounds***/
+
+.connection-con1 {
+    display: block;
+    width:300px; 
+    height:300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.connection-con2,
+.connection-con3,
+.connection-con4 {
+    display:none;
+    width:300px; 
+    height:300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/***rules****/
+
+.answer-con {
+    display:flex;
+    height: auto;
+    width: auto;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.rule {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: Small;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 0.5%;
+    margin-top:0.5%;
+}
+
+.rule p:nth-child(1) {
+    font-weight: 790;
+    margin:0px;
+}
+
+.rule p:nth-child(2) {
+    font-weight: 100;
+    margin:0px;
+}
+
+.bluerule {
+    background-color:#b0c4ef;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.purplerule {
+    background-color: #ba81c5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.yellowrule {
+    background-color: #f9df6d;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.greenrule {
+    background-color: #a0c35a;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fake {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    margin-top:20px; 
+}
+/***submission***/ 
+
+.submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100px;
+    text-align: center;
+    border:1px solid black;
+    border-radius:20px;
+    margin-top:20px; 
+    color:black;
+    background-color: white;
+    padding:10px;   
+}
+
+
+/*submit*/
+.connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr1,
+.connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr2,
+.connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr3,
+.connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr4
+{
+    color:white;
+    background-color: black;
+}
+
+.connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr1,
+.connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr2,
+.connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr3,
+.connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr4
+{
+    color:black;
+    background-color: white;
+}
+
+.connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr1,
+.connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr2,
+.connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr3,
+.connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr4
+{
+    display:none;
+}
+
+.connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake,
+.connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake,
+.connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake,
+.connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake
+{
+    display:block;
+}
+
+
+/*******************round 1******************************************/ 
+
+body:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .bluerule,
+body:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .purplerule,
+body:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .yellowrule,
+body:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .greenrule 
+{
+    display:flex;
+    order:1;
+}
+
+/***disappear r1***/
+
+body:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .blue,
+body:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .purple,
+body:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .yellow,
+body:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .green 
+{
+    opacity: 0;
+}
+
+/***submit r1/ open r2***/
+body:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .connection-con1,
+body:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .connection-con1,
+body:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .connection-con1,
+body:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .connection-con1 
+{
+    display:none;
+}
+
+body:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .connection-con2,
+body:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .connection-con2,
+body:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .connection-con2,
+body:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .connection-con2 
+{
+    display:block;
+}
+
+/*******************round 2******************************************/ 
+
+body:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .bluerule,
+body:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .purplerule,
+body:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .yellowrule,
+body:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .greenrule 
+{
+    display:flex;
+    order:2;
+}
+
+/***disappear r2***/
+
+body:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .blue,
+body:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .purple,
+body:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .yellow,
+body:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .green 
+{
+    opacity: 0;
+}
+
+/***submit r2/ open r3***/
+body:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .connection-con2,
+body:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .connection-con2,
+body:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .connection-con2,
+body:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .connection-con2 
+{
+    display:none;
+}
+
+body:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .connection-con3,
+body:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .connection-con3,
+body:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .connection-con3,
+body:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .connection-con3 
+{
+    display:block;
+}
+
+/*******************round 3******************************************/ 
+
+body:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .bluerule,
+body:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .purplerule,
+body:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .yellowrule,
+body:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .greenrule 
+{
+    display:flex;
+    order:3;
+}
+
+/***disappear r3***/
+
+body:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .blue,
+body:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .purple,
+body:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .yellow,
+body:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .green 
+{
+    opacity: 0;
+}
+
+/***submit r3/ open r4***/
+body:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .connection-con3,
+body:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .connection-con3,
+body:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .connection-con3,
+body:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .connection-con3 
+{
+    display:none;
+}
+
+body:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .connection-con4,
+body:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .connection-con4,
+body:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .connection-con4,
+body:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .connection-con4 
+{
+    display:block;
+}
+
+/*******************round 4******************************************/ 
+
+body:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .bluerule,
+body:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .purplerule,
+body:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .yellowrule,
+body:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .greenrule 
+{
+    display:flex;
+    order:4;
+}
+
+/***disappear r3***/
+
+body:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .blue,
+body:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .purple,
+body:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .yellow,
+body:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .green 
+{
+    opacity: 0;
+}
+
+
+body:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .connection-con4,
+body:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .connection-con4,
+body:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .connection-con4,
+body:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .connection-con4 
+{
+    display:none;
+}
+
+body:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .win-connect,
+body:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .win-connect,
+body:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .win-connect,
+body:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .win-connect 
+{
+    display:block;
+}
+
+/***********sudoku*****************/
+
+.dlist summary {
+  list-style: none;
+  cursor: pointer;
+  color: grey;
+}
+
+details {
+  margin: 0;
+}
+
+.numbers summary, .given {
+  width: 30px;
+  height: 30px;
+  border: thin solid black;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px
+}
+
+.dlist:not(:has(details:not([open]))) :first-child,
+.dlist:not(:has(details[open])) :first-child,
+.dlist > [open] + :not([open]),
+.dlist > :not([open]) + [open]
+{
+  display:inline-block;
+}
+
+/* for getting the detail-summary stacks to not just be a long list */
+.column {
+  float: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 2px
+}
+
+/* for centering whatever contained horizontally */
+.CentreHorizontal {
+  display: table;
+  margin: auto;
+}
+
+/* for getting the thicker borders */
+.square {
+  outline-color: black;
+  outline-style: solid;
+  outline-width: 4px;
+  margin: 2px;
+  line-height: 1;
+}
+
+/* for all the numbers, both hints and in the detail summary carrousel */
+.g1::after { content: "1" }
+.g2::after { content: "2" }
+.g3::after { content: "3" }
+.g4::after { content: "4" }
+.g5::after { content: "5" }
+.g6::after { content: "6" }
+.g7::after { content: "7" }
+.g8::after { content: "8" }
+.g9::after { content: "9" }
+
+.d0:not([open]) summary::after { content: " "}
+.d1:not([open]) summary::after { content: "1"}
+.d2:not([open]) summary::after { content: "2"}
+.d3:not([open]) summary::after { content: "3"}
+.d4:not([open]) summary::after { content: "4"}
+.d0[open] summary::after { content: "5"}
+.d1[open] summary::after { content: "6"}
+.d2[open] summary::after { content: "7"}
+.d3[open] summary::after { content: "8"}
+.d4[open] summary::after { content: "9"}
+
+/* revealing story and sudokus as the sudokus are completed */
+.styleTurnedOff {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/**sudoku win condition***/
+.sudoku-gc:has(.cell0 :not([open]) + .d2[open]):has(.cell2 :not([open]) + .d3[open]):has(.cell3 :not([open]) + .d1[open]):has(.cell5 [open] + .d1:not([open])):has(.cell8 .d0[open] + [open] + [open] + [open] + [open]):has(.cell11 :not([open]) + .d1[open]):has(.cell12 [open] + .d1:not([open])):has(.cell14 :not([open]) + .d3[open]):has(.cell15 .d0[open] + [open] + [open] + [open] + [open]):has(.cell16 :not([open]) + .d2[open]):has(.cell21 [open] + .d4:not([open])):has(.cell23 :not([open]) + .d4[open]):has(.cell25 [open] + .d2:not([open])):has(.cell26 [open] + .d1:not([open])):has(.cell28 :not([open]) + .d1[open]):has(.cell30 :not([open]) + .d4[open]):has(.cell31 [open] + .d3:not([open])):has(.cell37 :not([open]) + .d3[open]):has(.cell41 [open] + .d1:not([open])):has(.cell44 [open] + .d3:not([open])):has(.cell46 .d0[open] + [open] + [open] + [open] + [open]):has(.cell48 :not([open]) + .d4[open]):has(.cell51 .d0[open] + [open] + [open] + [open] + [open]):has(.cell55 :not([open]) + .d2[open]):has(.cell57 [open] + .d3:not([open])):has(.cell60 :not([open]) + .d3[open]):has(.cell61 :not([open]) + .d2[open]):has(.cell62 :not([open]) + .d4[open]):has(.cell63 [open] + .d1:not([open])):has(.cell65 [open] + .d4:not([open])):has(.cell67 :not([open]) + .d1[open]):has(.cell68 [open] + .d3:not([open])):has(.cell71 [open] + .d4:not([open])):has(.cell76 :not([open]) + .d4[open]):has(.cell78 :not([open]) + .d2[open]):has(.cell80 [open] + .d3:not([open])):has(.cell81 [open] + .d2:not([open])):has(.cell82 .d0[open] + [open] + [open] + [open] + [open]):has(.cell83 :not([open]) + .d2[open]):has(.cell84 :not([open]) + .d1[open]):has(.cell88 :not([open]) + .d3[open]) ~ .sudoku-after
+{
+  display:block;
+}
+
+
+/****pixel art*****/
+
+  .alist details,
+  .alist details > summary::marker, 
+  details > summary::-webkit-details-marker
+  {
+    display:none;
+  }
+  .alist summary {
+    list-style: none;
+    cursor: pointer;
+  }
+  .colors summary {
+    width: 40px;
+    height: 40px;
+    border: thin solid black;
+  }
+  .speeds details summary {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .clear {
+    clear:both;
+  }
+  .right {
+    border: thin solid black;
+    padding: 5px;
+  }
+  
+  .cells {
+    width:200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid black;
+  }
+
+  /*
+  This is a rule for infinite-cycling a stack of <details>.
+  
+  How this works is there's a stack of <details>
+  that are all intially closed and invisible inside a container
+  .alist.
+  A <details> becomes visible whenever:
+  (a) .alist holds only open or only closed <details>,
+      making the first <details> visible
+  (b) a closed details immediately follows an open details,
+      making the latter (closed) <details> visible
+  (c) am open details immediately follows a closed details,
+      making the latter (open) <details> visible
+  
+  This works as an infinte loop because:
+  (1) Initially all <details> are closed;
+      first <details> is visible by rule (a) above.
+  (2) Open the first details. First loses visibility;
+      the second becomse visible by rule (b).
+  (3) Each <details> becomes visible in turn by rule (b).
+  (4) Eventually, all <details> are open. First <details>
+      is now again visible by rule (a).
+  (5) Close the first details; second is now visible by
+      rule (c); it is open, following the closed first.
+  (6) Each <details> becomes visible in turn by rule (c).
+  (7) All details are now closed; we are back to step (1).
+  */
+  .alist:not(:has(details:not([open]))) :first-child,
+  .alist:not(:has(details[open])) :first-child,
+  .alist > [open] + :not([open]),
+  .alist > :not([open]) + [open]
+  {
+    display:inline-block;
+  }
+  
+  /*
+  A cell has a transition time of roughly 300 million years.
+  This means it will stay roughly the same color for, let's
+  just say, a LONG TIME.
+  A cell can change color on a non-geological timescale when
+  it becomes :active, when it briefly has a much smaller
+  transtion time. When :active goes away, the cell regains its
+  monstrously long baseline transition time and stays put,
+  whatever color it might be.
+  */
+  .cell { 
+    float: left;
+    max-width: 20px;
+    max-height: 20px;
+    width: 10vw;
+    height: 10vw;
+    background-color: white;
+    transition: 9999999999999999s;
+  }
+  
+  /*
+  Use the state of the .speeds picker to determine the time
+  it takes to change the color of a cell when you click it.
+  
+  It works by `:has` and the `~` sibling combinator, saying,
+  "If .alist has such-and-such element open (and its
+  predescessor closed), then give active cells somesuch transition time upon active click."
+  */
+  .speeds:not(:has(details[open])) ~ .cells:active .cell:hover,
+  .speeds:not(:has(details:not([open]))) ~ .cells:active .cell:hover {
+    transition: 2.5s;
+  }
+  .speeds:has([open] + .a2:not([open])) ~ .cells:active .cell:hover,
+  .speeds:has(:not([open]) + .a2[open]) ~ .cells:active .cell:hover {
+    transition: 1s;
+  }
+  .speeds:has([open] + .a3:not([open])) ~ .cells:active .cell:hover,
+  .speeds:has(:not([open]) + .a3[open]) ~ .cells:active .cell:hover {
+    transition: 0.3s;
+  }
+  .speeds:has([open] + .a4:not([open])) ~ .cells:active .cell:hover,
+  .speeds:has(:not([open]) + .a4[open]) ~ .cells:active .cell:hover {
+    transition: 0s;
+  }
+  
+  /*
+  Set colors for the .alist stack AND cell:active.
+  
+  The summary rules color the palatte cell up top.
+  The `~ cell:active` rules tell cells to become that
+  color when clicked.
+  
+  */
+  .colors .a1 summary,
+  .colors:not(:has(details[open])) ~ .cells:active .cell:hover,
+  .colors:not(:has(details:not([open]))) ~ .cells:active .cell:hover {
+    background-color: red;
+  }
+  .colors .a2 summary,
+  .colors:has([open] + .a2:not([open]),
+              :not([open]) + .a2[open]) ~ .cells:active .cell:hover
+  {
+    background-color: orange;
+  }
+  .colors .a3 summary,
+  .colors:has([open] + .a3:not([open])) ~ .cells:active .cell:hover,
+  .colors:has(:not([open]) + .a3[open]) ~ .cells:active .cell:hover
+  {
+    background-color: yellow;
+  }
+  .colors .a4 summary,
+  .colors:has([open] + .a4:not([open])) ~ .cells:active .cell:hover,
+  .colors:has(:not([open]) + .a4[open]) ~ .cells:active .cell:hover
+  {
+    background-color: green;
+  }
+  .colors .a5 summary,
+  .colors:has([open] + .a5:not([open])) ~ .cells:active .cell:hover,
+  .colors:has(:not([open]) + .a5[open]) ~ .cells:active .cell:hover
+  {
+    background-color: blue;
+  }
+  .colors .a6 summary,
+  .colors:has([open] + .a6:not([open])) ~ .cells:active .cell:hover,
+  .colors:has(:not([open]) + .a6[open]) ~ .cells:active .cell:hover
+  {
+    background-color: purple;
+  }
+  .colors .a7 summary,
+  .colors:has([open] + .a7:not([open])) ~ .cells:active .cell:hover,
+  .colors:has(:not([open]) + .a7[open]) ~ .cells:active .cell:hover
+  {
+    background-color: black;
+  }
+  .colors .a8 summary,
+  .colors:has([open] + .a8:not([open])) ~ .cells:active .cell:hover,
+  .colors:has(:not([open]) + .a8[open]) ~ .cells:active .cell:hover
+  {
+    background-color: white;
+  }
+  
+
+/*****chat bot*****/
+.phone {
+  max-width: 300px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: table;
+  margin: auto;
+}
+
+.header {
+  min-width: 300px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #b2b2b2;
+  color: #000000;
+  font-weight: bold;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  margin-left: -.5em;
+  margin-right: -.5em;
+  margin-bottom: -2em;
+  text-align: center;
+  text-transform: capitalize;
+  display: table;
+}
+
+.messagebody {
+  background-color: #FFFFFF;
+  display: table;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.text {
+  float: left;
+  color: #000000;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: #e5e5ea;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+  word-break:break-word;
+}
+
+.text::after {
+  content: "";
+  position: absolute;
+  left: -.5em;
+  bottom: 0;
+  width: 0.5em;
+  height: 1em;
+  border-right: 0.5em solid #e5e5ea;
+  border-bottom-right-radius: 1em 0.5em;
+}
+
+.breply {
+  float: right;
+  color: #FFFFFF;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: #1289fe;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+
+.breply::after {
+  content: "";
+  position: absolute;
+  right: -0.5em;
+  bottom: 0;
+  width: 0.5em;
+  height: 1em;
+  border-left: 0.5em solid #1289fe;
+  border-bottom-left-radius: 1em 0.5em;
+}
+
+.breply-op {  
+  color: black;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: #d0d3d9;
+  max-width: 75%;
+  clear: both;
+}
+
+details.breply-op summary {
+  list-style:none;
+}
+
+body:has(details.ch-op-1-1[open]) .ch-1-1,
+body:has(details.ch-op-1-2[open]) .ch-1-2,
+body:has(details.ch-op-1-3[open]) .ch-1-3,
+body:has(details.ch-op1-3-1[open]) .ch-1-3-1,
+body:has(details.ch-op1-3-2[open]) .ch-1-3-2,
+body:has(details.ch-op-1-1[open]) .ch-op-con2,
+body:has(details.ch-op-1-2[open]) .ch-op-con2,
+body:has(details.ch-op1-3-1[open]) .ch-op-con2,
+body:has(details.ch-op1-3-2[open]) .ch-op-con2,
+body:has(details.ch-op-2-1[open]) .ch-2-1,
+body:has(details.ch-op-2-2[open]) .ch-2-2,
+body:has(details.ch-op-2-1[open]) .ch-op-con3,
+body:has(details.ch-op-2-2[open]) .ch-op-con3,
+body:has(details.ch-op-3-1[open]) .ch-3-1,
+body:has(details.ch-op-3-2[open]) .ch-op-con4,
+body:has(details.ch-op-3-1[open]) .ch-op-con4,
+body:has(details.ch-op-3-2[open]) .ch-3-2,
+body:has(details.ch-op-4-1[open]) .ch-4-1,
+body:has(details.ch-op-4-2[open]) .ch-4-2,
+body:has(details.ch-op-4-3[open]) .ch-4-3,
+body:has(details.ch-op-4-1[open]) .ch-op-con5,
+body:has(details.ch-op-4-2[open]) .ch-op-con5,
+body:has(details.ch-op-4-3[open]) .ch-op-con5,
+body:has(details.ch-op-5-1[open]) .ch-end
+{
+    display:block
+}
+
+body:has(details.ch-op-1-1[open]) .ch-op-con1,
+body:has(details.ch-op-1-2[open]) .ch-op-con1,
+body:has(details.ch-op-1-3[open]) .ch-op-con1,
+body:has(details.ch-op-1-3-1[open]) .ch-op-con1-3-1,
+body:has(details.ch-op1-3-1[open]) .ch-bird-opcon,
+body:has(details.ch-op1-3-2[open]) .ch-bird-opcon,
+body:has(details.ch-op-2-1[open]) .ch-op-con2,
+body:has(details.ch-op-2-2[open]) .ch-op-con2,
+body:has(details.ch-op-3-1[open]) .ch-op-con3,
+body:has(details.ch-op-3-2[open]) .ch-op-con3,
+body:has(details.ch-op-4-1[open]) .ch-op-con4,
+body:has(details.ch-op-4-2[open]) .ch-op-con4,
+body:has(details.ch-op-4-3[open]) .ch-op-con4,
+body:has(details.ch-op-5-1[open]) .ch-op-5-1
+{ 
+    display:none;
+}
+
+/*****player choices****/ 
+
+body:has(details.op-1-1[open]) .an-1-1,
+body:has(details.op-1-2[open]) .an-1-2,
+body:has(details.op-1-3[open]) .an-1-3,
+body:has(details.op-1[open]) .op-2-con,
+body:has(details.op-2-1[open]) .an-2-1,
+body:has(details.op-2-2[open]) .an-2-2,
+body:has(details.op-2-3[open]) .an-2-3,
+body:has(details.op-2[open]) .sect-1,
+body:has(details.op-3-1[open]) .an-3-1,
+body:has(details.op-3-2[open]) .an-3-2,
+body:has(details.op-3-3[open]) .an-3-3
+body:has(details.op-3[open]) .sect-4,
+body:has(details.op-3[open]) .sticky-con,
+body:has(details.op-4-1[open]) .an-4-1,
+body:has(details.op-4-2[open]) .an-4-2,
+body:has(details.op-4[open]) .sect-5,
+body:has(details.op-5-1[open]) .an-5-1,
+body:has(details.op-5-2[open]) .an-5-2,
+body:has(details.op-5[open]) .connections-parentcon,
+body:has(details.op-6-1[open]) .an-6-1,
+body:has(details.op-6-2[open]) .an-6-2,
+body:has(details.op-6[open]) .sect-7,
+body:has(details.op-7-1[open]) .an-7-1,
+body:has(details.op-7-2[open]) .an-7-2,
+body:has(details.op-7[open]) .sect-9,
+body:has(details.op-8-1[open]) .an-8-1,
+body:has(details.op-8-2[open]) .an-8-2,
+body:has(details.op-8-3[open]) .an-8-3,
+body:has(details.op-9-1[open]) .sect-11,
+body:has(details.op-10-1[open]) .sect-10,
+body:has(details.op-10-2[open]) .an-8-3,
+body:has(details.op-10-half-1[open]) .sect-11,
+body:has(details.op-11-1[open]) .sect-12,
+body:has(details.op-11-2[open]) .sect-12,
+body:has(details.op-12-1[open]) .chat-bot,
+body:has(details.op-9-1[open]) .sect-13,
+body:has(details.op-10-half-1[open]) .sect-13,
+body:has(details.ch-op-5-1[open]) .sect-13,
+body:has(details.op-13-1[open]) .an-13-1,
+body:has(details.op-13-2[open]) .an-13-2,
+body:has(details.op-13-1[open]) .pixel-art,
+body:has(details.op-13-2[open]) .pixel-art,
+body:has(details.op-14-1[open]) .sect-15
+{
+    display:block;
+}
+
+.gc-acon:has(details[open]) details.op-1:not([open]),
+.gc-acon:has(details[open]) details.op-2:not([open]),
+.gc-acon:has(details[open]) details.op-3:not([open]), 
+.gc-acon:has(details[open]) details.op-4:not([open]), 
+.gc-acon:has(details[open]) details.op-5:not([open]), 
+.gc-acon:has(details[open]) details.op-6:not([open]),
+.gc-acon:has(details[open]) details.op-7:not([open]), 
+.gc-acon:has(details[open]) details.op-8:not([open]), 
+.gc-acon:has(details[open]) details.op-9:not([open]),
+.gc-acon:has(details[open]) details.op-10:not([open]),
+.gc-acon:has(details[open]) details.op-11:not([open]),
+.gc-acon:has(details[open]) details.op-12:not([open]),
+.gc-acon:has(details[open]) details.op-13:not([open]),
+.gc-acon:has(details[open]) details.op-14:not([open])
+{
+    visibility: hidden;
+}
+
+/***points podium****/
+.gc-pointscon {
+    width:300px;
+    height:150px;
+    overflow-y: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    z-index: 10000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#workskin {
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+.gc-pointsconcon {
+    width:240px;
+    height:150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.gc-pointwindow {
+    width:100px; 
+    height:45px;
+    background: black;
+    font-family: monospace;
+    color:red;
+    z-index: 100000000;
+    position: absolute;
+    font-size: 30px;
+    top:45px;
+    left:65px;
+    padding:5px;
+    overflow: hidden;
+}
+
+.scorestrip {
+    height:1000px;    
+    position:relative;
+    top:-285px;
+}
+
+.scorestrip div {
+  display: flex;
+  width: 100px;
+  align-items: end;
+  justify-content: end;
+}
+
+.score {
+  height:45px;
+  border:1px solid black;
+}
+
+
+ /****podium****/
+.gc-podium-con {
+    width:210px;
+    height:400px;
+    overflow-x: hidden;
+    position:relative;
+}
+
+.gc-podium {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% 50% 0 0;
+}
+
+.gc-podium::after {
+    content: '';
+    position: absolute;
+    top:110px;
+}
+
+.gc-p1 {
+    background-color: #d6423e;
+    width:210px;
+    height:210px;
+}
+
+.gc-p1::after {
+    background-color: #d6423e;
+    width:210px;
+    height:250px;
+}
+
+.gc-p2 {
+    background-color: #e2c65c;
+    width:165px;
+    height:165px;
+}
+
+.gc-p2::after {
+    background-color: #e2c65c;
+    z-index: 1;
+    width:165px;
+    height:230px;
+}
+
+.gc-p3 {
+    background-color: #e9ae5c;
+    width:120px;
+    height:120px;
+}
+
+.gc-p3::after {
+    background-color: #e9ae5c;
+    z-index: 2;
+    width:120px;
+    height:210px;
+}
+
+.gc-p4 {
+    background-color: #5abcd2;
+    width:75px;
+    height:75px;
+}
+
+.gc-p4::after {
+    background-color: #5abcd2;
+    z-index: 3;
+    width:75px;
+    height:190px;
+}
+
+.gc-p5 {
+    background-color: #c3425a;
+    width:30px;
+    height:30px;
+}
+
+.gc-p5::after {
+    background-color: #c3425a;
+    z-index: 5;
+    width:30px;
+    height:170px;
+}
+
+.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.scorestrip div.slug {
+  width:0px;
+}
+
+/***win conditions slug****/
+body:has(.cell0 :not([open]) + .d2[open]):has(.cell2 :not([open]) + .d3[open]):has(.cell3 :not([open]) + .d1[open]):has(.cell5 [open] + .d1:not([open])):has(.cell8 .d0[open] + [open] + [open] + [open] + [open]):has(.cell11 :not([open]) + .d1[open]):has(.cell12 [open] + .d1:not([open])):has(.cell14 :not([open]) + .d3[open]):has(.cell15 .d0[open] + [open] + [open] + [open] + [open]):has(.cell16 :not([open]) + .d2[open]):has(.cell21 [open] + .d4:not([open])):has(.cell23 :not([open]) + .d4[open]):has(.cell25 [open] + .d2:not([open])):has(.cell26 [open] + .d1:not([open])):has(.cell28 :not([open]) + .d1[open]):has(.cell30 :not([open]) + .d4[open]):has(.cell31 [open] + .d3:not([open])):has(.cell37 :not([open]) + .d3[open]):has(.cell41 [open] + .d1:not([open])):has(.cell44 [open] + .d3:not([open])):has(.cell46 .d0[open] + [open] + [open] + [open] + [open]):has(.cell48 :not([open]) + .d4[open]):has(.cell51 .d0[open] + [open] + [open] + [open] + [open]):has(.cell55 :not([open]) + .d2[open]):has(.cell57 [open] + .d3:not([open])):has(.cell60 :not([open]) + .d3[open]):has(.cell61 :not([open]) + .d2[open]):has(.cell62 :not([open]) + .d4[open]):has(.cell63 [open] + .d1:not([open])):has(.cell65 [open] + .d4:not([open])):has(.cell67 :not([open]) + .d1[open]):has(.cell68 [open] + .d3:not([open])):has(.cell71 [open] + .d4:not([open])):has(.cell76 :not([open]) + .d4[open]):has(.cell78 :not([open]) + .d2[open]):has(.cell80 [open] + .d3:not([open])):has(.cell81 [open] + .d2:not([open])):has(.cell82 .d0[open] + [open] + [open] + [open] + [open]):has(.cell83 :not([open]) + .d2[open]):has(.cell84 :not([open]) + .d1[open]):has(.cell88 :not([open]) + .d3[open]) .slug3,
+body:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .slug2,
+body:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .slug2,
+body:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .slug2,
+body:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .slug2,
+body:has(details.chatend[open]) .slug4,
+body:has(details.pixelartend[open]) .slug5
+{
+    height:45px;
+    transition: 0s;
+    display: block;
+}
+
+
