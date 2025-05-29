@@ -1,0 +1,166 @@
+/**image help 
+https://iconduck.com/icons/23671/icarus
+https://www.svgrepo.com/svg/322578/icarus
+https://www.stockio.com/free-icon/nature-icons-water-waves
+*/
+
+
+/***needed to make sticky viable on ao3*/ 
+#workskin {
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+body {
+    background:linear-gradient(to bottom,
+    #c9fcfd 40%,
+    #141852 100%)
+}
+
+.sticky-con-bg {
+    width:100%;
+    height:3000px;
+    /*border:1px solid purple;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icarus-sticky-con {
+    width:100px;
+    height:100px;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 50%;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:1px solid black;*/
+}
+
+.icarus-con {
+    width:100px;
+    height: 100px;
+    /*border:1px solid green;*/
+    display: flex;
+    transform: rotate(260deg);
+}
+
+.icarus-img {
+    height:90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.suncon-1 {
+    height:150px;
+    width:300px;
+    margin-right: auto;
+    margin-left: auto;
+    /*border:1px solid red;*/
+    overflow-y: hidden;
+}
+
+.sun-1 {
+    width:300px;
+    height:300px; 
+    background-color:#ffe59b;
+    border-radius: 50%;
+    top:-150px;
+    position: absolute;
+    box-shadow:#ffe59b 0px 10px 70px 4px;
+
+}
+
+.suncon-2 {
+    height:150px;
+    width:300px;
+    margin-right: auto;
+    margin-left: auto;
+    /*border:1px solid red;*/
+    overflow-y: hidden;
+    overflow-x: visible;
+    margin-top:0;
+    top:-100px;
+}
+.sun-2 {
+    width:300px;
+    height:300px; 
+    background-color:#e6f1fa;
+    border-radius: 50%;
+    top:0px;
+}
+
+.water-top {
+    background-image: url(https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/flyboy/water-small.png);
+    background-repeat: repeat-x;
+    width:100%;
+    height:140px;
+}
+
+.water-middle {
+    background-color: #207ba9;
+    height:650px;
+    width: 100%;
+}
+
+.water-bottom {
+    background-image: url(https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/flyboy/water-small-u2.png);
+    background-repeat: repeat-x;
+    width:100%;
+    height:200px;
+}
+
+.text-con-top {
+    height:1000px;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:1px solid orange;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3em;
+    text-align: center;
+
+}
+
+.text-con-bottom {
+    height:1000px;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:1px solid orange;*/    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3em;
+}
+
+.text-con-water {
+    height:600px;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:1px solid orange;*/
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upside-down {
+    transform: rotate(180deg);
+}
+
+.center {
+    text-align: center;
+}
