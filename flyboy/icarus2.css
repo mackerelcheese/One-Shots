@@ -14,12 +14,13 @@ https://www.stockio.com/free-icon/nature-icons-water-waves
 body {
     background:linear-gradient(to bottom,#c9fcfd 50%,#141852 100%);
     font-family:'Times New Roman', Times, serif;
+    z-index: -2;
 }
 
 .sticky-con-bg {
     width:100%;
-    height:7000px;
-    /*border:1px solid purple;*/
+    margin-top:200px;
+    /*border:1px solid orange;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,7 +30,7 @@ body {
     height:100px;
     position: -webkit-sticky;
     position: sticky;
-    bottom: 50%;
+    bottom: 40%;
     z-index: -1;
     margin-left: auto;
     margin-right: auto;
@@ -49,12 +50,18 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .rel {
     position: relative;
 }
 
 .abs {
     position: absolute;
+}
+
+.clear {
+    height:100px;
+    width: 100%;
 }
 
 .suncon-1 {
@@ -64,27 +71,24 @@ body {
     margin-left: auto;
     /*border:1px solid red;*/
     overflow-y: hidden;
+    display: block;
 }
 
 .sun-1 {
     width:300px;
     height:300px; 
-    background-color:#ffe59b;
+    background: #ffe59b;
     border-radius: 50%;
-    top:-150px;
     position: absolute;
     box-shadow:#ffe59b 0px 10px 70px 4px;
-
 }
 
 .suncon-2 {
-    height:150px;
+    height:300px;
     width:300px;
     margin-right: auto;
     margin-left: auto;
     /*border:1px solid red;*/
-    overflow-y: hidden;
-    overflow-x: visible;
     margin-top:0;
     top:-100px;
 }
@@ -92,6 +96,7 @@ body {
     width:300px;
     height:300px; 
     background-color:#e6f1fa;
+    box-shadow: #FAF9F6 0px 10px 70px 4px;
     border-radius: 50%;
     top:0px;
 }
@@ -99,25 +104,29 @@ body {
 .water-top {
     background-image: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/flyboy/water-coloured-waves-nobg.png");
     background-repeat: repeat-x;
-    width:100%%;
+    width:100%;
     height:140px;
+    z-index: 2;
 }
 
 .water-middle {
     background-color: #002535;
     height:2000px;
-    width:100%%;
+    width:100%;
+    z-index: 2;
+
 }
 
 .water-bottom {
     background-image: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/flyboy/water-coloured-waves-nobgup.png");
     background-repeat: repeat-x;
-    width:100%%;
+    width:100%;
     height:200px;
+    z-index: 2;
 }
 
 .text-con-top {
-    height:3500px;
+    height:3600px;
     width:300px;
     margin-left: auto;
     margin-right: auto;
@@ -125,13 +134,13 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;
 
 }
 
 .text-con-bottom {
-    height:1000px;
+    height:1100px;
     width:300px;
     margin-left: auto;
     margin-right: auto;
@@ -139,8 +148,9 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;
+    color:black;
 }
 
 .text-con-water {
@@ -150,7 +160,6 @@ body {
     margin-right: auto;
     /*border:1px solid orange;*/
     color: white;
-    font-size: 1.3em;
     display: flex;
     flex-direction: column;
     font-size: 1.3em;
@@ -167,62 +176,62 @@ body {
 }
 
 .t1 {
-    top:150px;
+    top:250px;
 }
 
 .t2 {
-    top:350px;
+    top:450px;
 }
 
 .t3 {
-    top:550px;
+    top:650px;
 }
 
 .t4 {
-    top:750px;
+    top:850px;
 }
 
 .t5 {
-    top:1050px;
+    top:1150px;
 }
 
 .t6 {
-    top:1250px;
+    top:1350px;
 }
 
 .t7 {
-    top:1450px;
+    top:1550px;
 }
 
 .t8 {
-    top:1650px;
+    top:1750px;
 }
 
 .t9 {
-    top:1850px;
+    top:1950px;
 }
 
 .t10 {
-    top:2050px;
+    top:2150px;
 }
 
 .t11 {
-    top:2250px;
+    top:2350px;
 }
 
 .t12 {
-    top:2450px;
+    top:2550px;
 }
 
 .t13 {
-    top:2650px;
+    top:2750px;
 }
 .t14 {
-    top:2850px;
+    top:2950px;
 }
 
 .t15 {
-    top:3050px;
+    top:3150px;
 }
 
 .t16 {
@@ -270,9 +279,9 @@ body {
 }
 
 .f2 {
-    top:50%;
+    top:40%;
 }
 
 .f3 {
-    top:90%;
+    top:70%;
 }
