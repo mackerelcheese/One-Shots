@@ -1,0 +1,278 @@
+/**image help 
+https://iconduck.com/icons/23671/icarus
+https://www.svgrepo.com/svg/322578/icarus
+https://www.stockio.com/free-icon/nature-icons-water-waves
+*/
+
+
+/***needed to make sticky viable on ao3*/ 
+#workskin {
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+body {
+    background:linear-gradient(to bottom,#c9fcfd 50%,#141852 100%);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.sticky-con-bg {
+    width:100%;
+    height:7000px;
+    /*border:1px solid purple;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icarus-sticky-con {
+    width:100px;
+    height:100px;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 50%;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:1px solid black;*/
+}
+
+.icarus-con {
+    width:100px;
+    height: 100px;
+    /*border:1px solid green;*/
+    display: flex;
+    transform: rotate(260deg);
+}
+
+.icarus-img {
+    height:90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.suncon-1 {
+    height:150px;
+    width:300px;
+    margin-right: auto;
+    margin-left: auto;
+    /*border:1px solid red;*/
+    overflow-y: hidden;
+}
+
+.sun-1 {
+    width:300px;
+    height:300px; 
+    background-color:#ffe59b;
+    border-radius: 50%;
+    top:-150px;
+    position: absolute;
+    box-shadow:#ffe59b 0px 10px 70px 4px;
+
+}
+
+.suncon-2 {
+    height:150px;
+    width:300px;
+    margin-right: auto;
+    margin-left: auto;
+    /*border:1px solid red;*/
+    overflow-y: hidden;
+    overflow-x: visible;
+    margin-top:0;
+    top:-100px;
+}
+.sun-2 {
+    width:300px;
+    height:300px; 
+    background-color:#e6f1fa;
+    border-radius: 50%;
+    top:0px;
+}
+
+.water-top {
+    background-image: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/flyboy/water-coloured-waves-nobg.png");
+    background-repeat: repeat-x;
+    width:100%%;
+    height:140px;
+}
+
+.water-middle {
+    background-color: #002535;
+    height:2000px;
+    width:100%%;
+}
+
+.water-bottom {
+    background-image: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/flyboy/water-coloured-waves-nobgup.png");
+    background-repeat: repeat-x;
+    width:100%%;
+    height:200px;
+}
+
+.text-con-top {
+    height:3500px;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:1px solid orange;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3em;
+    text-align: center;
+
+}
+
+.text-con-bottom {
+    height:1000px;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:1px solid orange;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.text-con-water {
+    height:1900px;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:1px solid orange;*/
+    color: white;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    text-align: center;
+    align-items: center;
+}
+
+.upside-down {
+    transform: rotate(180deg);
+}
+
+.center {
+    text-align: center;
+}
+
+.t1 {
+    top:150px;
+}
+
+.t2 {
+    top:350px;
+}
+
+.t3 {
+    top:550px;
+}
+
+.t4 {
+    top:750px;
+}
+
+.t5 {
+    top:1050px;
+}
+
+.t6 {
+    top:1250px;
+}
+
+.t7 {
+    top:1450px;
+}
+
+.t8 {
+    top:1650px;
+}
+
+.t9 {
+    top:1850px;
+}
+
+.t10 {
+    top:2050px;
+}
+
+.t11 {
+    top:2250px;
+}
+
+.t12 {
+    top:2450px;
+}
+
+.t13 {
+    top:2650px;
+}
+.t14 {
+    top:2850px;
+}
+
+.t15 {
+    top:3050px;
+}
+
+.t16 {
+    bottom:0px;
+}
+
+.w1 {
+    top:300px;
+} 
+
+.w2 {
+    top:400px;
+}
+
+.w3 {
+    top:600px;
+}
+
+.w4 {
+    top:800px;
+}
+
+.w5 {
+    top:900px;
+}
+
+.w6 {
+    top:1000px;
+}
+
+.w7 {
+    top:1300px;
+}
+
+.w8 {
+    top:1500px;
+}
+
+.w9 {
+    top:1800px;
+}
+
+.f1 {
+    top:0px;
+}
+
+.f2 {
+    top:50%;
+}
+
+.f3 {
+    top:90%;
+}
