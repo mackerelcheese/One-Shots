@@ -1,171 +1,11 @@
-<style>
-  /**image help 
-https://iconduck.com/icons/23671/icarus
-https://www.svgrepo.com/svg/322578/icarus
-https://www.stockio.com/free-icon/nature-icons-water-waves
-*/
-
-
-/***needed to make sticky viable on ao3*/ 
-#workskin {
-    overflow-x: visible;
-    overflow-y: visible;
-}
-
-body {
-    background:linear-gradient(to bottom,#c9fcfd 40%,#141852 100%);
-    font-family:'Times New Roman', Times, serif;
-    width:100%;
-}
-
-.sticky-con-bg {
-    width:100%;
-    height:6000px;
-    /*border:1px solid purple;*/
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.icarus-sticky-con {
-    width:100px;
-    height:100px;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 50%;
-    z-index: -1;
-    margin-left: auto;
-    margin-right: auto;
-    /*border:1px solid black;*/
-}
-
-.icarus-con {
-    width:100px;
-    height: 100px;
-    /*border:1px solid green;*/
-    display: flex;
-    transform: rotate(260deg);
-}
-
-.icarus-img {
-    height:90px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.rel {
-    position: relative;
-}
-
-.abs {
-    position: absolute;
-}
-
-.suncon-1 {
-    height:150px;
-    width:300px;
-    margin-right: auto;
-    margin-left: auto;
-    /*border:1px solid red;*/
-    overflow-y: hidden;
-}
-
-.sun-1 {
-    width:300px;
-    height:300px; 
-    background-color:#ffe59b;
-    border-radius: 50%;
-    top:-150px;
-    position: absolute;
-    box-shadow:#ffe59b 0px 10px 70px 4px;
-
-}
-
-.suncon-2 {
-    height:150px;
-    width:300px;
-    margin-right: auto;
-    margin-left: auto;
-    /*border:1px solid red;*/
-    overflow-y: hidden;
-    overflow-x: visible;
-    margin-top:0;
-    top:-100px;
-}
-.sun-2 {
-    width:300px;
-    height:300px; 
-    background-color:#e6f1fa;
-    border-radius: 50%;
-    top:0px;
-}
-
-.water-top {
-    background-image: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/flyboy/water-coloured-waves-nobg.png");
-    background-repeat: repeat-x;
-    width:100%;
-    height:140px;
-}
-
-.water-middle {
-    background-color: #002535;
-    height:2000px;
-    width: 100%;
-}
-
-.water-bottom {
-    background-image: url("https://raw.githubusercontent.com/mackerelcheese/One-Shots/refs/heads/main/flyboy/water-coloured-waves-nobgup.png");
-    background-repeat: repeat-x;
-    width:100%;
-    height:200px;
-}
-
-.text-con-top {
-    height:2500px;
-    width:300px;
-    margin-left: auto;
-    margin-right: auto;
-    /*border:1px solid orange;*/
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1.3em;
-    text-align: center;
-
-}
-
-.text-con-bottom {
-    height:1000px;
-    width:300px;
-    margin-left: auto;
-    margin-right: auto;
-    /*border:1px solid orange;*/    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1.3em;
-}
-
-.text-con-water {
-    height:1950px;
-    width:300px;
-    margin-left: auto;
-    margin-right: auto;
-    /*border:1px solid orange;*/    
-    color: white;
-    font-size: 1.3em;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.upside-down {
-    transform: rotate(180deg);
-}
-
-.center {
-    text-align: center;
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icarus</title>
+    <link href="icarus2.css" rel="stylesheet">
+</head>
 <body>
     <div class="suncon-1">
         <div class="sun-1"></div>
@@ -173,111 +13,42 @@ body {
     <div class="sticky-con">
         <div class="sticky-con-bg">
                 <div class="text-con-top rel">
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>no one prepares you</p>
-                    <p>&nbsp;</p>
-                    <p>for when the wax melts</p>
-                    <p>&nbsp;</p>
-                    <p>they don't know how far the fall is</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>or how easy it is to sink midair</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>it will hurt</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>and when you fly too high</p>
-                    <p>&nbsp;</p>
-                    <p>they shake their head</p>
-                    <p>&nbsp;</p>
-                    <p>and say it was your fault</p>
-                    <p>&nbsp;</p>
-                    <p>for wanting to touch the sunlight</p>
-                    <p>&nbsp;</p>
-                    <p>and they do not understand</p>
-                    <p>&nbsp;</p>
-                    <p>the appeal of warmth</p>
-                    <p>&nbsp;</p>
-                    <p>and they forgetten</p>
-                    <p>&nbsp;</p>
-                    <p>that when you fly too low</p>
-                    <p>&nbsp;</p>
-                    <p>the water will soak your feathers</p>
-                    <p>&nbsp;</p>
-                    <p>and drag you down</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>you will drown</p>
+                    <p class="t1 abs">no one prepares you</p>
+                    <p class="t2 abs">for when the wax melts.</p>
+                    <p class="t3 abs">they don't know how far the fall is</p>
+                    <p class="t4 abs">or how easy it is to sink midair.</p>
+                    <p class="t5 abs">it will hurt.</p>
+                    <p class="t6 abs">and when you flew too high</p>
+                    <p class="t7 abs">they shook their head</p>
+                    <p class="t8 abs">and said it was your fault</p>
+                    <p class="t9 abs">for wanting to touch the sunlight.</p>
+                    <p class="t10 abs">but they do not understand</p>
+                    <p class="t11 abs">the appeal of warmth</p>
+                    <p class="t12 abs">and they forgotten</p>
+                    <p class="t13 abs">that when you fly too low</p>
+                    <p class="t14 abs">the water will soak your feathers</p>
+                    <p class="t15 abs">and drag you under.</p>
+                    <p class="t16 abs">you will drown.</p>
                 </div>
                 <div class="water-top"></div>
                 <div class="water-middle">
-                    <div class="text-con-water">
-                        <div class="water-text-con">
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>your lungs will deflate</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>and the water is cold</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>you can't feel your fingers</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>it is easier</p>
-                            <p>&nbsp;</p>
-                            <p>to sink</p>
-                            <p>&nbsp;</p>
-                            <p>than swim</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>but don't you forget</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>you can still</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <div class="upside-down">turn things around</div>
-                            <p>&nbsp;</p>
-                        </div>
-                    </div>
+                    <div class="text-con-water rel">
+                        <p class="w1 abs">your lungs will deflate.</p>
+                        <p class="w2 abs">and the water is cold.</p>
+                        <p class="w3 abs">you can't feel your fingers.</p>
+                        <p class="w4 abs">it is easier</p>
+                        <p class="w5 abs">to sink</p>
+                        <p class="w6 abs">than swim.</p>
+                        <p class="w7 abs">but don't you forget</p>
+                        <p class="w8 abs">you can still</p>
+                        <div class="w9 abs upside-down">turn things around.</div>
+                   </div>
                 </div>
                 <div class="water-bottom"></div>
                 <div class="text-con-bottom rel">
-                    <div class="upside-down center">and one day</div>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <div class="upside-down">you can grow wings</div>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <div class="upside-down">and learn to fly again.</div>
+                    <div class="f1 upside-down center abs">and one day</div>
+                    <div class="f2 upside-down abs">you can grow wings</div>
+                    <div class="f3 upside-down abs">and learn to fly again.</div>
                 </div>
         </div>
         
