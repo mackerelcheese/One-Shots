@@ -5,16 +5,66 @@ https://www.stockio.com/free-icon/nature-icons-water-waves
 */
 
 
-/***needed to make sticky viable on ao3*/ 
-#workskin {
-    overflow-x: visible;
-    overflow-y: visible;
-}
+/***background***/
 
 body {
-    background:linear-gradient(to bottom,#c9fcfd 50%,#141852 100%);
-    font-family:'Times New Roman', Times, serif;
-    z-index: 1;
+  overflow-x: visible;
+  overflow-y: visible;
+  background: linear-gradient(to bottom,#c9fcfd 50%,#141852 100%);
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 1;
+}
+
+/***housekeeping***/
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.clear {
+  height: 100px;
+  width: 100%;
+}
+
+.preface.group {
+  background: none;
+  color: black !important;
+}
+
+.preface h2, .preface h3, .preface a, .preface a:visited {
+  color: black !important;
+}
+
+.end.notes, .end.notes h3, .end.notes a, .end.notes a:visited {
+  color: #eee !important;
+  border-color: #eee !important;
+}
+
+.text-con-top.rel {
+  color: black;
+}
+
+/****kudos message****/ 
+#workskin ~ #feedback #kudos_message {
+    font-size: 0;
+}
+  
+#workskin ~ #feedback #kudos_message.notice::after {
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
+    content: "One day, maybe, we can get there.";
+}
+  
+#workskin ~ #feedback #kudos_message.kudos_error::after {
+    content: "Get back up.";
+    font-size: 12pt;
+    padding: 10px;
+    display: block;
 }
 
 .sticky-con-bg {
@@ -49,19 +99,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     transform: rotate(260deg);
-}
-
-.rel {
-    position: relative;
-}
-
-.abs {
-    position: absolute;
-}
-
-.clear {
-    height:100px;
-    width: 100%;
 }
 
 .suncon-1 {
@@ -166,6 +203,22 @@ body {
     font-size: 1.3em;
     text-align: center;
     align-items: center;
+}
+
+.upside-down {
+    transform: rotate(180deg);
+}
+
+.center {
+    text-align: center;
+}
+
+.upside-down {
+    transform: rotate(180deg);
+}
+
+.center {
+    text-align: center;
 }
 
 .upside-down {
