@@ -1,0 +1,866 @@
+<style>
+
+.connectionbox details summary,
+details.connectionbox summary,
+.submit details summary,
+details.submit summary,
+.submit1 details summary,
+details.submit1 summary 
+
+{
+    list-style: none;
+}
+
+details.connectionbox summary::-webkit-details-marker,
+details.connectionbox summary::marker,
+details.submit summary::-webkit-details-marker,
+details.submit::marker,
+details.submit1 summary::-webkit-details-marker,
+details.submit1::marker
+{
+    display:none;
+}
+
+/**connections*****/ 
+
+.connectionbox {
+    display: block;
+    float:left;
+    text-align: center;
+    text-align: center;
+    background-color: #efefe6;
+    color:black;
+    width:70px;
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+    margin-bottom: 1.5px;
+    margin-top:1.5px;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    word-break: break-word;
+}
+
+.smalltxt {
+    font-size: 0.9em !important;
+
+}
+
+.clear {
+    clear: both;
+}
+
+:has(details.connectionbox[open]) 
+details.connectionbox[open] {
+    background-color: #5a594e;
+    color:white;
+
+}
+
+.win-connect {
+    display:none;
+}
+/***connections rounds***/
+
+.connection-con1 {
+    display: block;
+    width:300px; 
+    height:300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.connection-con2,
+.connection-con3,
+.connection-con4 {
+    display:none;
+    width:300px; 
+    height:300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/***rules****/
+
+.answer-con {
+    display:flex;
+    height: auto;
+    width: auto;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.rule {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: Small;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 0.5%;
+    margin-top:0.5%;
+}
+
+.rule p:nth-child(1) {
+    font-weight: 790;
+    margin:0px;
+}
+
+.rule p:nth-child(2) {
+    font-weight: 100;
+    margin:0px;
+}
+
+.bluerule {
+    background-color:#b0c4ef;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.purplerule {
+    background-color: #ba81c5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.yellowrule {
+    background-color: #f9df6d;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.greenrule {
+    background-color: #a0c35a;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fake {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    margin-top:20px; 
+}
+/***submission***/ 
+
+.submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100px;
+    text-align: center;
+    border:1px solid black;
+    border-radius:20px;
+    margin-top:20px; 
+    color:black;
+    background-color: white;
+    padding:10px;   
+}
+
+
+/*submit*/
+.connection-main-con-1 .connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr1,
+.connection-main-con-1 .connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr2,
+.connection-main-con-1 .connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr3,
+.connection-main-con-1 .connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr4
+{
+    color:white;
+    background-color: black;
+}
+
+.connection-main-con-1 .connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr1,
+.connection-main-con-1 .connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr2,
+.connection-main-con-1 .connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr3,
+.connection-main-con-1 .connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr4
+{
+    color:black;
+    background-color: white;
+}
+
+.connection-main-con-1 + .connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr1,
+.connection-main-con-1 + .connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr2,
+.connection-main-con-1 + .connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr3,
+.connection-main-con-1 + .connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr4
+{
+    display:none;
+}
+
+.connection-main-con-1 + .connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake,
+.connection-main-con-1 + .connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake,
+.connection-main-con-1 + .connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake,
+.connection-main-con-1 + .connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake
+{
+    display:block;
+}
+
+
+/*******************round 1******************************************/ 
+
+.connection-main-con-1:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .bluerule,
+.connection-main-con-1:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .purplerule,
+.connection-main-con-1:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .yellowrule,
+.connection-main-con-1:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .greenrule 
+{
+    display:flex;
+    order:1;
+}
+
+/***disappear r1***/
+
+.connection-main-con-1:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .blue,
+.connection-main-con-1:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .purple,
+.connection-main-con-1:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .yellow,
+.connection-main-con-1:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .green 
+{
+    opacity: 0;
+}
+
+/***submit r1/ open r2***/
+.connection-main-con-1:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .connection-con1,
+.connection-main-con-1:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .connection-con1,
+.connection-main-con-1:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .connection-con1,
+.connection-main-con-1:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .connection-con1 
+{
+    display:none;
+}
+
+.connection-main-con-1:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .connection-con2,
+.connection-main-con-1:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .connection-con2,
+.connection-main-con-1:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .connection-con2,
+.connection-main-con-1:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .connection-con2 
+{
+    display:block;
+}
+
+/*******************round 2******************************************/ 
+
+.connection-main-con-1:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .bluerule,
+.connection-main-con-1:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .purplerule,
+.connection-main-con-1:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .yellowrule,
+.connection-main-con-1:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .greenrule 
+{
+    display:flex;
+    order:2;
+}
+
+/***disappear r2***/
+
+.connection-main-con-1:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .blue,
+.connection-main-con-1:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .purple,
+.connection-main-con-1:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .yellow,
+.connection-main-con-1:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .green 
+{
+    opacity: 0;
+}
+
+/***submit r2/ open r3***/
+.connection-main-con-1:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .connection-con2,
+.connection-main-con-1:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .connection-con2,
+.connection-main-con-1:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .connection-con2,
+.connection-main-con-1:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .connection-con2 
+{
+    display:none;
+}
+
+.connection-main-con-1:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .connection-con3,
+.connection-main-con-1:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .connection-con3,
+.connection-main-con-1:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .connection-con3,
+.connection-main-con-1:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .connection-con3 
+{
+    display:block;
+}
+
+/*******************round 3******************************************/ 
+
+.connection-main-con-1:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .bluerule,
+.connection-main-con-1:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .purplerule,
+.connection-main-con-1:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .yellowrule,
+.connection-main-con-1:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .greenrule 
+{
+    display:flex;
+    order:3;
+}
+
+/***disappear r3***/
+
+.connection-main-con-1:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .blue,
+.connection-main-con-1:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .purple,
+.connection-main-con-1:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .yellow,
+.connection-main-con-1:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .green 
+{
+    opacity: 0;
+}
+
+/***submit r3/ open r4***/
+.connection-main-con-1:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .connection-con3,
+.connection-main-con-1:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .connection-con3,
+.connection-main-con-1:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .connection-con3,
+.connection-main-con-1:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .connection-con3 
+{
+    display:none;
+}
+
+.connection-main-con-1:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .connection-con4,
+.connection-main-con-1:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .connection-con4,
+.connection-main-con-1:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .connection-con4,
+.connection-main-con-1:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .connection-con4 
+{
+    display:block;
+}
+
+/*******************round 4******************************************/ 
+
+.connection-main-con-1:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .bluerule,
+.connection-main-con-1:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .purplerule,
+.connection-main-con-1:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .yellowrule,
+.connection-main-con-1:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .greenrule 
+{
+    display:flex;
+    order:4;
+}
+
+/***disappear r3***/
+
+.connection-main-con-1:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .blue,
+.connection-main-con-1:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .purple,
+.connection-main-con-1:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .yellow,
+.connection-main-con-1:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .green 
+{
+    opacity: 0;
+}
+
+
+.connection-main-con-1:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .connection-con4,
+.connection-main-con-1:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .connection-con4,
+.connection-main-con-1:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .connection-con4,
+.connection-main-con-1:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .connection-con4 
+{
+    display:none;
+}
+
+.connection-main-con-1:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .win-connect,
+.connection-main-con-1:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .win-connect,
+.connection-main-con-1:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .win-connect,
+.connection-main-con-1:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .win-connect 
+{
+    display:block;
+}
+
+/*submit*/
+.connection-main-con-2 .connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr1,
+.connection-main-con-2 .connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr2,
+.connection-main-con-2 .connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr3,
+.connection-main-con-2 .connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr4
+{
+    color:white;
+    background-color: black;
+}
+
+.connection-main-con-2  .connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr1,
+.connection-main-con-2 .connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr2,
+.connection-main-con-2 .connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr3,
+.connection-main-con-2 .connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr4
+{
+    color:black;
+    background-color: white;
+}
+
+.connection-main-con-2 + .connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr1,
+.connection-main-con-2 + .connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr2,
+.connection-main-con-2 + .connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr3,
+.connection-main-con-2 + .connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .subr4
+{
+    display:none;
+}
+
+.connection-main-con-2 + .connection-con1:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake,
+.connection-main-con-2 + .connection-con2:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake,
+.connection-main-con-2 + .connection-con3:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake,
+.connection-main-con-2 + .connection-con4:has(details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open] ~ details.connectionbox[open]) .fake
+{
+    display:block;
+}
+
+
+/*******************round 1******************************************/ 
+
+.connection-main-con-2:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .bluerule,
+.connection-main-con-2:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .purplerule,
+.connection-main-con-2:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .yellowrule,
+.connection-main-con-2:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .greenrule 
+{
+    display:flex;
+    order:1;
+}
+
+/***disappear r1***/
+
+.connection-main-con-2:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .blue,
+.connection-main-con-2:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .purple,
+.connection-main-con-2:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .yellow,
+.connection-main-con-2:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .green 
+{
+    opacity: 0;
+}
+
+/***submit r1/ open r2***/
+.connection-main-con-2:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .connection-con1,
+.connection-main-con-2:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .connection-con1,
+.connection-main-con-2:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .connection-con1,
+.connection-main-con-2:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .connection-con1 
+{
+    display:none;
+}
+
+.connection-main-con-2:has(details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.blue1[open] ~ details.subr1[open]) .connection-con2,
+.connection-main-con-2:has(details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.purple1[open] ~ details.subr1[open]) .connection-con2,
+.connection-main-con-2:has(details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.yellow1[open] ~ details.subr1[open]) .connection-con2,
+.connection-main-con-2:has(details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.green1[open] ~ details.subr1[open]) .connection-con2 
+{
+    display:block;
+}
+
+/*******************round 2******************************************/ 
+
+.connection-main-con-2:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .bluerule,
+.connection-main-con-2:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .purplerule,
+.connection-main-con-2:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .yellowrule,
+.connection-main-con-2:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .greenrule 
+{
+    display:flex;
+    order:2;
+}
+
+/***disappear r2***/
+
+.connection-main-con-2:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .blue,
+.connection-main-con-2:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .purple,
+.connection-main-con-2:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .yellow,
+.connection-main-con-2:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .green 
+{
+    opacity: 0;
+}
+
+/***submit r2/ open r3***/
+.connection-main-con-2:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .connection-con2,
+.connection-main-con-2:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .connection-con2,
+.connection-main-con-2:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .connection-con2,
+.connection-main-con-2:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .connection-con2 
+{
+    display:none;
+}
+
+.connection-main-con-2:has(details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.blue2[open] ~ details.subr2[open]) .connection-con3,
+.connection-main-con-2:has(details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.purple2[open] ~ details.subr2[open]) .connection-con3,
+.connection-main-con-2:has(details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.yellow2[open] ~ details.subr2[open]) .connection-con3,
+.connection-main-con-2:has(details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.green2[open] ~ details.subr2[open]) .connection-con3 
+{
+    display:block;
+}
+
+/*******************round 3******************************************/ 
+
+.connection-main-con-2:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .bluerule,
+.connection-main-con-2:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .purplerule,
+.connection-main-con-2:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .yellowrule,
+.connection-main-con-2:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .greenrule 
+{
+    display:flex;
+    order:3;
+}
+
+/***disappear r3***/
+
+.connection-main-con-2:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .blue,
+.connection-main-con-2:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .purple,
+.connection-main-con-2:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .yellow,
+.connection-main-con-2:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .green 
+{
+    opacity: 0;
+}
+
+/***submit r3/ open r4***/
+.connection-main-con-2:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .connection-con3,
+.connection-main-con-2:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .connection-con3,
+.connection-main-con-2:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .connection-con3,
+.connection-main-con-2:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .connection-con3 
+{
+    display:none;
+}
+
+.connection-main-con-2:has(details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.blue3[open] ~ details.subr3[open]) .connection-con4,
+.connection-main-con-2:has(details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.purple3[open] ~ details.subr3[open]) .connection-con4,
+.connection-main-con-2:has(details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.yellow3[open] ~ details.subr3[open]) .connection-con4,
+.connection-main-con-2:has(details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.green3[open] ~ details.subr3[open]) .connection-con4 
+{
+    display:block;
+}
+
+/*******************round 4******************************************/ 
+
+.connection-main-con-2:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .bluerule,
+.connection-main-con-2:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .purplerule,
+.connection-main-con-2:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .yellowrule,
+.connection-main-con-2:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .greenrule 
+{
+    display:flex;
+    order:4;
+}
+
+/***disappear r3***/
+
+.connection-main-con-2:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .blue,
+.connection-main-con-2:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .purple,
+.connection-main-con-2:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .yellow,
+.connection-main-con-2:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .green 
+{
+    opacity: 0;
+}
+
+
+.connection-main-con-2:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .connection-con4,
+.connection-main-con-2:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .connection-con4,
+.connection-main-con-2:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .connection-con4,
+.connection-main-con-2:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .connection-con4 
+{
+    display:none;
+}
+
+.connection-main-con-2:has(details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.blue4[open] ~ details.subr4[open]) .win-connect,
+.connection-main-con-2:has(details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.purple4[open] ~ details.subr4[open]) .win-connect,
+.connection-main-con-2:has(details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.yellow4[open] ~ details.subr4[open]) .win-connect,
+.connection-main-con-2:has(details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.green4[open] ~ details.subr4[open]) .win-connect 
+{
+    display:block;
+}
+
+</style>
+<body>
+            <div class="instructions">
+                <p><strong>How to play:</strong></p>
+                <ul>
+                    <li>Find groups of four items that share something in common.</li>
+                    <li>Select four items and tap 'Submit' to check if your guess is correct.</li>
+                </ul>
+            </div>
+<!--parent of all parent cons-->
+<div class="connection-main-con-1">
+                <div class="answer-con">
+        <div class="yellowrule rule">
+            <p>First four prompts from the first make some noise episode</p>
+            <p>sally, fredrick, rachel, may</p>
+        </div>
+        <div class="greenrule rule">
+            <p>Things the mouth approves of in the Nom nom nom episode</p>
+            <p>atlas, percy, annabeth, artemis</p>
+
+        </div>
+        <div class="bluerule rule">
+            <p>OLDER SIBLINGS WHO DIE </p>
+            <p>LEE, LUKE, SILENA, BIANCA</p>
+        </div>
+        <div class="purplerule rule">
+            <p>Words made from the first letters of Game Changer S7 Episode Names</p>
+            <p><em>YOU</em>-lympics, <em>EAR</em>nest-est, <em>crow</em>d control, <em>one</em> year later
+</p>
+        </div>
+    </div>    
+
+    <div class="connect connection-con1">
+        <details class="connectionbox blue blue1">
+            <summary>LEE</summary>
+        </details>
+        <details class="connectionbox green green1">
+            <summary>atlas</summary>
+        </details>
+        <details class="connectionbox purple purple1">
+            <summary>Empousa</summary>
+        </details>
+        <details class="connectionbox purple purple1">
+            <summary>gabe</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox yellow yellow1">
+            <summary>sally</summary>
+        </details>
+        <details class="connectionbox green green1">
+            <summary>percy</summary>
+        </details>
+        <details class="connectionbox blue blue1">
+            <summary>LUKE</summary>
+        </details>
+        <details class="connectionbox yellow yellow1">
+            <summary>fredrick</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox green green1">
+            <summary class="smalltxt">annabeth</summary>
+        </details>
+        <details class="connectionbox purple purple1">
+            <summary>typhon</summary>
+        </details>
+        <details class="connectionbox yellow yellow1">
+            <summary>rachel</summary>
+        </details>
+        <details class="connectionbox blue blue1">
+            <summary>SILENA</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox purple purple1">
+            <summary class="smalltxt">Charybdis</summary>
+        </details>
+        <details class="connectionbox blue blue1">
+            <summary>BIANCA</summary>
+        </details>
+        <details class="connectionbox green green1">
+            <summary>artemis</summary>
+        </details>
+        <details class="connectionbox yellow yellow1">
+            <summary>may</summary>
+        </details>
+        <p>&nbsp;</p>
+        <details class="submit subr1">
+            <summary>Submit</summary>
+        </details>
+        <div class="fake">Select four</div>
+    
+    </div>
+
+    <!--round 22222222222222222222222222222222222222222222222-->
+    <div class="connect connection-con2">
+        <details class="connectionbox blue blue2">
+            <summary>LEE</summary>
+        </details>
+        <details class="connectionbox green green2">
+            <summary>atlas</summary>
+        </details>
+        <details class="connectionbox purple purple2">
+            <summary>Empousa</summary>
+        </details>
+        <details class="connectionbox purple purple2">
+            <summary>gabe</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox yellow yellow2">
+            <summary>sally</summary>
+        </details>
+        <details class="connectionbox green green2">
+            <summary>percy</summary>
+        </details>
+        <details class="connectionbox blue blue2">
+            <summary>LUKE</summary>
+        </details>
+        <details class="connectionbox yellow yellow2">
+            <summary>fredrick</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox green green2">
+            <summary class="smalltxt">annabeth</summary>
+        </details>
+        <details class="connectionbox purple purple2">
+            <summary>typhon</summary>
+        </details>
+        <details class="connectionbox yellow yellow2">
+            <summary>rachel</summary>
+        </details>
+        <details class="connectionbox blue blue2">
+            <summary>SILENA</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox purple purple2">
+            <summary class="smalltxt">Charybdis</summary>
+        </details>
+        <details class="connectionbox blue blue2">
+            <summary>BIANCA</summary>
+        </details>
+        <details class="connectionbox green green2">
+            <summary>artemis</summary>
+        </details>
+        <details class="connectionbox yellow yellow2">
+            <summary>may</summary>
+        </details>
+        <p>&nbsp;</p>
+        <details class="submit subr2">
+            <summary>Submit</summary>
+        </details>    
+        <div class="fake">Select four</div>
+    </div>
+
+    <!--round 33333333333333333333333333333333333333333333333-->
+    <div class="connect connection-con3">
+        <details class="connectionbox blue blue3">
+            <summary>LEE</summary>
+        </details>
+        <details class="connectionbox green green3">
+            <summary>atlas</summary>
+        </details>
+        <details class="connectionbox purple purple3">
+            <summary>Empousa</summary>
+        </details>
+        <details class="connectionbox purple purple3">
+            <summary>gabe</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox yellow yellow3">
+            <summary>sally</summary>
+        </details>
+        <details class="connectionbox green green3">
+            <summary>percy</summary>
+        </details>
+        <details class="connectionbox blue blue3">
+            <summary>LUKE</summary>
+        </details>
+        <details class="connectionbox yellow yellow3">
+            <summary>fredrick</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox green green3">
+            <summary  class="smalltxt">annabeth</summary>
+        </details>
+        <details class="connectionbox purple purple3">
+            <summary>typhon</summary>
+        </details>
+        <details class="connectionbox yellow yellow3">
+            <summary>rachel</summary>
+        </details>
+        <details class="connectionbox blue blue3">
+            <summary>SILENA</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox purple purple3">
+            <summary class="smalltxt">Charybdis</summary>
+        </details>
+        <details class="connectionbox blue blue3">
+            <summary>BIANCA</summary>
+        </details>
+        <details class="connectionbox green green3">
+            <summary>artemis</summary>
+        </details>
+        <details class="connectionbox yellow yellow3">
+            <summary>may</summary>
+        </details>
+        <p>&nbsp;</p>
+        <details class="submit subr3">
+            <summary>Submit</summary>
+        </details>
+        <div class="fake">Select four</div>
+    
+    </div>
+
+    <!--round 44444444444444444444444444444444444444444444444444-->
+    <div class="connect connection-con4">
+        <details class="connectionbox blue blue4">
+            <summary>LEE</summary>
+        </details>
+        <details class="connectionbox green green4">
+            <summary>atlas</summary>
+        </details>
+        <details class="connectionbox purple purple4">
+            <summary>Empousa</summary>
+        </details>
+        <details class="connectionbox purple purple4">
+            <summary>gabe</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox yellow yellow4">
+            <summary>sally</summary>
+        </details>
+        <details class="connectionbox green green4">
+            <summary>percy</summary>
+        </details>
+        <details class="connectionbox blue blue4">
+            <summary>LUKE</summary>
+        </details>
+        <details class="connectionbox yellow yellow4">
+            <summary>fredrick</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox green green4">
+            <summary class="smalltxt">annabeth</summary>
+        </details>
+        <details class="connectionbox purple purple4">
+            <summary>typhon</summary>
+        </details>
+        <details class="connectionbox yellow yellow4">
+            <summary>rachel</summary>
+        </details>
+        <details class="connectionbox blue blue4">
+            <summary>SILENA</summary>
+        </details>
+    
+        <div class="clear"></div>
+        
+        <details class="connectionbox purple purple4">
+            <summary class="smalltxt">Charybdis</summary>
+        </details>
+        <details class="connectionbox blue blue4">
+            <summary>BIANCA</summary>
+        </details>
+        <details class="connectionbox green green4">
+            <summary>artemis</summary>
+        </details>
+        <details class="connectionbox yellow yellow4">
+            <summary>may</summary>
+        </details>
+        <p>&nbsp;</p>
+        <details class="submit subr4">
+            <summary>Submit</summary>
+        </details>
+        <div class="fake">Select four</div>
+    </div>
+    <p>&nbsp;</p>
+        <div class="win-connect">
+            <p>Congratulations player! One point for you. How did you find it?</p>
+            <!--questions 6-->
+            <p>&nbsp;</p>            
+            <div class="gc-acon buttons op-6">
+                <details class="gc-choice buttons op-6 op-6-1"><summary>It was fun! I liked it.</summary></details>
+                <details class="gc-choice buttons op-6 op-6-2"><summary>Meh, it was fine. </summary></details>
+            </div>
+        </div>
+</div>
+
+</body>
